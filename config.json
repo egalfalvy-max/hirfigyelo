@@ -234,6 +234,14 @@
       "lang": "EN",
       "weight": 3,
       "topic": "ai"
+    },
+    {
+      "name": "PC MAG",
+      "url": "https://www.pcmag.com/",
+      "rss": "https://www.pcmag.com/feeds/rss/latest",
+      "lang": "EN",
+      "weight": 4,
+      "topic": "ai"
     }
   ],
   "fallback_models": [
