@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#eceef3">
+<title>Hírfigyelő</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+/* Elrendezés: idővonal-fülsáv fent, alatta kiemelt "hero" kártya és kétoszlopos kártyarács; heti nézet rangsorlista. */
+:root {
+  --ground: #eceef3;
+  --panel: #ffffff;
+  --ink: #0d1220;
+  --mute: #5a6378;
+  --line: #d3d8e3;
+  --accent: #3a2bff;
+  --accent-ink: #ffffff;
+  --warn: #b4380a;
+  --ok: #0f766e;
+  --l1: #3a2bff;   /* altéma 1 */
+  --l2: #d4146a;   /* altéma 2 */
+  --l3: #0b7a62;   /* altéma 3 */
+  --l4: #a65f00;   /* altéma 4 */
+  --chip-ink: #ffffff;
+  --scrim: rgba(8, 10, 16, 0.55);
+  --display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  --radius: 14px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ground: #0b0e15; --panel: #151a25; --ink: #eceff6; --mute: #98a1b6; --line: #262d3c;
+    --accent: #8f87ff; --accent-ink: #0b0e15; --warn: #ff9a6b; --ok: #5eead4;
+    --l1: #8f87ff; --l2: #ff6fae; --l3: #4fd8b4; --l4: #f2b450; --chip-ink: #0b0e15;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --ground: #0b0e15; --panel: #151a25; --ink: #eceff6; --mute: #98a1b6; --line: #262d3c;
+  --accent: #8f87ff; --accent-ink: #0b0e15; --warn: #ff9a6b; --ok: #5eead4;
+  --l1: #8f87ff; --l2: #ff6fae; --l3: #4fd8b4; --l4: #f2b450; --chip-ink: #0b0e15;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--ground); color: var(--ink);
+  font-family: var(--display); font-size: 16px; line-height: 1.45;
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+body::before {
+  content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px);
+  background: var(--ground); z-index: 10;
+}
+a { color: inherit; }
+img { max-width: 100%; }
+button, input, select, textarea { font: inherit; color: inherit; }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+[hidden] { display: none !important; }
+
+.wrap {
+  max-width: 1080px; margin: 0 auto; padding-block: 0 72px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+
+/* ---------- fejléc ---------- */
+header { padding: calc(28px + env(safe-area-inset-top, 0px)) 0 16px; display: grid; gap: 10px; }
+header h1 {
+  margin: 0; font-size: clamp(2.4rem, 9vw, 4.2rem); font-weight: 800;
+  letter-spacing: -0.045em; line-height: 0.9;
+}
+.ruler {
+  display: flex; flex-wrap: wrap; gap: 6px 18px; align-items: center;
+  font-family: var(--mono); font-size: 0.78rem; color: var(--mute);
+  font-variant-numeric: tabular-nums; text-transform: uppercase; letter-spacing: 0.04em;
+}
+.ruler .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--ok); display: inline-block; margin-right: 6px; }
+.ruler .dot.stale { background: var(--warn); }
+
+/* ---------- fülsáv ---------- */
+.tabs {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5;
+  display: flex; gap: 2px; overflow-x: auto; scrollbar-width: none;
+  background: var(--ground); border-bottom: 1px solid var(--line);
+}
+.tabs::-webkit-scrollbar { display: none; }
+.tab {
+  flex: none; background: none; border: 0; cursor: pointer;
+  padding: 13px 14px 11px; color: var(--mute); font-weight: 600;
+  border-bottom: 3px solid transparent; margin-bottom: -1px; min-height: 44px;
+}
+.tab[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--accent); }
+.tab.add { color: var(--accent); }
+.tab .count { font-family: var(--mono); font-weight: 400; font-size: 0.8em; margin-left: 6px; color: var(--mute); }
+
+main { padding-top: 18px; }
+
+/* ---------- altéma szűrő ---------- */
+.filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; }
+.fchip {
+  border: 1px solid var(--line); background: var(--panel); border-radius: 999px;
+  padding: 7px 14px; cursor: pointer; font-size: 0.88rem; font-weight: 600; min-height: 36px;
+  display: inline-flex; align-items: center; gap: 8px; color: var(--mute);
+}
+.fchip .sw { width: 10px; height: 10px; border-radius: 3px; background: var(--c, var(--accent)); }
+.fchip[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--ground); }
+.fchip .n { font-family: var(--mono); font-weight: 400; font-size: 0.8em; opacity: 0.75; }
+
+/* ---------- kártyák ---------- */
+.grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; list-style: none; margin: 0; padding: 0; }
+.card {
+  background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius);
+  overflow: hidden; display: flex; flex-direction: column; min-width: 0;
+}
+.card.hero { grid-column: 1 / -1; display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); }
+.card.is-down { opacity: 0.45; }
+.media { position: relative; aspect-ratio: 16 / 10; background: var(--line); overflow: hidden; max-width: 100%; }
+.card.hero .media { aspect-ratio: auto; min-height: 300px; }
+.media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+.cover { position: absolute; inset: 0; display: grid; place-items: end start; padding: 16px; overflow: hidden; }
+.cover b {
+  position: relative; font-family: var(--display); font-weight: 800; font-size: clamp(3rem, 9vw, 5.5rem);
+  line-height: 0.8; letter-spacing: -0.06em; color: rgba(255, 255, 255, 0.92); mix-blend-mode: overlay;
+}
+.cover::after {
+  content: ""; position: absolute; inset: 0;
+  background-image: linear-gradient(rgba(255,255,255,.14) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.14) 1px, transparent 1px);
+  background-size: 24px 24px; mask-image: linear-gradient(135deg, transparent 30%, #000);
+  -webkit-mask-image: linear-gradient(135deg, transparent 30%, #000);
+}
+.label {
+  position: absolute; top: 12px; left: 12px; z-index: 1;
+  background: var(--c, var(--accent)); color: var(--chip-ink);
+  font-size: 0.74rem; font-weight: 600; letter-spacing: 0.03em; text-transform: uppercase;
+  padding: 5px 10px; border-radius: 6px;
+}
+.body { padding: 16px 18px 18px; display: flex; flex-direction: column; gap: 10px; flex: 1; min-width: 0; }
+.card.hero .body { padding: 26px 28px; justify-content: center; }
+.meta {
+  font-family: var(--mono); font-size: 0.76rem; color: var(--mute); text-transform: uppercase;
+  letter-spacing: 0.04em; display: flex; flex-wrap: wrap; gap: 4px 12px; font-variant-numeric: tabular-nums;
+}
+.meta .tc { color: var(--ink); font-weight: 600; }
+.title {
+  font-size: 1.22rem; line-height: 1.22; font-weight: 600; letter-spacing: -0.015em;
+  text-decoration: none; text-wrap: balance; overflow-wrap: anywhere;
+}
+.card.hero .title { font-size: clamp(1.5rem, 3.4vw, 2.2rem); font-weight: 800; letter-spacing: -0.03em; line-height: 1.08; }
+.title::after { content: " ↗"; color: var(--mute); font-weight: 400; }
+.title:hover { text-decoration: underline; text-decoration-color: var(--accent); text-underline-offset: 4px; }
+.title:visited { color: var(--mute); }
+.fb { display: flex; gap: 8px; margin-top: auto; padding-top: 4px; flex-wrap: wrap; }
+.fb button {
+  background: none; border: 1px solid var(--line); border-radius: 999px;
+  padding: 6px 14px; cursor: pointer; color: var(--mute); font-size: 0.86rem; min-height: 36px;
+}
+.fb button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+
+/* ---------- heti rangsor ---------- */
+.week-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 16px; margin: 4px 0 18px; }
+.week-head h2 { margin: 0; font-size: clamp(1.6rem, 5vw, 2.4rem); letter-spacing: -0.035em; line-height: 1; }
+.week-head span { font-family: var(--mono); font-size: 0.8rem; color: var(--mute); text-transform: uppercase; }
+.rank { list-style: none; margin: 0 0 28px; padding: 0; border-top: 1px solid var(--line); }
+.rank li {
+  display: grid; grid-template-columns: 48px 112px minmax(0, 1fr); gap: 14px; align-items: center;
+  padding: 14px 0; border-bottom: 1px solid var(--line);
+}
+.rank li.is-down { opacity: 0.45; }
+.rank .no { font-family: var(--mono); font-size: 1.5rem; font-weight: 600; color: var(--mute); font-variant-numeric: tabular-nums; }
+.rank .media { aspect-ratio: 4 / 3; border-radius: 8px; }
+.rank .media .cover { padding: 8px; }
+.rank .media .cover b { font-size: 2rem; }
+.rank .rt { display: grid; gap: 6px; min-width: 0; }
+.rank .title { font-size: 1.08rem; }
+.rank .pill { color: var(--c, var(--accent)); font-weight: 600; }
+.rank .fb { padding-top: 0; }
+h3.sec { margin: 8px 0 10px; font-size: 1.1rem; letter-spacing: -0.01em; }
+
+/* ---------- üres állapot, blokkok, űrlapok ---------- */
+.empty { padding: 40px 0; color: var(--mute); max-width: 54ch; }
+.empty strong { color: var(--ink); display: block; font-size: 1.2rem; margin-bottom: 6px; letter-spacing: -0.01em; }
+section.block { padding: 22px 0 6px; }
+section.block h2 { margin: 0 0 10px; font-size: 1.3rem; letter-spacing: -0.02em; }
+section.block p.note { color: var(--mute); margin: 0 0 14px; max-width: 62ch; font-size: 0.95rem; }
+.cols { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 28px; align-items: start; }
+.srcrow {
+  display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2px 12px; align-items: center;
+  padding: 12px 0; border-bottom: 1px solid var(--line);
+}
+.srcrow .n { font-weight: 600; }
+.srcrow .m { color: var(--mute); font-size: 0.82rem; font-family: var(--mono); overflow-wrap: anywhere; }
+.status { font-family: var(--mono); font-size: 0.82rem; font-variant-numeric: tabular-nums; margin-right: 6px; }
+.ok { color: var(--ok); } .bad { color: var(--warn); }
+.wt { font-family: var(--mono); font-size: 0.78rem; color: var(--mute); }
+form.panel { display: grid; gap: 10px; background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px; }
+label { display: grid; gap: 4px; font-size: 0.88rem; color: var(--mute); }
+input, select, textarea {
+  background: var(--ground); border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; width: 100%; min-height: 44px;
+}
+textarea { min-height: 84px; resize: vertical; }
+.row2 { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 10px; }
+.btn { border: 1px solid var(--line); background: var(--panel); border-radius: 8px; padding: 10px 16px; font-weight: 600; cursor: pointer; min-height: 44px; }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.btn:disabled { opacity: 0.5; cursor: default; }
+.btns { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; align-items: center; }
+.linkbtn { background: none; border: 0; color: var(--mute); cursor: pointer; text-decoration: underline; padding: 6px; min-height: 36px; }
+.hint { color: var(--mute); font-size: 0.88rem; }
+
+dialog {
+  border: 1px solid var(--line); border-radius: var(--radius); background: var(--panel); color: var(--ink);
+  max-width: min(500px, calc(100vw - 32px)); width: 100%; padding: 22px;
+}
+dialog::backdrop { background: var(--scrim); }
+dialog h3 { margin: 0 0 8px; font-size: 1.25rem; letter-spacing: -0.01em; }
+dialog ul { padding-left: 18px; margin: 8px 0 16px; }
+dialog li { margin-bottom: 6px; overflow-wrap: anywhere; }
+.toast {
+  position: fixed; left: 50%; bottom: calc(20px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%);
+  background: var(--ink); color: var(--ground); padding: 10px 16px; border-radius: 8px; font-size: 0.92rem;
+  max-width: calc(100vw - 32px); z-index: 20;
+}
+
+@media (max-width: 760px) {
+  .grid { grid-template-columns: minmax(0, 1fr); }
+  .card.hero { grid-template-columns: minmax(0, 1fr); }
+  .card.hero .media { min-height: 0; aspect-ratio: 16 / 10; }
+  .card.hero .body { padding: 18px; }
+  .cols { grid-template-columns: minmax(0, 1fr); }
+  .rank li { grid-template-columns: 34px 84px minmax(0, 1fr); gap: 10px; }
+  .rank .no { font-size: 1.1rem; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .tab, .fchip { transition: color .15s, border-color .15s, background-color .15s; }
+  .card { transition: transform .2s ease, border-color .2s; }
+  .card:hover { transform: translateY(-2px); border-color: var(--mute); }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Hírfigyelő</h1>
+    <div class="ruler" id="ruler">Betöltés…</div>
+  </header>
+  <nav class="tabs" id="tabs" role="tablist" aria-label="Nézetek"></nav>
+  <main id="main"></main>
+</div>
+
+<dialog id="errDialog">
+  <h3>Hiba a gyűjtés közben</h3>
+  <ul id="errList"></ul>
+  <div class="btns"><button class="btn primary" id="errClose">Értem</button></div>
+</dialog>
+
+<dialog id="confirmDialog">
+  <h3 id="confirmText">Biztos?</h3>
+  <div class="btns">
+    <button class="btn primary" id="confirmYes">Törlés</button>
+    <button class="btn" id="confirmNo">Mégse</button>
+  </div>
+</dialog>
+
+<dialog id="topicDialog">
+  <h3>Új téma</h3>
+  <form method="dialog" id="topicForm" class="panel" style="border:0;padding:0;background:none">
+    <label for="tName">Téma neve (ez lesz a fül neve)<input id="tName" name="name" required placeholder="Pl. Magyar kulturális hírek"></label>
+    <label for="tInt">Altémák, soronként egy. Formátum: Címke: mi érdekel benne<textarea id="tInt" name="interests" required placeholder="Kiállítások: új kiállítások és megnyitók&#10;Díjak: díjátadók, pályázatok, bejelentések"></textarea></label>
+    <label for="tKw">Kulcsszavak, vesszővel elválasztva (a kulcsszavas szűréshez)<input id="tKw" name="keywords" placeholder="Pl. kiállítás, múzeum, megnyitó"></label>
+    <div class="btns">
+      <button class="btn primary" type="submit">Téma létrehozása</button>
+      <button class="btn" type="button" id="topicCancel">Mégse</button>
+    </div>
+  </form>
+</dialog>
+
+<script>
+"use strict";
+const $ = (s, r = document) => r.querySelector(s);
+function el(tag, props = {}, ...kids) {
+  const n = document.createElement(tag);
+  for (const [k, v] of Object.entries(props)) {
+    if (k === "class") n.className = v;
+    else if (k === "style" && typeof v === "object") Object.assign(n.style, v);
+    else if (k.startsWith("--")) n.style.setProperty(k, v);
+    else if (k.startsWith("on")) n.addEventListener(k.slice(2), v);
+    else if (v !== false && v != null) n.setAttribute(k, v === true ? "" : v);
+  }
+  for (const c of kids.flat()) {
+    if (c == null || c === false) continue;
+    n.append(c.nodeType ? c : document.createTextNode(c));
+  }
+  return n;
+}
+const LS = {
+  get(k, d) { try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch { return d; } },
+  set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch { /* privát mód */ } }
+};
+const bust = () => "?t=" + Date.now();
+
+const state = {
+  config: null, news: null, weekly: null,
+  repoVotes: [], localVotes: LS.get("hf_votes", {}),
+  settings: LS.get("hf_settings", { repo: "", branch: "main", token: "" }),
+  tab: LS.get("hf_tab", ""), filter: {}, configDirty: false
+};
+
+/* ---------- betöltés ---------- */
+async function getJSON(path) {
+  const r = await fetch(path + bust(), { cache: "no-store" });
+  if (!r.ok) throw new Error(path + ": HTTP " + r.status);
+  return r.json();
+}
+async function load() {
+  try { state.config = await getJSON("config.json"); }
+  catch (e) { return showFatal("A config.json nem tölthető be. " + e.message); }
+  const [news, weekly, fb] = await Promise.allSettled([getJSON("news.json"), getJSON("weekly.json"), getJSON("feedback.json")]);
+  state.news = news.status === "fulfilled" ? news.value : null;
+  state.weekly = weekly.status === "fulfilled" ? weekly.value : null;
+  state.repoVotes = fb.status === "fulfilled" ? (fb.value.votes || []) : [];
+  const valid = ["heti", "forrasok", "frissites", ...state.config.topics.map(t => t.id)];
+  if (!valid.includes(state.tab)) state.tab = state.config.topics[0]?.id || "forrasok";
+  render();
+  const errs = state.news?.errors || [];
+  if (errs.length && LS.get("hf_err_seen", "") !== state.news.generated_at) {
+    showErrors(errs); LS.set("hf_err_seen", state.news.generated_at);
+  }
+}
+function showFatal(msg) {
+  $("#ruler").textContent = "Hiba";
+  $("#main").replaceChildren(el("div", { class: "empty" }, el("strong", {}, "Az oldal nem indult el"), msg));
+}
+
+/* ---------- visszajelzés ---------- */
+function allVotes() {
+  const map = new Map(state.repoVotes.map(v => [v.id, v]));
+  for (const v of Object.values(state.localVotes)) map.set(v.id, v);
+  return map;
+}
+function voteOf(id) { const v = allVotes().get(id); return v ? v.vote : null; }
+function setVote(a, vote, topicId) {
+  const next = voteOf(a.id) === vote ? "none" : vote; // ugyanarra kattintva visszavonja
+  state.localVotes[a.id] = { id: a.id, title: a.title, source: a.source, label: a.label || "", topic: topicId, vote: next, date: new Date().toISOString() };
+  LS.set("hf_votes", state.localVotes);
+  render(true);
+}
+function pendingVotes() { return Object.values(state.localVotes).length; }
+
+/* ---------- formázás ---------- */
+const huTime = new Intl.DateTimeFormat("hu-HU", { hour: "2-digit", minute: "2-digit" });
+const huDay = new Intl.DateTimeFormat("hu-HU", { month: "short", day: "numeric" });
+function fmtDay(d) {
+  const today = new Date(); today.setHours(0, 0, 0, 0);
+  const diff = Math.round((today - new Date(d.getFullYear(), d.getMonth(), d.getDate())) / 864e5);
+  if (diff <= 0) return "ma";
+  if (diff === 1) return "tegnap";
+  return huDay.format(d);
+}
+function fmtFull(iso) { return new Intl.DateTimeFormat("hu-HU", { dateStyle: "medium", timeStyle: "short" }).format(new Date(iso)); }
+function toast(msg) {
+  const t = el("div", { class: "toast", role: "status" }, msg);
+  document.body.append(t); setTimeout(() => t.remove(), 3800);
+}
+function hash(s) { let h = 2166136261; for (const c of s) { h ^= c.charCodeAt(0); h = Math.imul(h, 16777619); } return h >>> 0; }
+
+/* altéma -> szín (a téma altémáinak sorrendje szerint) */
+function labelColor(topic, label) {
+  const idx = (topic?.interests || []).findIndex(i => (i.label || i.text) === label);
+  return "var(--l" + ((idx < 0 ? 0 : idx) % 4 + 1) + ")";
+}
+function topicOf(id) { return state.config.topics.find(t => t.id === id); }
+
+/* generatív borító, ha a cikkhez nincs kép vagy nem töltődik be */
+function cover(a, color) {
+  const h = hash(a.id || a.title);
+  const ang = h % 360, hue = h % 360, hue2 = (hue + 40 + (h >> 8) % 80) % 360;
+  const words = (a.source || "").split(/\s+/).filter(Boolean);
+  const mono = (words.length > 1 ? words[0][0] + words[1][0] : (words[0] || "?").slice(0, 2)).toUpperCase();
+  return el("div", { class: "cover", "aria-hidden": "true",
+    style: { background: `linear-gradient(${ang}deg, ${color} 0%, hsl(${hue2} 70% 45%) 100%)` } },
+    el("b", {}, mono));
+}
+function media(a, color) {
+  const box = el("div", { class: "media" });
+  if (a.image) {
+    const img = el("img", { src: a.image, alt: "", loading: "lazy", decoding: "async", referrerpolicy: "no-referrer" });
+    img.addEventListener("error", () => img.replaceWith(cover(a, color)));
+    box.append(img);
+  } else box.append(cover(a, color));
+  return box;
+}
+function fbButtons(a, topicId) {
+  const v = voteOf(a.id);
+  return el("div", { class: "fb" },
+    el("button", { "aria-pressed": String(v === "up"), onclick: () => setVote(a, "up", topicId) }, "Érdekel"),
+    el("button", { "aria-pressed": String(v === "down"), onclick: () => setVote(a, "down", topicId) }, "Nem érdekel"));
+}
+
+/* ---------- megjelenítés ---------- */
+function render(keepScroll) {
+  const cfg = state.config;
+  renderRuler();
+  const tabBtn = (id, text, count) => el("button", {
+    class: "tab", role: "tab", "aria-selected": String(state.tab === id), onclick: () => go(id)
+  }, text, count != null ? el("span", { class: "count" }, String(count)) : null);
+  $("#tabs").replaceChildren(
+    ...cfg.topics.map(t => tabBtn(t.id, t.name, state.news?.topics?.[t.id]?.length)),
+    tabBtn("heti", "Heti válogatás"),
+    tabBtn("forrasok", "Források"),
+    tabBtn("frissites", "Frissítés"),
+    el("button", { class: "tab add", onclick: () => $("#topicDialog").showModal() }, "+ Új téma")
+  );
+  const y = window.scrollY;
+  const main = $("#main");
+  if (state.tab === "forrasok") main.replaceChildren(sourcesView());
+  else if (state.tab === "frissites") main.replaceChildren(updateView());
+  else if (state.tab === "heti") main.replaceChildren(weeklyView());
+  else main.replaceChildren(topicView(state.tab));
+  if (keepScroll) window.scrollTo({ top: y });
+}
+function renderRuler() {
+  const r = $("#ruler");
+  if (!state.news) { r.replaceChildren("Még nem futott le gyűjtés"); return; }
+  const age = (Date.now() - new Date(state.news.generated_at)) / 36e5;
+  const errs = state.news.errors?.length || 0;
+  r.replaceChildren(
+    el("span", {}, el("i", { class: "dot" + (age > 30 ? " stale" : "") }), "Frissítve " + fmtFull(state.news.generated_at)),
+    el("span", {}, "Pontozás: " + state.news.scoring),
+    errs ? el("span", { class: "bad" }, errs + " hiba") : null);
+}
+function go(id) { state.tab = id; LS.set("hf_tab", id); render(); window.scrollTo({ top: 0 }); }
+
+function topicView(id) {
+  const topic = topicOf(id);
+  if (!topic) return el("div", { class: "empty" }, "Ismeretlen téma.");
+  if (!state.news) return el("div", { class: "empty" }, el("strong", {}, "Még nincs cikk"), "Indítsd el az első gyűjtést a Frissítés fülön.");
+  const items = state.news.topics?.[id];
+  if (!items) return el("div", { class: "empty" }, el("strong", {}, "Új téma"), "A következő gyűjtéstől jelennek meg itt cikkek. Előtte a Források fülön adj hozzá oldalakat ehhez a témához.");
+  if (!items.length) return el("div", { class: "empty" }, el("strong", {}, "Nincs új, érdekes cikk"), "Az utolsó " + state.news.window_hours + " órában egyik forrásból sem került be cikk. Új keresést a Frissítés fülön indíthatsz.");
+
+  const labels = [...new Set(items.map(a => a.label).filter(Boolean))];
+  const active = state.filter[id] || "";
+  const shown = active ? items.filter(a => a.label === active) : items;
+  const chip = (lab, text, n) => el("button", {
+    class: "fchip", "aria-pressed": String(active === lab), "--c": lab ? labelColor(topic, lab) : "var(--ink)",
+    onclick: () => { state.filter[id] = lab; render(true); }
+  }, lab ? el("i", { class: "sw" }) : null, text, el("span", { class: "n" }, String(n)));
+
+  const wrap = el("div");
+  if (labels.length > 1) wrap.append(el("div", { class: "filters", role: "group", "aria-label": "Altémák" },
+    chip("", "Mind", items.length), labels.map(l => chip(l, l, items.filter(a => a.label === l).length))));
+  wrap.append(el("ul", { class: "grid" }, shown.map((a, i) => card(a, topic, i === 0 && shown.length > 1))));
+  return wrap;
+}
+function card(a, topic, hero) {
+  const d = new Date(a.published), color = labelColor(topic, a.label), v = voteOf(a.id);
+  const m = media(a, color);
+  if (a.label) m.append(el("span", { class: "label", "--c": color }, a.label));
+  return el("li", { class: "card" + (hero ? " hero" : "") + (v === "down" ? " is-down" : "") },
+    m,
+    el("div", { class: "body" },
+      el("div", { class: "meta" },
+        el("span", { class: "tc" }, huTime.format(d)), el("span", {}, fmtDay(d)), el("span", {}, a.source)),
+      el("a", { class: "title", href: a.link, target: "_blank", rel: "noopener noreferrer" }, a.title),
+      fbButtons(a, topic.id)));
+}
+
+/* ---------- heti válogatás ---------- */
+function weeklyView() {
+  const w = state.weekly;
+  if (!w) return el("div", { class: "empty" }, el("strong", {}, "Még nincs heti válogatás"),
+    "Hétfő reggel készül el automatikusan az előző hét legjobb cikkeiből. A Frissítés fülön kézzel is elkészítheted.");
+  const range = huDay.format(new Date(w.from)) + " – " + huDay.format(new Date(w.to));
+  const wrap = el("div", {}, el("div", { class: "week-head" }, el("h2", {}, "A hét legjobbjai"), el("span", {}, range)));
+  for (const t of state.config.topics) {
+    const items = w.topics?.[t.id];
+    if (!items?.length) continue;
+    if (state.config.topics.length > 1) wrap.append(el("h3", { class: "sec" }, t.name));
+    wrap.append(el("ol", { class: "rank" }, items.map((a, i) => {
+      const d = new Date(a.published), color = labelColor(t, a.label);
+      return el("li", { class: voteOf(a.id) === "down" ? "is-down" : "" },
+        el("span", { class: "no" }, String(i + 1).padStart(2, "0")),
+        media(a, color),
+        el("div", { class: "rt" },
+          el("div", { class: "meta" },
+            a.label ? el("span", { class: "pill", "--c": color }, a.label) : null,
+            el("span", {}, fmtDay(d) + " " + huTime.format(d)), el("span", {}, a.source)),
+          el("a", { class: "title", href: a.link, target: "_blank", rel: "noopener noreferrer" }, a.title),
+          fbButtons(a, t.id)));
+    })));
+  }
+  if (wrap.children.length === 1) wrap.append(el("p", { class: "hint" }, "Ezen a héten nem gyűlt össze elég cikk."));
+  return wrap;
+}
+
+/* ---------- források fül ---------- */
+function sourcesView() {
+  const cfg = state.config, stats = new Map((state.news?.sources || []).map(s => [s.topic + "|" + s.name, s]));
+  const list = el("div");
+  for (const t of cfg.topics) {
+    const srcs = cfg.sources.filter(s => s.topic === t.id);
+    list.append(el("section", { class: "block" },
+      el("h2", {}, t.name),
+      el("p", { class: "note" }, "Altémák: " + (t.interests || []).map(i => i.label || i.text).join(" · ")),
+      srcs.length ? srcs.map(s => {
+        const st = stats.get(t.id + "|" + s.name);
+        return el("div", { class: "srcrow" },
+          el("div", {}, el("div", { class: "n" }, s.name, " ", el("span", { class: "wt" }, "fontosság " + s.weight + "/5")), el("div", { class: "m" }, s.rss || s.url)),
+          el("div", {},
+            st ? el("span", { class: "status " + (st.ok ? "ok" : "bad"), title: "bekerült / letöltött" }, st.ok ? st.kept + "/" + st.fetched : "hiba") : null,
+            el("button", { class: "linkbtn", onclick: () => removeSource(s) }, "Törlés")));
+      }) : el("p", { class: "note" }, "Ehhez a témához még nincs forrás."),
+      cfg.topics.length > 1 ? el("div", { class: "btns" }, el("button", { class: "linkbtn", onclick: () => removeTopic(t) }, "A(z) " + t.name + " téma törlése")) : null));
+  }
+  return el("div", { class: "cols" },
+    el("div", {}, list, saveBar()),
+    el("section", { class: "block" }, el("h2", {}, "Új forrás"),
+      el("p", { class: "note" }, "Az oldal RSS-csatornáját add meg. Gyakran a cím végére írt /feed vagy /rss működik."),
+      addSourceForm()));
+}
+function addSourceForm() {
+  const preset = topicOf(state.lastTopic) ? state.lastTopic : state.config.topics[0]?.id;
+  const topicSel = el("select", { id: "sTopic", name: "topic" }, state.config.topics.map(t => el("option", { value: t.id, selected: t.id === preset }, t.name)));
+  const form = el("form", { class: "panel", onsubmit: e => {
+    e.preventDefault();
+    const f = new FormData(form);
+    state.config.sources.push({
+      name: f.get("name").trim(), url: f.get("url").trim(), rss: f.get("rss").trim(),
+      lang: f.get("lang").trim() || "EN", weight: Number(f.get("weight")), topic: f.get("topic")
+    });
+    state.lastTopic = f.get("topic");
+    state.configDirty = true; render(true); toast("Hozzáadva. Mentés után a következő gyűjtéstől figyeli.");
+  } },
+    el("label", { for: "sName" }, "Oldal neve", el("input", { id: "sName", name: "name", required: true, placeholder: "Pl. Creative Bloq" })),
+    el("label", { for: "sUrl" }, "Honlap címe", el("input", { id: "sUrl", name: "url", type: "url", required: true, placeholder: "https://" })),
+    el("label", { for: "sRss" }, "RSS link", el("input", { id: "sRss", name: "rss", type: "url", required: true, placeholder: "https://…/feed" })),
+    el("div", { class: "row2" },
+      el("label", { for: "sTopic" }, "Téma", topicSel),
+      el("label", { for: "sW" }, "Fontosság (1-5)", el("input", { id: "sW", name: "weight", type: "number", min: "1", max: "5", value: "3", required: true }))),
+    el("label", { for: "sLang" }, "Nyelv", el("input", { id: "sLang", name: "lang", value: "EN", maxlength: "3" })),
+    el("div", { class: "btns" }, el("button", { class: "btn primary", type: "submit" }, "Hozzáadás")));
+  return form;
+}
+function askConfirm(text, yesLabel) {
+  return new Promise(res => {
+    const d = $("#confirmDialog");
+    $("#confirmText").textContent = text; $("#confirmYes").textContent = yesLabel || "Törlés";
+    const done = v => { d.close(); $("#confirmYes").onclick = $("#confirmNo").onclick = null; res(v); };
+    $("#confirmYes").onclick = () => done(true); $("#confirmNo").onclick = () => done(false);
+    d.showModal();
+  });
+}
+async function removeSource(s) {
+  if (!await askConfirm(s.name + " törlése a forrásokból?")) return;
+  state.config.sources = state.config.sources.filter(x => x !== s);
+  state.configDirty = true; render(true);
+}
+async function removeTopic(t) {
+  if (!await askConfirm("A(z) " + t.name + " téma és a forrásai törlése?")) return;
+  state.config.topics = state.config.topics.filter(x => x !== t);
+  state.config.sources = state.config.sources.filter(s => s.topic !== t.id);
+  state.configDirty = true; render(true);
+}
+function saveBar() {
+  return el("div", { class: "btns", style: { marginTop: "18px" } },
+    el("button", { class: "btn primary", disabled: !state.configDirty, onclick: saveConfig }, "Módosítások mentése"),
+    state.configDirty ? el("span", { class: "hint" }, "Nem mentett változtatások vannak.") : null);
+}
+
+/* ---------- mentés GitHubra, vagy letöltés ---------- */
+function hasToken() { return state.settings.repo && state.settings.token; }
+function b64(text) { return btoa(unescape(encodeURIComponent(text))); }
+async function ghPut(path, text, message) {
+  const { repo, token, branch } = state.settings;
+  const url = "https://api.github.com/repos/" + repo + "/contents/" + path;
+  const headers = { Authorization: "Bearer " + token, Accept: "application/vnd.github+json" };
+  let sha;
+  const g = await fetch(url + "?ref=" + encodeURIComponent(branch), { headers });
+  if (g.ok) sha = (await g.json()).sha;
+  const r = await fetch(url, { method: "PUT", headers, body: JSON.stringify({ message, content: b64(text), sha, branch }) });
+  if (!r.ok) throw new Error("GitHub mentés: HTTP " + r.status + ". Ellenőrizd a tároló nevét és a token jogait.");
+}
+function download(name, text) {
+  const a = el("a", { href: URL.createObjectURL(new Blob([text], { type: "application/json" })), download: name });
+  document.body.append(a); a.click(); a.remove();
+}
+async function persist(path, obj, message) {
+  const text = JSON.stringify(obj, null, 2) + "\n";
+  if (hasToken()) {
+    try { await ghPut(path, text, message); return true; }
+    catch (e) { showErrors([{ source: "Mentés", message: e.message }]); return false; }
+  }
+  download(path, text);
+  toast("Letöltöttem a " + path + " fájlt. Töltsd fel a GitHub-tárolóba, hogy érvényes legyen.");
+  return true;
+}
+async function saveConfig() {
+  if (await persist("config.json", state.config, "Források és témák módosítása")) {
+    state.configDirty = false; render(true); if (hasToken()) toast("Mentve. A következő gyűjtéstől érvényes.");
+  }
+}
+async function saveVotes() {
+  const merged = [...allVotes().values()].filter(v => v.vote !== "none")
+    .sort((a, b) => (a.date || "").localeCompare(b.date || "")).slice(-300);
+  if (await persist("feedback.json", { votes: merged }, "Visszajelzések mentése")) {
+    state.repoVotes = merged; state.localVotes = {}; LS.set("hf_votes", {}); render(true);
+    if (hasToken()) toast("Visszajelzések mentve.");
+  }
+}
+
+/* ---------- frissítés fül ---------- */
+function updateView() {
+  const n = state.news, pv = pendingVotes();
+  const left = el("div");
+  left.append(el("section", { class: "block" },
+    el("h2", {}, "Új keresés"),
+    el("p", { class: "note" }, hasToken()
+      ? "A gyűjtés a GitHubon fut, 1-3 perc. Az oldal magától frissül, ha elkészült."
+      : "A gomb megnyitja a GitHub Actions oldalt, ott a Run workflow gombbal indul az új keresés. Ha lent megadod a hozzáférést, innen egy kattintás."),
+    el("div", { class: "btns" },
+      el("button", { class: "btn primary", id: "runBtn", onclick: () => runUpdate(false) }, "Napi gyűjtés indítása"),
+      el("button", { class: "btn", id: "runWeekBtn", onclick: () => runUpdate(true) }, "Heti válogatás most"))));
+
+  left.append(el("section", { class: "block" },
+    el("h2", {}, "Visszajelzés"),
+    el("p", { class: "note" }, "Az Érdekel és Nem érdekel jelzések ebben a böngészőben gyűlnek. Mentés után a következő gyűjtés ezekből tanul: a hasonló cikkek, altémák és források előrébb vagy hátrébb kerülnek."),
+    el("div", { class: "btns" }, el("button", { class: "btn", disabled: !pv, onclick: saveVotes },
+      pv ? "Visszajelzések mentése (" + pv + ")" : "Nincs mentetlen visszajelzés"),
+      el("span", { class: "hint" }, "Eddig mentve: " + state.repoVotes.length))));
+
+  if (n) {
+    left.append(el("section", { class: "block" },
+      el("h2", {}, "Utolsó futás"),
+      el("p", { class: "note" }, fmtFull(n.generated_at) + ", pontozás: " + n.scoring + ", időablak: " + n.window_hours + " óra. Számok: bekerült / letöltött cikk."),
+      n.sources.map(s => el("div", { class: "srcrow" },
+        el("div", { class: "n" }, s.name),
+        el("span", { class: "status " + (s.ok ? "ok" : "bad") }, s.ok ? s.kept + " / " + s.fetched : "hiba"))),
+      n.errors.length ? el("div", { class: "btns" }, el("button", { class: "btn", onclick: () => showErrors(n.errors) }, "Hibák megnézése")) : null));
+  }
+
+  const form = el("form", { class: "panel", onsubmit: e => {
+    e.preventDefault();
+    const f = new FormData(form);
+    state.settings = { repo: f.get("repo").trim(), branch: f.get("branch").trim() || "main", token: f.get("token").trim() };
+    LS.set("hf_settings", state.settings); toast("Beállítások elmentve ebben a böngészőben."); render(true);
+  } },
+    el("label", { for: "gRepo" }, "GitHub-tároló (felhasználó/tárolónév)", el("input", { id: "gRepo", name: "repo", value: state.settings.repo, placeholder: "nev/hirfigyelo" })),
+    el("label", { for: "gBranch" }, "Ág", el("input", { id: "gBranch", name: "branch", value: state.settings.branch })),
+    el("label", { for: "gToken" }, "Hozzáférési token (csak ebben a böngészőben tárolódik)", el("input", { id: "gToken", name: "token", type: "password", value: state.settings.token, autocomplete: "off" })),
+    el("div", { class: "btns" }, el("button", { class: "btn", type: "submit" }, "Beállítások mentése")));
+  const right = el("section", { class: "block" },
+    el("h2", {}, "Kapcsolat a GitHubbal"),
+    el("p", { class: "note" }, "Opcionális, de ajánlott. Ezzel a gyűjtés indítása, a forrás- és témamódosítás és a visszajelzés mentése egy kattintás. Telefonon és gépen külön kell megadni."),
+    form);
+  return el("div", { class: "cols" }, left, right);
+}
+
+let pollTimer = null;
+async function runUpdate(weekly) {
+  const { repo, token, branch } = state.settings;
+  if (!hasToken()) {
+    window.open(repo ? "https://github.com/" + repo + "/actions/workflows/update.yml" : "https://github.com", "_blank", "noopener");
+    return;
+  }
+  const btn = weekly ? $("#runWeekBtn") : $("#runBtn");
+  btn.disabled = true; btn.textContent = "Gyűjtés fut…";
+  try {
+    const r = await fetch("https://api.github.com/repos/" + repo + "/actions/workflows/update.yml/dispatches", {
+      method: "POST",
+      headers: { Authorization: "Bearer " + token, Accept: "application/vnd.github+json" },
+      body: JSON.stringify({ ref: branch, inputs: { weekly: weekly ? "true" : "false" } })
+    });
+    if (!r.ok) throw new Error("A gyűjtés nem indult el (HTTP " + r.status + "). Ellenőrizd a tároló nevét és a token jogait.");
+  } catch (e) {
+    showErrors([{ source: "Gyűjtés indítása", message: e.message }]);
+    render(true); return;
+  }
+  const before = state.news?.generated_at; let tries = 0;
+  clearInterval(pollTimer);
+  pollTimer = setInterval(async () => {
+    tries++;
+    try {
+      const fresh = await getJSON("news.json");
+      if (fresh.generated_at !== before) {
+        clearInterval(pollTimer); state.news = fresh;
+        try { state.weekly = await getJSON("weekly.json"); } catch { /* nincs még */ }
+        render(true); toast("Megérkeztek az új cikkek.");
+        if (fresh.errors.length) { showErrors(fresh.errors); LS.set("hf_err_seen", fresh.generated_at); }
+        return;
+      }
+    } catch { /* következő próba */ }
+    if (tries > 24) {
+      clearInterval(pollTimer); render(true);
+      showErrors([{ source: "Gyűjtés", message: "8 perc alatt sem fejeződött be. Nézd meg a GitHub Actions oldalon, mi történt." }]);
+    }
+  }, 20000);
+}
+
+/* ---------- felugró ablakok ---------- */
+function showErrors(list) {
+  $("#errList").replaceChildren(...list.map(e => el("li", {}, el("strong", {}, e.source + ": "), e.message)));
+  const d = $("#errDialog"); if (!d.open) d.showModal();
+}
+$("#errClose").addEventListener("click", () => $("#errDialog").close());
+$("#topicCancel").addEventListener("click", () => $("#topicDialog").close());
+$("#topicForm").addEventListener("submit", e => {
+  const f = new FormData(e.target);
+  const name = f.get("name").trim();
+  let id = name.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") || "tema";
+  while (state.config.topics.some(t => t.id === id)) id += "-2";
+  const keywords = f.get("keywords").split(",").map(s => s.trim()).filter(Boolean);
+  const interests = f.get("interests").split("\n").map(s => s.trim()).filter(Boolean).map(line => {
+    const m = line.match(/^([^:]{1,30}):\s*(.+)$/);
+    return { label: m ? m[1].trim() : line.slice(0, 28), text: m ? m[2].trim() : line, weight: 3, keywords };
+  });
+  state.config.topics.push({ id, name, must_match: [], interests });
+  state.configDirty = true; state.lastTopic = id; state.tab = "forrasok"; LS.set("hf_tab", "forrasok");
+  e.target.reset(); render();
+  toast("Téma létrehozva. Adj hozzá forrásokat, majd mentsd a módosításokat.");
+});
+
+load();
+</script>
+</body>
+</html>

@@ -1,0 +1,207 @@
+{
+  "model": "claude-haiku-4-5",
+  "max_items_per_topic": 10,
+  "max_age_hours": 36,
+  "min_keyword_score": 4,
+  "min_ai_score": 6,
+  "same_domain_only": true,
+  "profile": "Motion designer és grafikus vagyok. A legfontosabb: új AI modellek és technikák 3D, videógenerálás, tervezőgrafika és motion szempontból. Hír érdekel, ami változást jelent (új eszköz, szabály, bejelentés, felvásárlás, áttörés), nem vélemény vagy elemzés a már ismert dolgokról. Érdekelnek a nagy sikerű, AI-t használó reklámkampányok és a forradalmi AI-használat a reklám- és filmiparban.",
+  "exclude": {
+    "phrases": [
+      "click to read the full article",
+      "subscribe to read",
+      "subscribers only",
+      "this article is for subscribers"
+    ],
+    "keywords": [
+      "kardashian",
+      "gossip",
+      "red carpet",
+      "celebrity feud"
+    ],
+    "title_patterns": [
+      "^did you know",
+      "^you won'?t believe",
+      "^tudtad",
+      "^\\d+ (things|ways|reasons|tricks)\\b"
+    ]
+  },
+  "topics": [
+    {
+      "id": "ai",
+      "name": "AI",
+      "must_match": [
+        "ai",
+        "artificial intelligence",
+        "generative",
+        "gpt",
+        "llm",
+        "diffusion",
+        "sora",
+        "veo",
+        "midjourney",
+        "runway",
+        "neural",
+        "machine learning",
+        "chatbot",
+        "openai",
+        "anthropic",
+        "gemini"
+      ],
+      "interests": [
+        {
+          "text": "Új modellek, technikák: 3D, videógenerálás, tervezőgrafika, motion",
+          "weight": 5,
+          "keywords": [
+            "video generation",
+            "text-to-video",
+            "image-to-video",
+            "video model",
+            "sora",
+            "veo",
+            "runway",
+            "kling",
+            "luma",
+            "pika",
+            "midjourney",
+            "stable diffusion",
+            "firefly",
+            "3d",
+            "gaussian splat",
+            "nerf",
+            "text-to-3d",
+            "world model",
+            "comfyui",
+            "motion",
+            "animation",
+            "after effects",
+            "blender",
+            "cinema 4d",
+            "figma",
+            "canva",
+            "adobe",
+            "photoshop",
+            "illustrator",
+            "premiere",
+            "image generation",
+            "image model",
+            "design"
+          ],
+          "label": "Modellek & motion"
+        },
+        {
+          "text": "Nagy sikert arató reklámkampányok, amelyekben AI-t használtak; AI a reklám- és filmiparban",
+          "weight": 4,
+          "keywords": [
+            "ad campaign",
+            "advert",
+            "commercial",
+            "super bowl",
+            "cannes lions",
+            "marketing",
+            "brand",
+            "agency",
+            "hollywood",
+            "studio",
+            "vfx",
+            "film",
+            "movie",
+            "production"
+          ],
+          "label": "Reklám & film"
+        },
+        {
+          "text": "Sikeres AI artist-ok új projektjei, sikerei",
+          "weight": 3,
+          "keywords": [
+            "ai artist",
+            "ai-generated",
+            "ai generated",
+            "ai film",
+            "ai music",
+            "generative art",
+            "ai artwork",
+            "exhibition",
+            "gallery",
+            "album",
+            "short film"
+          ],
+          "label": "AI artistok"
+        },
+        {
+          "text": "Szabályozások, fontos változtatások és vélhető következményeik",
+          "weight": 2,
+          "keywords": [
+            "regulation",
+            "law",
+            "act",
+            "copyright",
+            "lawsuit",
+            "ban",
+            "policy",
+            "eu ai act",
+            "executive order",
+            "congress",
+            "court",
+            "licensing",
+            "legislation",
+            "settlement"
+          ],
+          "label": "Szabályozás"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "name": "The Verge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence",
+      "rss": "https://www.theverge.com/rss/index.xml",
+      "lang": "EN",
+      "weight": 5,
+      "topic": "ai"
+    },
+    {
+      "name": "VentureBeat",
+      "url": "https://venturebeat.com/",
+      "rss": "https://venturebeat.com/feed",
+      "lang": "EN",
+      "weight": 3,
+      "topic": "ai"
+    },
+    {
+      "name": "Ars Technica",
+      "url": "https://arstechnica.com/ai/",
+      "rss": "https://feeds.arstechnica.com/arstechnica/index",
+      "lang": "EN",
+      "weight": 4,
+      "topic": "ai"
+    },
+    {
+      "name": "The Decoder",
+      "url": "https://the-decoder.com/",
+      "rss": "https://the-decoder.com/feed/",
+      "lang": "EN",
+      "weight": 3,
+      "topic": "ai"
+    },
+    {
+      "name": "Mashable",
+      "url": "https://mashable.com/category/artificial-intelligence",
+      "rss": "https://in.mashable.com/artificial-intelligence.xml",
+      "lang": "EN",
+      "weight": 4,
+      "topic": "ai"
+    }
+  ],
+  "fallback_models": [
+    "claude-sonnet-5-5",
+    "claude-sonnet-4-5"
+  ],
+  "weekly": {
+    "enabled": true,
+    "weekday": 0,
+    "max_items_per_topic": 10,
+    "pool_days": 8
+  }
+}
