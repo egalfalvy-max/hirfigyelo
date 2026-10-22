@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-10-22T21:33:47.772686+00:00",
+  "generated_at": "2026-10-22T22:15:11.383435+00:00",
   "window_hours": 36,
   "scoring": "kulcsszavas",
   "topics": {
     "ai": [
       {
-        "id": "140d853f0e",
-        "title": "The new human-crafted Apple Music brand matters in an AI world",
-        "source": "Ars Technica",
-        "published": "2026-10-21T19:44:40+00:00",
-        "link": "https://arstechnica.com/culture/2026/10/the-new-human-crafted-apple-music-brand-matters-in-an-ai-world/",
-        "label": "Reklám & film",
-        "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/apple-music-rebrand-icon-1152x648.jpg",
-        "score": 5.6
+        "id": "1437b0ebe8",
+        "title": "Canva’s first AI image model plans designs before generating them",
+        "source": "The Verge",
+        "published": "2026-10-22T21:51:25+00:00",
+        "link": "https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model",
+        "label": "Modellek & motion",
+        "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/04-CRAFT-COLLAGE.png?quality=90&strip=all&crop=0,0,100,100",
+        "score": 12.0
       }
     ]
   },
@@ -28,7 +28,7 @@
       "topic": "ai",
       "ok": true,
       "fetched": 10,
-      "kept": 0
+      "kept": 1
     },
     {
       "name": "VentureBeat",
@@ -42,7 +42,7 @@
       "topic": "ai",
       "ok": true,
       "fetched": 20,
-      "kept": 1
+      "kept": 0
     },
     {
       "name": "The Decoder",
