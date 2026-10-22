@@ -105,7 +105,8 @@
             "opus",
             "new feature",
             "new",
-            "creative"
+            "creative",
+            "prompt"
           ],
           "label": "Modellek & motion"
         },
@@ -143,7 +144,9 @@
             "producer",
             "shortfilm",
             "agency",
-            "creative"
+            "creative",
+            "studio",
+            "group"
           ],
           "label": "Reklám & film"
         },
@@ -183,7 +186,9 @@
             "ceo",
             "young lions",
             "idea",
-            "creative"
+            "creative",
+            "studio",
+            "prompter"
           ],
           "label": "AI artistok"
         },
