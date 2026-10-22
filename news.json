@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T22:16:17.135381+00:00",
+  "generated_at": "2026-10-22T22:33:17.984546+00:00",
   "window_hours": 36,
   "scoring": "kulcsszavas",
   "topics": {
@@ -16,12 +16,7 @@
       }
     ]
   },
-  "errors": [
-    {
-      "source": "VentureBeat",
-      "message": "429 Client Error: Too Many Requests for url: https://venturebeat.com/feed"
-    }
-  ],
+  "errors": [],
   "sources": [
     {
       "name": "The Verge",
@@ -31,10 +26,10 @@
       "kept": 1
     },
     {
-      "name": "VentureBeat",
+      "name": "CG Channel",
       "topic": "ai",
-      "ok": false,
-      "fetched": 0,
+      "ok": true,
+      "fetched": 10,
       "kept": 0
     },
     {
