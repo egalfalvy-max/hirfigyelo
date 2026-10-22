@@ -336,6 +336,22 @@
       "lang": "EN",
       "weight": 4,
       "topic": "ai"
+    },
+    {
+      "name": "Design Boom",
+      "url": "https://www.designboom.com/",
+      "rss": "https://www.designboom.com/feed/",
+      "lang": "EN",
+      "weight": 3,
+      "topic": "ai"
+    },
+    {
+      "name": "Design Milk",
+      "url": "https://design-milk.com/",
+      "rss": "https://feeds.feedburner.com/design-milk",
+      "lang": "EN",
+      "weight": 2,
+      "topic": "ai"
     }
   ],
   "fallback_models": [
