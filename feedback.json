@@ -1,1 +1,22 @@
-{"votes": []}
+{
+  "votes": [
+    {
+      "id": "90884af215",
+      "title": "I Asked Gemini to Run My Googlebook. It Told Me to Do It Myself",
+      "source": "PC MAG",
+      "label": "AI artistok",
+      "topic": "ai",
+      "vote": "down",
+      "date": "2026-10-22T23:22:22.459Z"
+    },
+    {
+      "id": "23bb312064",
+      "title": "Are Googlebooks Right for You? I Tried Every One of Google's Android Laptops",
+      "source": "PC MAG",
+      "label": "AI artistok",
+      "topic": "ai",
+      "vote": "down",
+      "date": "2026-10-22T23:22:27.723Z"
+    }
+  ]
+}
