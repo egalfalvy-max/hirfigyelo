@@ -365,6 +365,7 @@ async function load() {
   const valid = ["heti", "forrasok", "kulcsszavak", "frissites", ...state.config.topics.map(t => t.id)];
   if (!valid.includes(state.tab)) state.tab = state.config.topics[0]?.id || "forrasok";
   render();
+  if (pendingVotes()) scheduleVoteSave(); /* korábban el nem mentett jelzések (pl. nem volt net) */
   const errs = alarming(state.news?.errors);
   if (errs.length && LS.get("hf_err_seen", "") !== state.news.generated_at) {
     showErrors(errs); LS.set("hf_err_seen", state.news.generated_at);
@@ -390,6 +391,7 @@ function setVote(a, vote, topicId) {
   state.localVotes[a.id] = { id: a.id, title: a.title, source: a.source, label: a.label || "", topic: topicId, vote: next, date: new Date().toISOString() };
   LS.set("hf_votes", state.localVotes);
   render(true);
+  scheduleVoteSave(); /* minden jelzés azonnal mentődik (a gyors kattintások egy mentésbe kerülnek) */
 }
 function pendingVotes() { return Object.values(state.localVotes).length; }
 
@@ -758,36 +760,55 @@ async function saveConfig() {
   state.configDirty = false; render(true); toast("Mentve. A következő gyűjtéstől érvényes.");
 }
 /* A helyi jelzéseket egy alaplistához fűzi: azonos cikknél a későbbi jelzés nyer, a visszavont jelzés kikerül. */
-function mergeVotes(base) {
+function mergeVotes(base, local) {
   const map = new Map(base.map(v => [v.id, v]));
-  for (const v of Object.values(state.localVotes)) {
+  for (const v of Object.values(local)) {
     const prev = map.get(v.id);
     if (!prev || (v.date || "") >= (prev.date || "")) map.set(v.id, v);
   }
   return [...map.values()].filter(v => v.vote !== "none")
     .sort((a, b) => (a.date || "").localeCompare(b.date || "")).slice(-300);
 }
+/* Automatikus mentés: a jelzés után kicsit vár, hogy a gyors egymás utáni kattintások egy mentésbe kerüljenek.
+   Token nélkül a jelzések ebben a böngészőben maradnak, és a token megadása után mentődnek. */
+let voteTimer = null, voteSaving = false, voteAgain = false, voteErrShown = false;
+function scheduleVoteSave() {
+  if (!hasToken()) return;
+  clearTimeout(voteTimer);
+  voteTimer = setTimeout(saveVotes, 1200);
+}
 async function saveVotes() {
-  const path = "feedback.json", msg = "Visszajelzések mentése";
-  let merged = mergeVotes(state.repoVotes);
-  if (!hasToken()) {
-    offerDownload(path, { votes: merged });
-  } else {
+  if (!hasToken() || !pendingVotes()) return;
+  if (voteSaving) { voteAgain = true; return; }
+  voteSaving = true;
+  const path = "feedback.json", msg = "Visszajelzés mentése";
+  const snap = { ...state.localVotes }; /* a mentés közben érkező jelzések a következő körbe kerülnek */
+  try {
+    let merged = mergeVotes(state.repoVotes, snap);
     try {
       state.sha[path] = await ghPut(path, toText({ votes: merged }), msg, state.sha[path]);
     } catch (e) {
-      if (!e.conflict) return showErrors([{ source: "Mentés", message: e.message }]);
-      try { /* közben máshol is mentettek: összefésüljük a kettőt, így egyik jelzés sem vész el */
-        const fresh = await ghGet(path);
-        merged = mergeVotes(fresh?.data?.votes || []);
-        state.sha[path] = await ghPut(path, toText({ votes: merged }), msg, fresh ? fresh.sha : undefined);
-      } catch (e2) { return showErrors([{ source: "Mentés", message: e2.message }]); }
+      if (!e.conflict) throw e;
+      /* közben máshol is mentettek: összefésüljük a kettőt, így egyik jelzés sem vész el */
+      const fresh = await ghGet(path);
+      merged = mergeVotes(fresh?.data?.votes || [], snap);
+      state.sha[path] = await ghPut(path, toText({ votes: merged }), msg, fresh ? fresh.sha : undefined);
     }
-    toast("Visszajelzések mentve.");
+    state.repoVotes = merged;
+    for (const [id, v] of Object.entries(snap)) if (state.localVotes[id] === v) delete state.localVotes[id];
+    LS.set("hf_votes", state.localVotes);
+    voteErrShown = false;
+    if (state.tab === "frissites") render(true);
+  } catch (e) {
+    if (!voteErrShown) {
+      voteErrShown = true;
+      toast("A visszajelzést most nem sikerült menteni. A következő jelzésnél vagy az oldal megnyitásakor újra megpróbálom.");
+    }
+  } finally {
+    voteSaving = false;
+    if (voteAgain) { voteAgain = false; scheduleVoteSave(); }
   }
-  state.repoVotes = merged; state.localVotes = {}; LS.set("hf_votes", {}); render(true);
 }
-
 /* ---------- frissítés fül ---------- */
 function updateView() {
   const n = state.news, pv = pendingVotes();
@@ -803,10 +824,10 @@ function updateView() {
 
   left.append(el("section", { class: "block" },
     el("h2", {}, "Visszajelzés"),
-    el("p", { class: "note" }, "Az Érdekel és Nem érdekel jelzések ebben a böngészőben gyűlnek. Mentés után a következő gyűjtés ezekből tanul: a hasonló cikkek, altémák és források előrébb vagy hátrébb kerülnek."),
-    el("div", { class: "btns" }, el("button", { class: "btn", disabled: !pv, onclick: saveVotes },
-      pv ? "Visszajelzések mentése (" + pv + ")" : "Nincs mentetlen visszajelzés"),
-      el("span", { class: "hint" }, "Eddig mentve: " + state.repoVotes.length))));
+    el("p", { class: "note" }, hasToken()
+      ? "Az Érdekel és Nem érdekel jelzéseket az oldal azonnal elmenti. A következő gyűjtés ezekből tanul: a hasonló cikkek, altémák és források előrébb vagy hátrébb kerülnek."
+      : "Token nélkül a jelzések csak ebben a böngészőben maradnak, a gyűjtés nem tanul belőlük. Add meg lent a hozzáférést: utána az oldal minden jelzést azonnal elment, a korábbiakat is."),
+    el("p", { class: "hint" }, "Eddig mentve: " + state.repoVotes.length + (pv ? " · mentésre vár: " + pv : ""))));
 
   if (n) {
     left.append(el("section", { class: "block" },
