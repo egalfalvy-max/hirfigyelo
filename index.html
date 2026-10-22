@@ -224,6 +224,26 @@ dialog li { margin-bottom: 6px; overflow-wrap: anywhere; }
   max-width: calc(100vw - 32px); z-index: 20;
 }
 
+/* ---------- kulcsszavak fül ---------- */
+.kwbox { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0 10px; }
+.kw {
+  display: inline-flex; align-items: center; gap: 2px; border: 1px solid var(--line); background: var(--panel);
+  border-radius: 999px; padding: 2px 4px 2px 12px; font-size: 0.88rem; overflow-wrap: anywhere;
+}
+.kw button { border: 0; background: none; cursor: pointer; color: var(--mute); min-width: 30px; min-height: 30px; border-radius: 50%; font-size: 1rem; }
+.kw button:hover { color: var(--warn); }
+.kwadd { display: flex; gap: 8px; }
+.kwadd input { flex: 1; min-width: 0; }
+.kwadd .btn { flex: none; }
+.introw { padding: 16px 0; border-bottom: 1px solid var(--line); }
+.introw:first-of-type { border-top: 1px solid var(--line); }
+.inthead { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; }
+.inthead strong { font-size: 1.05rem; }
+.inthead select { width: auto; min-height: 36px; padding: 4px 10px; }
+.inthead label { display: inline-flex; align-items: center; gap: 8px; }
+.introw .hint { margin: 6px 0 0; }
+.thr { display: inline-flex; align-items: center; gap: 10px; }
+.thr input { width: 84px; }
 @media (max-width: 760px) {
   .grid { grid-template-columns: minmax(0, 1fr); }
   .card.hero { grid-template-columns: minmax(0, 1fr); }
@@ -321,7 +341,7 @@ async function load() {
   state.news = news.status === "fulfilled" ? news.value : null;
   state.weekly = weekly.status === "fulfilled" ? weekly.value : null;
   state.repoVotes = fb.status === "fulfilled" ? (fb.value.votes || []) : [];
-  const valid = ["heti", "forrasok", "frissites", ...state.config.topics.map(t => t.id)];
+  const valid = ["heti", "forrasok", "kulcsszavak", "frissites", ...state.config.topics.map(t => t.id)];
   if (!valid.includes(state.tab)) state.tab = state.config.topics[0]?.id || "forrasok";
   render();
   const errs = state.news?.errors || [];
@@ -410,6 +430,7 @@ function render(keepScroll) {
     ...cfg.topics.map(t => tabBtn(t.id, t.name, state.news?.topics?.[t.id]?.length)),
     tabBtn("heti", "Heti válogatás"),
     tabBtn("forrasok", "Források"),
+    tabBtn("kulcsszavak", "Kulcsszavak"),
     tabBtn("frissites", "Frissítés"),
     el("button", { class: "tab add", onclick: () => $("#topicDialog").showModal() }, "+ Új téma")
   );
@@ -417,9 +438,11 @@ function render(keepScroll) {
   const main = $("#main");
   if (state.tab === "forrasok") main.replaceChildren(sourcesView());
   else if (state.tab === "frissites") main.replaceChildren(updateView());
+  else if (state.tab === "kulcsszavak") main.replaceChildren(keywordsView());
   else if (state.tab === "heti") main.replaceChildren(weeklyView());
   else main.replaceChildren(topicView(state.tab));
   if (keepScroll) window.scrollTo({ top: y });
+  if (state.focusId) { document.getElementById(state.focusId)?.focus({ preventScroll: true }); state.focusId = null; }
 }
 function renderRuler() {
   const r = $("#ruler");
@@ -570,6 +593,93 @@ function saveBar() {
     state.configDirty ? el("span", { class: "hint" }, "Nem mentett változtatások vannak.") : null);
 }
 
+/* ---------- kulcsszavak fül ---------- */
+function markDirty(focusId) { state.configDirty = true; state.focusId = focusId || null; render(true); }
+function kwEditor(list, key, placeholder) {
+  const box = el("div", { class: "kwbox" }, list.length
+    ? list.map((k, i) => el("span", { class: "kw" }, k,
+        el("button", { type: "button", title: "Törlés", "aria-label": k + " törlése",
+          onclick: () => { list.splice(i, 1); markDirty(); } }, "×")))
+    : el("span", { class: "hint" }, "Még nincs kulcsszó."));
+  const id = "kw-" + key;
+  const input = el("input", { id, name: "kw", autocomplete: "off", placeholder: placeholder || "Új kulcsszó (többet vesszővel)", "aria-label": "Új kulcsszó" });
+  const form = el("form", { class: "kwadd", onsubmit: e => {
+    e.preventDefault();
+    const fresh = input.value.split(",").map(s => s.trim().toLowerCase()).filter(Boolean).filter(k => !list.includes(k));
+    if (!fresh.length) { input.value = ""; return; }
+    list.push(...new Set(fresh)); markDirty(id);
+  } }, input, el("button", { class: "btn", type: "submit" }, "Hozzáadás"));
+  return el("div", {}, box, form);
+}
+function weightSelect(value, onChange) {
+  return el("select", { onchange: e => onChange(Number(e.target.value)) },
+    [1, 2, 3, 4, 5].map(n => el("option", { value: String(n), selected: n === (value || 3) }, n + "/5")));
+}
+async function removeInterest(t, it) {
+  if (!await askConfirm("A(z) " + (it.label || it.text) + " altéma törlése?")) return;
+  t.interests = t.interests.filter(x => x !== it); markDirty();
+}
+function addInterestForm(t) {
+  const form = el("form", { class: "panel", onsubmit: e => {
+    e.preventDefault();
+    const f = new FormData(form);
+    const kws = f.get("kws").split(",").map(s => s.trim().toLowerCase()).filter(Boolean);
+    (t.interests ||= []).push({ label: f.get("label").trim(), text: f.get("text").trim() || f.get("label").trim(),
+      weight: Number(f.get("weight")), keywords: [...new Set(kws)] });
+    markDirty(); toast("Altéma hozzáadva. Ne felejtsd el menteni.");
+  } },
+    el("div", { class: "row2" },
+      el("label", {}, "Címke (rövid név)", el("input", { name: "label", required: true, maxlength: "28", placeholder: "Pl. Általános AI" })),
+      el("label", {}, "Fontosság", weightSelect(3, () => {}))),
+    el("label", {}, "Mi érdekel benne (a Claude-pontozáshoz)", el("input", { name: "text", placeholder: "Pl. nagy AI-bejelentések, új modellek" })),
+    el("label", {}, "Kulcsszavak, vesszővel", el("input", { name: "kws", placeholder: "Pl. openai, new model, acquisition" })),
+    el("div", { class: "btns" }, el("button", { class: "btn", type: "submit" }, "Altéma hozzáadása")));
+  form.querySelector("select").name = "weight";
+  return form;
+}
+function keywordsView() {
+  const cfg = state.config;
+  const thr = cfg.min_keyword_score ?? 4;
+  const wrap = el("div", {},
+    el("section", { class: "block" },
+      el("h2", {}, "Hogyan működik?"),
+      el("p", { class: "note" }, "Kulcsszavas szűrésnél minden cikk pontot kap: altémánként fontosság × találatok száma (legfeljebb 2 találat számít). " +
+        "A cikk akkor kerül be, ha az összpontszáma eléri a küszöböt. Egy szó vagy kifejezés kis- és nagybetűtől függetlenül, egész szóként számít: az „ai” illeszkedik az „AI-generated”-re, de a „said”-re nem."),
+      el("label", { class: "thr" }, "Bekerülési küszöb",
+        el("input", { type: "number", min: "1", max: "20", value: String(thr),
+          onchange: e => { const v = Number(e.target.value); if (v >= 1) { cfg.min_keyword_score = v; markDirty(); } } }),
+        el("span", { class: "hint" }, "Kisebb szám = több cikk")),
+      saveBar()));
+  for (const t of cfg.topics) {
+    t.must_match ||= [];
+    const sec = el("section", { class: "block" },
+      el("h2", {}, t.name),
+      el("h3", { class: "sec" }, "Kötelező szavak"),
+      el("p", { class: "note" }, "Ezek közül legalább egynek szerepelnie kell a cikk címében vagy leírásában, különben nem kerül ebbe a témába. Ha üres, nincs ilyen feltétel."),
+      kwEditor(t.must_match, "m-" + t.id),
+      el("h3", { class: "sec", style: { marginTop: "22px" } }, "Altémák és kulcsszavaik"));
+    (t.interests || []).forEach((it, i) => {
+      it.keywords ||= [];
+      sec.append(el("div", { class: "introw" },
+        el("div", { class: "inthead" },
+          el("i", { class: "sw", style: { width: "12px", height: "12px", borderRadius: "3px", background: labelColor(t, it.label || it.text) } }),
+          el("strong", {}, it.label || it.text),
+          el("label", {}, "Fontosság", weightSelect(it.weight, v => { it.weight = v; markDirty(); })),
+          el("button", { class: "linkbtn", onclick: () => removeInterest(t, it) }, "Altéma törlése")),
+        it.text && it.text !== it.label ? el("p", { class: "hint" }, it.text) : null,
+        kwEditor(it.keywords, "i-" + t.id + "-" + i)));
+    });
+    sec.append(el("h3", { class: "sec", style: { marginTop: "22px" } }, "Új altéma"), addInterestForm(t));
+    wrap.append(sec);
+  }
+  cfg.exclude ||= {}; cfg.exclude.keywords ||= [];
+  wrap.append(el("section", { class: "block" },
+    el("h2", {}, "Kizárt szavak"),
+    el("p", { class: "note" }, "Ha ezek közül bármelyik szerepel a cikkben, a cikk kimarad, minden témából."),
+    kwEditor(cfg.exclude.keywords, "x", "Új kizárt szó (többet vesszővel)"),
+    saveBar()));
+  return wrap;
+}
 /* ---------- mentés GitHubra, vagy letöltés ---------- */
 function hasToken() { return state.settings.repo && state.settings.token; }
 function b64(text) { return btoa(unescape(encodeURIComponent(text))); }
