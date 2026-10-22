@@ -92,10 +92,21 @@ def entry_image(entry):
 
 
 def word_hits(text, keywords):
-    """Hány különböző kulcsszó szerepel a szövegben (szóhatárral; az "AI-generated" is találat az "ai"-ra)."""
+    """Hány különböző kulcsszó szerepel a szövegben.
+
+    Egész szóként keres (az "AI-generated" találat az "ai"-ra, a "said" nem).
+    A *-ra végződő kulcsszó szókezdetként illeszkedik, így a magyar ragozott alakokat is megtalálja:
+    "reklám*" -> reklám, reklámot, reklámkampány.
+    """
     hits = 0
     for kw in keywords:
-        if re.search(r"(?<!\w)" + re.escape(kw.lower()) + r"(?!\w)", text):
+        kw = (kw or "").strip().lower()
+        prefix = kw.endswith("*")
+        kw = kw.rstrip("*").strip()
+        if not kw:
+            continue
+        pattern = r"(?<!\w)" + re.escape(kw) + ("" if prefix else r"(?!\w)")
+        if re.search(pattern, text):
             hits += 1
     return hits
 
