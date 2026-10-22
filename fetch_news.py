@@ -16,14 +16,23 @@ import json
 import os
 import re
 import sys
+import time
 from datetime import datetime, timedelta, timezone
 from urllib.parse import urlparse
+
+try:
+    from zoneinfo import ZoneInfo
+    BUDAPEST = ZoneInfo("Europe/Budapest")
+except Exception:  # ha nincs időzóna-adatbázis
+    BUDAPEST = timezone(timedelta(hours=1))
 
 import feedparser
 import requests
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
-UA = "Mozilla/5.0 (compatible; Hirfigyelo/1.1)"
+UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
+      "(KHTML, like Gecko) Chrome/124.0 Safari/537.36 Hirfigyelo/1.2")
+HEADERS = {"User-Agent": UA, "Accept": "application/rss+xml, application/xml;q=0.9, */*;q=0.8"}
 
 
 # ---------- segédek ----------
@@ -83,10 +92,10 @@ def entry_image(entry):
 
 
 def word_hits(text, keywords):
-    """Hány különböző kulcsszó szerepel a szövegben (szóhatárral)."""
+    """Hány különböző kulcsszó szerepel a szövegben (szóhatárral; az "AI-generated" is találat az "ai"-ra)."""
     hits = 0
     for kw in keywords:
-        if re.search(r"(?<![\w-])" + re.escape(kw.lower()) + r"(?![\w-])", text):
+        if re.search(r"(?<!\w)" + re.escape(kw.lower()) + r"(?!\w)", text):
             hits += 1
     return hits
 
@@ -101,7 +110,14 @@ def fetch_source(src):
     """Visszaadja a forrás cikkeit. Hibánál kivételt dob (ezt az oldal felugró ablakban mutatja)."""
     if not src.get("rss"):
         raise ValueError("nincs RSS link megadva")
-    resp = requests.get(src["rss"], headers={"User-Agent": UA}, timeout=25)
+    resp = requests.get(src["rss"], headers=HEADERS, timeout=25)
+    if resp.status_code in (429, 503):  # túl sok kérés: rövid várakozás, majd még egy próba
+        try:
+            wait = min(int(resp.headers.get("Retry-After", 15)), 30)
+        except ValueError:
+            wait = 15
+        time.sleep(wait)
+        resp = requests.get(src["rss"], headers=HEADERS, timeout=25)
     resp.raise_for_status()
     feed = feedparser.parse(resp.content)
     if not feed.entries:
@@ -276,8 +292,7 @@ def is_weekly_day(cfg, now):
     wk = cfg.get("weekly", {})
     if not wk.get("enabled", True):
         return False
-    budapest = now + timedelta(hours=1)  # elég pontos a nap meghatározásához reggeli futásnál
-    return budapest.weekday() == wk.get("weekday", 0)
+    return now.astimezone(BUDAPEST).weekday() == wk.get("weekday", 0)
 
 
 # ---------- fő folyamat ----------
@@ -293,7 +308,7 @@ def main():
 
     now = datetime.now(timezone.utc)
     cutoff = now - timedelta(hours=cfg.get("max_age_hours", 36))
-    errors, stats, result = [], [], {}
+    errors, stats, result, modes = [], [], {}, set()
 
     for topic in cfg["topics"]:
         interests = topic.get("interests", [])
@@ -334,6 +349,8 @@ def main():
             errors.append({"source": "Claude pontozás",
                            "message": "kulcsszavas szűrésre váltottam: " + str(exc)[:150]})
 
+        if candidates:
+            modes.add("claude" if scores is not None else "kulcsszavas")
         scored = []
         for idx, it in enumerate(candidates):
             if scores is not None:
@@ -370,7 +387,7 @@ def main():
     payload = {
         "generated_at": now.isoformat(),
         "window_hours": cfg.get("max_age_hours", 36),
-        "scoring": "claude" if os.environ.get("ANTHROPIC_API_KEY") else "kulcsszavas",
+        "scoring": "vegyes" if len(modes) > 1 else (modes.pop() if modes else "nem volt pontozandó cikk"),
         "topics": result,
         "errors": errors,
         "sources": stats,
