@@ -166,11 +166,11 @@
       "topic": "ai"
     },
     {
-      "name": "VentureBeat",
-      "url": "https://venturebeat.com/",
-      "rss": "https://venturebeat.com/feed",
+      "name": "CG Channel",
+      "url": "https://www.cgchannel.com/",
+      "rss": "https://www.cgchannel.com/feed/",
       "lang": "EN",
-      "weight": 3,
+      "weight": 4,
       "topic": "ai"
     },
     {
