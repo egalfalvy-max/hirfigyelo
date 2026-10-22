@@ -122,11 +122,13 @@ def fetch_source(src):
     if not src.get("rss"):
         raise ValueError("nincs RSS link megadva")
     resp = requests.get(src["rss"], headers=HEADERS, timeout=25)
-    if resp.status_code in (429, 503):  # túl sok kérés: rövid várakozás, majd még egy próba
+    # 403 (tiltás), 429 (túl sok kérés), 5xx: a GitHub-gépeket egyes oldalak csak időnként engedik be,
+    # ezért rövid várakozás után még egyszer megpróbáljuk
+    if resp.status_code in (403, 429) or resp.status_code >= 500:
         try:
-            wait = min(int(resp.headers.get("Retry-After", 15)), 30)
+            wait = min(int(resp.headers.get("Retry-After", 8)), 30)
         except ValueError:
-            wait = 15
+            wait = 8
         time.sleep(wait)
         resp = requests.get(src["rss"], headers=HEADERS, timeout=25)
     resp.raise_for_status()
@@ -320,6 +322,9 @@ def main():
     now = datetime.now(timezone.utc)
     cutoff = now - timedelta(hours=cfg.get("max_age_hours", 36))
     errors, stats, result, modes = [], [], {}, set()
+    # hány futás óta hibázik egy forrás egymás után (az előző news.json-ból); az oldal csak 2+ után riaszt
+    prev_streak = {(s.get("topic"), s.get("name")): s.get("fail_streak", 0 if s.get("ok", True) else 1)
+                   for s in load_json("news.json", {}).get("sources", [])}
 
     for topic in cfg["topics"]:
         interests = topic.get("interests", [])
@@ -331,8 +336,13 @@ def main():
                 stat["ok"] = True
                 stat["fetched"] = len(items)
                 raw.extend(items)
-            except Exception as exc:  # a hiba az oldalon felugró ablakban jelenik meg
-                errors.append({"source": src["name"], "message": str(exc)[:200]})
+            except Exception as exc:  # a hiba az oldalon jelenik meg (felugró ablakban, ha tartós)
+                streak = prev_streak.get((topic["id"], src["name"]), 0) + 1
+                stat["fail_streak"] = streak
+                msg = str(exc)[:200]
+                if streak >= 2:
+                    msg = "{} futás óta nem érhető el. {}".format(streak, msg)
+                errors.append({"source": src["name"], "message": msg, "streak": streak})
             stats.append(stat)
 
         seen, candidates = set(), []
