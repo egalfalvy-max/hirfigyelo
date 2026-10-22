@@ -217,6 +217,14 @@
       "lang": "EN",
       "weight": 4,
       "topic": "ai"
+    },
+    {
+      "name": "Telex",
+      "url": "https://telex.hu/",
+      "rss": "https://telex.hu/rss",
+      "lang": "HU",
+      "weight": 1,
+      "topic": "ai"
     }
   ],
   "fallback_models": [
