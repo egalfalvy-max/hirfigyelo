@@ -2,7 +2,7 @@
   "model": "claude-haiku-4-5",
   "max_items_per_topic": 10,
   "max_age_hours": 36,
-  "min_keyword_score": 3,
+  "min_keyword_score": 4,
   "min_ai_score": 6,
   "same_domain_only": true,
   "profile": "Motion designer és grafikus vagyok. A legfontosabb: új AI modellek és technikák 3D, videógenerálás, tervezőgrafika és motion szempontból. Hír érdekel, ami változást jelent (új eszköz, szabály, bejelentés, felvásárlás, áttörés), nem vélemény vagy elemzés a már ismert dolgokról. Érdekelnek a nagy sikerű, AI-t használó reklámkampányok és a forradalmi AI-használat a reklám- és filmiparban.",
