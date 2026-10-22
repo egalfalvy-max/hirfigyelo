@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T22:48:15.026382+00:00",
+  "generated_at": "2026-10-22T23:11:18.424767+00:00",
   "window_hours": 36,
   "scoring": "kulcsszavas",
   "topics": {
@@ -12,17 +12,77 @@
         "link": "https://www.pcmag.com/opinions/can-free-ai-clones-really-replace-photoshop-i-put-lightcraft-and-photocraft",
         "label": "Modellek & motion",
         "image": null,
-        "score": 15.6
+        "score": 22.6
       },
       {
-        "id": "1437b0ebe8",
-        "title": "Canva’s first AI image model plans designs before generating them",
-        "source": "The Verge",
-        "published": "2026-10-22T21:51:25+00:00",
-        "link": "https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model",
+        "id": "140d853f0e",
+        "title": "The new human-crafted Apple Music brand matters in an AI world",
+        "source": "Ars Technica",
+        "published": "2026-10-21T19:44:40+00:00",
+        "link": "https://arstechnica.com/culture/2026/10/the-new-human-crafted-apple-music-brand-matters-in-an-ai-world/",
         "label": "Modellek & motion",
-        "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/04-CRAFT-COLLAGE.png?quality=90&strip=all&crop=0,0,100,100",
-        "score": 12.0
+        "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/apple-music-rebrand-icon-1152x648.jpg",
+        "score": 13.6
+      },
+      {
+        "id": "90884af215",
+        "title": "I Asked Gemini to Run My Googlebook. It Told Me to Do It Myself",
+        "source": "PC MAG",
+        "published": "2026-10-22T12:48:11+00:00",
+        "link": "https://www.pcmag.com/opinions/i-asked-gemini-to-run-my-googlebook-it-told-me-to-do-it-myself",
+        "label": "Modellek & motion",
+        "image": null,
+        "score": 9.6
+      },
+      {
+        "id": "b09d743ebd",
+        "title": "Unlike Amazon, Walmart Wants Your AI Agent to Shop for You",
+        "source": "PC MAG",
+        "published": "2026-10-22T09:51:01+00:00",
+        "link": "https://www.pcmag.com/news/unlike-amazon-walmart-wants-your-ai-agent-to-shop-for-you",
+        "label": "Modellek & motion",
+        "image": null,
+        "score": 9.6
+      },
+      {
+        "id": "23bb312064",
+        "title": "Are Googlebooks Right for You? I Tried Every One of Google's Android Laptops",
+        "source": "PC MAG",
+        "published": "2026-10-21T13:48:18+00:00",
+        "link": "https://www.pcmag.com/explainers/are-googlebooks-right-for-you-i-tried-every-one-of-googles-android-laptops",
+        "label": "Modellek & motion",
+        "image": null,
+        "score": 9.6
+      },
+      {
+        "id": "5cabb389fd",
+        "title": "Recursive shows first result of its AI-driven research process with Flint",
+        "source": "The Decoder",
+        "published": "2026-10-22T14:40:16+00:00",
+        "link": "https://the-decoder.com/recursive-shows-first-result-of-its-ai-driven-research-process-with-flint/",
+        "label": "Modellek & motion",
+        "image": "https://the-decoder.com/wp-content/uploads/2026/10/recursive-flint-header-1.jpg",
+        "score": 9.2
+      },
+      {
+        "id": "9b2c96aca5",
+        "title": "An AI agent in \"Skynet mode\" hijacks unprotected language models to launch self-sustaining cyberattacks",
+        "source": "The Decoder",
+        "published": "2026-10-22T11:30:56+00:00",
+        "link": "https://the-decoder.com/an-ai-agent-in-skynet-mode-hijacks-unprotected-language-models-to-launch-self-sustaining-cyberattacks/",
+        "label": "Modellek & motion",
+        "image": "https://the-decoder.com/wp-content/uploads/2026/10/cybersecurity_kraken-1.png",
+        "score": 9.2
+      },
+      {
+        "id": "57c335905f",
+        "title": "Gartner’s 2027 tech trends just dropped – and they go beyond AI",
+        "source": "zdnet",
+        "published": "2026-10-21T15:53:54+00:00",
+        "link": "https://www.zdnet.com/innovation/future-business-autonomous-garter-2027-technology-trends/",
+        "label": "Modellek & motion",
+        "image": "https://www.zdnet.com/wp-content/uploads/sites/3/facing-portalGettyImages-2292677200.jpg",
+        "score": 9.2
       },
       {
         "id": "fcaae5b064",
@@ -35,25 +95,30 @@
         "score": 6.2
       },
       {
-        "id": "140d853f0e",
-        "title": "The new human-crafted Apple Music brand matters in an AI world",
-        "source": "Ars Technica",
-        "published": "2026-10-21T19:44:40+00:00",
-        "link": "https://arstechnica.com/culture/2026/10/the-new-human-crafted-apple-music-brand-matters-in-an-ai-world/",
-        "label": "Reklám & film",
-        "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/apple-music-rebrand-icon-1152x648.jpg",
-        "score": 5.6
+        "id": "1a821e7a7f",
+        "title": "Deepmind founder Hassabis shortens AGI timeline from five to two to three years",
+        "source": "The Decoder",
+        "published": "2026-10-21T17:10:46+00:00",
+        "link": "https://the-decoder.com/deepmind-founder-hassabis-shortens-agi-timeline-from-five-to-two-to-three-years/",
+        "label": "AI artistok",
+        "image": "https://the-decoder.com/wp-content/uploads/2026/07/deepmind_hassabis.png",
+        "score": 4.2
       }
     ]
   },
-  "errors": [],
+  "errors": [
+    {
+      "source": "Telex",
+      "message": "403 Client Error: Forbidden for url: https://telex.hu/rss"
+    }
+  ],
   "sources": [
     {
       "name": "The Verge",
       "topic": "ai",
       "ok": true,
       "fetched": 10,
-      "kept": 1
+      "kept": 0
     },
     {
       "name": "CG Channel",
@@ -74,7 +139,7 @@
       "topic": "ai",
       "ok": true,
       "fetched": 10,
-      "kept": 1
+      "kept": 4
     },
     {
       "name": "Mashable",
@@ -86,8 +151,8 @@
     {
       "name": "Telex",
       "topic": "ai",
-      "ok": true,
-      "fetched": 50,
+      "ok": false,
+      "fetched": 0,
       "kept": 0
     },
     {
@@ -95,14 +160,14 @@
       "topic": "ai",
       "ok": true,
       "fetched": 25,
-      "kept": 0
+      "kept": 1
     },
     {
       "name": "PC MAG",
       "topic": "ai",
       "ok": true,
       "fetched": 100,
-      "kept": 1
+      "kept": 4
     }
   ]
 }
