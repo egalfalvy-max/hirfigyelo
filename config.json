@@ -46,7 +46,12 @@
         "chatbot",
         "openai",
         "anthropic",
-        "gemini"
+        "gemini",
+        "claude",
+        "develop",
+        "model",
+        "video generation",
+        "generation"
       ],
       "interests": [
         {
@@ -88,7 +93,10 @@
             "image model",
             "graphic design",
             "design tool",
-            "designer"
+            "designer",
+            "higgsfield",
+            "opus",
+            "new feature"
           ],
           "label": "Modellek & motion"
         },
@@ -110,7 +118,15 @@
             "animation studio",
             "vfx",
             "film",
-            "movie"
+            "movie",
+            "gfx",
+            "motion",
+            "after effects",
+            "premiere pro",
+            "adobe",
+            "ad",
+            "campaign",
+            "brand"
           ],
           "label": "Reklám & film"
         },
@@ -128,7 +144,12 @@
             "exhibition",
             "gallery",
             "album",
-            "short film"
+            "short film",
+            "shortlist",
+            "competition",
+            "film",
+            "movie",
+            "ad"
           ],
           "label": "AI artistok"
         },
