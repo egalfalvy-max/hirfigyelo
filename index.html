@@ -3,8 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#eceef3">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#eceef3">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0b0e15">
 <title>Hírfigyelő</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Hírfigyelő">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -325,7 +333,8 @@ const state = {
   config: null, news: null, weekly: null,
   repoVotes: [], localVotes: LS.get("hf_votes", {}),
   settings: LS.get("hf_settings", { repo: "", branch: "main", token: "" }),
-  tab: LS.get("hf_tab", ""), filter: {}, configDirty: false
+  tab: LS.get("hf_tab", ""), filter: {}, configDirty: false,
+  sha: {}  /* a GitHubról betöltött fájlok verziója: ebből látszik, ha közben máshol mentettek */
 };
 
 /* ---------- betöltés ---------- */
@@ -334,10 +343,22 @@ async function getJSON(path) {
   if (!r.ok) throw new Error(path + ": HTTP " + r.status);
   return r.json();
 }
+/* Tokennel a beállításokat és a visszajelzéseket közvetlenül a GitHubról olvassuk:
+   így mindig a legfrissebb változat látszik (a weblap 1-2 perc késéssel frissül), és mentéskor kiderül, ha közben máshol is mentettek. */
+async function loadEditable(path, fallback) {
+  if (hasToken()) {
+    try {
+      const g = await ghGet(path);
+      if (g) { state.sha[path] = g.sha; return g.data; }
+    } catch { /* ha a GitHub nem érhető el, a weblapról olvassuk */ }
+  }
+  delete state.sha[path];
+  return fallback ? getJSON(path).catch(() => fallback) : getJSON(path);
+}
 async function load() {
-  try { state.config = await getJSON("config.json"); }
+  try { state.config = await loadEditable("config.json"); }
   catch (e) { return showFatal("A config.json nem tölthető be. " + e.message); }
-  const [news, weekly, fb] = await Promise.allSettled([getJSON("news.json"), getJSON("weekly.json"), getJSON("feedback.json")]);
+  const [news, weekly, fb] = await Promise.allSettled([getJSON("news.json"), getJSON("weekly.json"), loadEditable("feedback.json", { votes: [] })]);
   state.news = news.status === "fulfilled" ? news.value : null;
   state.weekly = weekly.status === "fulfilled" ? weekly.value : null;
   state.repoVotes = fb.status === "fulfilled" ? (fb.value.votes || []) : [];
@@ -381,6 +402,7 @@ function fmtDay(d) {
 }
 function fmtFull(iso) { return new Intl.DateTimeFormat("hu-HU", { dateStyle: "medium", timeStyle: "short" }).format(new Date(iso)); }
 function toast(msg) {
+  document.querySelectorAll(".toast").forEach(t => t.remove()); /* egyszerre csak egy értesítés látszik */
   const t = el("div", { class: "toast", role: "status" }, msg);
   document.body.append(t); setTimeout(() => t.remove(), 3800);
 }
@@ -644,7 +666,8 @@ function keywordsView() {
     el("section", { class: "block" },
       el("h2", {}, "Hogyan működik?"),
       el("p", { class: "note" }, "Kulcsszavas szűrésnél minden cikk pontot kap: altémánként fontosság × találatok száma (legfeljebb 2 találat számít). " +
-        "A cikk akkor kerül be, ha az összpontszáma eléri a küszöböt. Egy szó vagy kifejezés kis- és nagybetűtől függetlenül, egész szóként számít: az „ai” illeszkedik az „AI-generated”-re, de a „said”-re nem."),
+        "A cikk akkor kerül be, ha az összpontszáma eléri a küszöböt. Egy szó vagy kifejezés kis- és nagybetűtől függetlenül, egész szóként számít: az „ai” illeszkedik az „AI-generated”-re, de a „said”-re nem. " +
+        "Ha a szó végére *-ot teszel (pl. reklám*), a ragozott és összetett alakokat is megtalálja: reklámot, reklámkampány."),
       el("label", { class: "thr" }, "Bekerülési küszöb",
         el("input", { type: "number", min: "1", max: "20", value: String(thr),
           onchange: e => { const v = Number(e.target.value); if (v >= 1) { cfg.min_keyword_score = v; markDirty(); } } }),
@@ -683,42 +706,83 @@ function keywordsView() {
 /* ---------- mentés GitHubra, vagy letöltés ---------- */
 function hasToken() { return state.settings.repo && state.settings.token; }
 function b64(text) { return btoa(unescape(encodeURIComponent(text))); }
-async function ghPut(path, text, message) {
-  const { repo, token, branch } = state.settings;
-  const url = "https://api.github.com/repos/" + repo + "/contents/" + path;
-  const headers = { Authorization: "Bearer " + token, Accept: "application/vnd.github+json" };
-  let sha;
-  const g = await fetch(url + "?ref=" + encodeURIComponent(branch), { headers });
-  if (g.ok) sha = (await g.json()).sha;
-  const r = await fetch(url, { method: "PUT", headers, body: JSON.stringify({ message, content: b64(text), sha, branch }) });
+function unb64(data) { return decodeURIComponent(escape(atob(data.replace(/\s/g, "")))); }
+function ghUrl(path) { return "https://api.github.com/repos/" + state.settings.repo + "/contents/" + path; }
+function ghHeaders() { return { Authorization: "Bearer " + state.settings.token, Accept: "application/vnd.github+json" }; }
+/* Egy fájl aktuális tartalma és verziója (sha) a GitHubról. Ha nincs ilyen fájl: null. */
+async function ghGet(path) {
+  const r = await fetch(ghUrl(path) + "?ref=" + encodeURIComponent(state.settings.branch), { headers: ghHeaders(), cache: "no-store" });
+  if (r.status === 404) return null;
+  if (!r.ok) throw new Error(path + " olvasása: HTTP " + r.status);
+  const j = await r.json();
+  return { sha: j.sha, data: JSON.parse(unb64(j.content)) };
+}
+/* Mentés. Ha megadjuk az ismert verziót (sha), és közben valaki más mentett, a GitHub elutasítja: ekkor e.conflict = true.
+   sha nélkül a mostani GitHub-változatot írja felül. Visszaadja az új verziót. */
+async function ghPut(path, text, message, sha) {
+  const { branch } = state.settings;
+  if (sha === undefined) {
+    const g = await fetch(ghUrl(path) + "?ref=" + encodeURIComponent(branch), { headers: ghHeaders(), cache: "no-store" });
+    if (g.ok) sha = (await g.json()).sha;
+  }
+  const r = await fetch(ghUrl(path), { method: "PUT", headers: ghHeaders(), body: JSON.stringify({ message, content: b64(text), sha, branch }) });
+  if (r.status === 409) throw Object.assign(new Error("Közben máshol is mentették: " + path), { conflict: true });
   if (!r.ok) throw new Error("GitHub mentés: HTTP " + r.status + ". Ellenőrizd a tároló nevét és a token jogait.");
+  return (await r.json()).content?.sha;
 }
 function download(name, text) {
   const a = el("a", { href: URL.createObjectURL(new Blob([text], { type: "application/json" })), download: name });
   document.body.append(a); a.click(); a.remove();
 }
-async function persist(path, obj, message) {
-  const text = JSON.stringify(obj, null, 2) + "\n";
-  if (hasToken()) {
-    try { await ghPut(path, text, message); return true; }
-    catch (e) { showErrors([{ source: "Mentés", message: e.message }]); return false; }
-  }
-  download(path, text);
+const toText = obj => JSON.stringify(obj, null, 2) + "\n";
+function offerDownload(path, obj) {
+  download(path, toText(obj));
   toast("Letöltöttem a " + path + " fájlt. Töltsd fel a GitHub-tárolóba, hogy érvényes legyen.");
-  return true;
 }
 async function saveConfig() {
-  if (await persist("config.json", state.config, "Források és témák módosítása")) {
-    state.configDirty = false; render(true); if (hasToken()) toast("Mentve. A következő gyűjtéstől érvényes.");
+  const path = "config.json", msg = "Források és témák módosítása", text = toText(state.config);
+  if (!hasToken()) { offerDownload(path, state.config); state.configDirty = false; render(true); return; }
+  try {
+    state.sha[path] = await ghPut(path, text, msg, state.sha[path]);
+  } catch (e) {
+    if (!e.conflict) return showErrors([{ source: "Mentés", message: e.message }]);
+    const overwrite = await askConfirm("Amióta megnyitottad az oldalt, egy másik eszközön vagy lapon is mentettek beállításokat. " +
+      "Felülírod azokat az itteni változtatásaiddal? Ha nem, töltsd újra az oldalt: a másik mentés megmarad, az itteni mentetlen változtatások elvesznek.", "Felülírom");
+    if (!overwrite) { toast("Nem mentettem. Töltsd újra az oldalt a friss beállításokért."); return; }
+    try { state.sha[path] = await ghPut(path, text, msg); }
+    catch (e2) { return showErrors([{ source: "Mentés", message: e2.message }]); }
   }
+  state.configDirty = false; render(true); toast("Mentve. A következő gyűjtéstől érvényes.");
+}
+/* A helyi jelzéseket egy alaplistához fűzi: azonos cikknél a későbbi jelzés nyer, a visszavont jelzés kikerül. */
+function mergeVotes(base) {
+  const map = new Map(base.map(v => [v.id, v]));
+  for (const v of Object.values(state.localVotes)) {
+    const prev = map.get(v.id);
+    if (!prev || (v.date || "") >= (prev.date || "")) map.set(v.id, v);
+  }
+  return [...map.values()].filter(v => v.vote !== "none")
+    .sort((a, b) => (a.date || "").localeCompare(b.date || "")).slice(-300);
 }
 async function saveVotes() {
-  const merged = [...allVotes().values()].filter(v => v.vote !== "none")
-    .sort((a, b) => (a.date || "").localeCompare(b.date || "")).slice(-300);
-  if (await persist("feedback.json", { votes: merged }, "Visszajelzések mentése")) {
-    state.repoVotes = merged; state.localVotes = {}; LS.set("hf_votes", {}); render(true);
-    if (hasToken()) toast("Visszajelzések mentve.");
+  const path = "feedback.json", msg = "Visszajelzések mentése";
+  let merged = mergeVotes(state.repoVotes);
+  if (!hasToken()) {
+    offerDownload(path, { votes: merged });
+  } else {
+    try {
+      state.sha[path] = await ghPut(path, toText({ votes: merged }), msg, state.sha[path]);
+    } catch (e) {
+      if (!e.conflict) return showErrors([{ source: "Mentés", message: e.message }]);
+      try { /* közben máshol is mentettek: összefésüljük a kettőt, így egyik jelzés sem vész el */
+        const fresh = await ghGet(path);
+        merged = mergeVotes(fresh?.data?.votes || []);
+        state.sha[path] = await ghPut(path, toText({ votes: merged }), msg, fresh ? fresh.sha : undefined);
+      } catch (e2) { return showErrors([{ source: "Mentés", message: e2.message }]); }
+    }
+    toast("Visszajelzések mentve.");
   }
+  state.repoVotes = merged; state.localVotes = {}; LS.set("hf_votes", {}); render(true);
 }
 
 /* ---------- frissítés fül ---------- */
@@ -755,7 +819,8 @@ function updateView() {
     e.preventDefault();
     const f = new FormData(form);
     state.settings = { repo: f.get("repo").trim(), branch: f.get("branch").trim() || "main", token: f.get("token").trim() };
-    LS.set("hf_settings", state.settings); toast("Beállítások elmentve ebben a böngészőben."); render(true);
+    LS.set("hf_settings", state.settings); toast("Beállítások elmentve ebben a böngészőben.");
+    if (state.configDirty) render(true); else load(); /* újraolvasás a GitHubról, a mentésvédelemhez */
   } },
     el("label", { for: "gRepo" }, "GitHub-tároló (felhasználó/tárolónév)", el("input", { id: "gRepo", name: "repo", value: state.settings.repo, placeholder: "nev/hirfigyelo" })),
     el("label", { for: "gBranch" }, "Ág", el("input", { id: "gBranch", name: "branch", value: state.settings.branch })),
