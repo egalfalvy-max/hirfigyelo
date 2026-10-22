@@ -328,6 +328,14 @@
       "lang": "EN",
       "weight": 4,
       "topic": "ai"
+    },
+    {
+      "name": "Creative Boom",
+      "url": "https://www.creativeboom.com/",
+      "rss": "https://www.creativeboom.com/feed/",
+      "lang": "EN",
+      "weight": 4,
+      "topic": "ai"
     }
   ],
   "fallback_models": [
