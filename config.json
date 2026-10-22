@@ -320,6 +320,14 @@
       "lang": "EN",
       "weight": 4,
       "topic": "ai"
+    },
+    {
+      "name": "It's nice that",
+      "url": "https://www.itsnicethat.com/",
+      "rss": "https://feeds2.feedburner.com/itsnicethat/SlXC",
+      "lang": "EN",
+      "weight": 4,
+      "topic": "ai"
     }
   ],
   "fallback_models": [
