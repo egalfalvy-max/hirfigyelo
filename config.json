@@ -52,7 +52,10 @@
         "model",
         "video generation",
         "generation",
-        "robot"
+        "robot",
+        "news",
+        "new",
+        "feature"
       ],
       "interests": [
         {
@@ -97,7 +100,8 @@
             "designer",
             "higgsfield",
             "opus",
-            "new feature"
+            "new feature",
+            "new"
           ],
           "label": "Modellek & motion"
         },
@@ -127,7 +131,14 @@
             "adobe",
             "ad",
             "campaign",
-            "brand"
+            "brand",
+            "marketing",
+            "modell",
+            "idea",
+            "produce",
+            "producer",
+            "shortfilm",
+            "agency"
           ],
           "label": "Reklám & film"
         },
@@ -150,7 +161,20 @@
             "competition",
             "film",
             "movie",
-            "ad"
+            "ad",
+            "modell",
+            "model",
+            "director",
+            "cannes lions",
+            "new",
+            "star",
+            "graphic",
+            "designer",
+            "motion designer",
+            "motion",
+            "talent",
+            "interview",
+            "executer"
           ],
           "label": "AI artistok"
         },
@@ -171,7 +195,10 @@
             "court",
             "licensing",
             "legislation",
-            "settlement"
+            "settlement",
+            "law",
+            "banned",
+            "ban"
           ],
           "label": "Szabályozás"
         }
