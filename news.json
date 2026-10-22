@@ -1,9 +1,19 @@
 {
-  "generated_at": "2026-10-22T22:33:17.984546+00:00",
+  "generated_at": "2026-10-22T22:48:15.026382+00:00",
   "window_hours": 36,
   "scoring": "kulcsszavas",
   "topics": {
     "ai": [
+      {
+        "id": "ff1a4a80b1",
+        "title": "Can Free AI Clones Really Replace Photoshop? I Put LightCraft and PhotoCraft to the Test",
+        "source": "PC MAG",
+        "published": "2026-10-22T13:07:48+00:00",
+        "link": "https://www.pcmag.com/opinions/can-free-ai-clones-really-replace-photoshop-i-put-lightcraft-and-photocraft",
+        "label": "Modellek & motion",
+        "image": null,
+        "score": 15.6
+      },
       {
         "id": "1437b0ebe8",
         "title": "Canva’s first AI image model plans designs before generating them",
@@ -13,6 +23,26 @@
         "label": "Modellek & motion",
         "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/04-CRAFT-COLLAGE.png?quality=90&strip=all&crop=0,0,100,100",
         "score": 12.0
+      },
+      {
+        "id": "fcaae5b064",
+        "title": "Anthropic takes on Grok Bot, Meta's Muse, and OpenAI's Dots with its always-on agent \"Claude Duet\"",
+        "source": "The Decoder",
+        "published": "2026-10-22T08:35:22+00:00",
+        "link": "https://the-decoder.com/anthropic-takes-on-grok-bot-metas-muse-and-openais-dots-with-its-always-on-agent-claude-duet/",
+        "label": "Modellek & motion",
+        "image": "https://the-decoder.com/wp-content/uploads/2026/10/Claude-Duet.png",
+        "score": 6.2
+      },
+      {
+        "id": "140d853f0e",
+        "title": "The new human-crafted Apple Music brand matters in an AI world",
+        "source": "Ars Technica",
+        "published": "2026-10-21T19:44:40+00:00",
+        "link": "https://arstechnica.com/culture/2026/10/the-new-human-crafted-apple-music-brand-matters-in-an-ai-world/",
+        "label": "Reklám & film",
+        "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/apple-music-rebrand-icon-1152x648.jpg",
+        "score": 5.6
       }
     ]
   },
@@ -37,14 +67,14 @@
       "topic": "ai",
       "ok": true,
       "fetched": 20,
-      "kept": 0
+      "kept": 1
     },
     {
       "name": "The Decoder",
       "topic": "ai",
       "ok": true,
       "fetched": 10,
-      "kept": 0
+      "kept": 1
     },
     {
       "name": "Mashable",
@@ -52,6 +82,27 @@
       "ok": true,
       "fetched": 40,
       "kept": 0
+    },
+    {
+      "name": "Telex",
+      "topic": "ai",
+      "ok": true,
+      "fetched": 50,
+      "kept": 0
+    },
+    {
+      "name": "zdnet",
+      "topic": "ai",
+      "ok": true,
+      "fetched": 25,
+      "kept": 0
+    },
+    {
+      "name": "PC MAG",
+      "topic": "ai",
+      "ok": true,
+      "fetched": 100,
+      "kept": 1
     }
   ]
 }
