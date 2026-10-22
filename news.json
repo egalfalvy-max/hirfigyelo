@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T23:21:08.226070+00:00",
+  "generated_at": "2026-10-22T23:45:32.470175+00:00",
   "window_hours": 36,
   "scoring": "kulcsszavas",
   "topics": {
@@ -12,7 +12,7 @@
         "link": "https://www.pcmag.com/opinions/can-free-ai-clones-really-replace-photoshop-i-put-lightcraft-and-photocraft",
         "label": "Modellek & motion",
         "image": null,
-        "score": 22.6
+        "score": 22.0
       },
       {
         "id": "1437b0ebe8",
@@ -43,74 +43,14 @@
         "label": "Modellek & motion",
         "image": "https://the-decoder.com/wp-content/uploads/2026/10/Claude-Duet.png",
         "score": 6.2
-      },
-      {
-        "id": "90884af215",
-        "title": "I Asked Gemini to Run My Googlebook. It Told Me to Do It Myself",
-        "source": "PC MAG",
-        "published": "2026-10-22T12:48:11+00:00",
-        "link": "https://www.pcmag.com/opinions/i-asked-gemini-to-run-my-googlebook-it-told-me-to-do-it-myself",
-        "label": "AI artistok",
-        "image": null,
-        "score": 4.6
-      },
-      {
-        "id": "b09d743ebd",
-        "title": "Unlike Amazon, Walmart Wants Your AI Agent to Shop for You",
-        "source": "PC MAG",
-        "published": "2026-10-22T09:51:01+00:00",
-        "link": "https://www.pcmag.com/news/unlike-amazon-walmart-wants-your-ai-agent-to-shop-for-you",
-        "label": "AI artistok",
-        "image": null,
-        "score": 4.6
-      },
-      {
-        "id": "23bb312064",
-        "title": "Are Googlebooks Right for You? I Tried Every One of Google's Android Laptops",
-        "source": "PC MAG",
-        "published": "2026-10-21T13:48:18+00:00",
-        "link": "https://www.pcmag.com/explainers/are-googlebooks-right-for-you-i-tried-every-one-of-googles-android-laptops",
-        "label": "AI artistok",
-        "image": null,
-        "score": 4.6
-      },
-      {
-        "id": "5cabb389fd",
-        "title": "Recursive shows first result of its AI-driven research process with Flint",
-        "source": "The Decoder",
-        "published": "2026-10-22T14:40:16+00:00",
-        "link": "https://the-decoder.com/recursive-shows-first-result-of-its-ai-driven-research-process-with-flint/",
-        "label": "AI artistok",
-        "image": "https://the-decoder.com/wp-content/uploads/2026/10/recursive-flint-header-1.jpg",
-        "score": 4.2
-      },
-      {
-        "id": "9b2c96aca5",
-        "title": "An AI agent in \"Skynet mode\" hijacks unprotected language models to launch self-sustaining cyberattacks",
-        "source": "The Decoder",
-        "published": "2026-10-22T11:30:56+00:00",
-        "link": "https://the-decoder.com/an-ai-agent-in-skynet-mode-hijacks-unprotected-language-models-to-launch-self-sustaining-cyberattacks/",
-        "label": "AI artistok",
-        "image": "https://the-decoder.com/wp-content/uploads/2026/10/cybersecurity_kraken-1.png",
-        "score": 4.2
-      },
-      {
-        "id": "1a821e7a7f",
-        "title": "Deepmind founder Hassabis shortens AGI timeline from five to two to three years",
-        "source": "The Decoder",
-        "published": "2026-10-21T17:10:46+00:00",
-        "link": "https://the-decoder.com/deepmind-founder-hassabis-shortens-agi-timeline-from-five-to-two-to-three-years/",
-        "label": "AI artistok",
-        "image": "https://the-decoder.com/wp-content/uploads/2026/07/deepmind_hassabis.png",
-        "score": 4.2
       }
     ]
   },
   "errors": [
     {
       "source": "Telex",
-      "message": "2 futás óta nem érhető el. 403 Client Error: Forbidden for url: https://telex.hu/rss",
-      "streak": 2
+      "message": "3 futás óta nem érhető el. 403 Client Error: Forbidden for url: https://telex.hu/rss",
+      "streak": 3
     }
   ],
   "sources": [
@@ -140,7 +80,7 @@
       "topic": "ai",
       "ok": true,
       "fetched": 10,
-      "kept": 4
+      "kept": 1
     },
     {
       "name": "Mashable",
@@ -155,7 +95,7 @@
       "ok": false,
       "fetched": 0,
       "kept": 0,
-      "fail_streak": 2
+      "fail_streak": 3
     },
     {
       "name": "zdnet",
@@ -169,7 +109,35 @@
       "topic": "ai",
       "ok": true,
       "fetched": 100,
-      "kept": 4
+      "kept": 1
+    },
+    {
+      "name": "It's nice that",
+      "topic": "ai",
+      "ok": true,
+      "fetched": 20,
+      "kept": 0
+    },
+    {
+      "name": "Creative Boom",
+      "topic": "ai",
+      "ok": true,
+      "fetched": 20,
+      "kept": 0
+    },
+    {
+      "name": "Design Boom",
+      "topic": "ai",
+      "ok": true,
+      "fetched": 10,
+      "kept": 0
+    },
+    {
+      "name": "Design Milk",
+      "topic": "ai",
+      "ok": true,
+      "fetched": 12,
+      "kept": 0
     }
   ]
 }
