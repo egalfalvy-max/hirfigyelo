@@ -55,7 +55,10 @@
         "robot",
         "news",
         "new",
-        "feature"
+        "feature",
+        "interview",
+        "creative",
+        "idea"
       ],
       "interests": [
         {
@@ -101,7 +104,8 @@
             "higgsfield",
             "opus",
             "new feature",
-            "new"
+            "new",
+            "creative"
           ],
           "label": "Modellek & motion"
         },
@@ -138,7 +142,8 @@
             "produce",
             "producer",
             "shortfilm",
-            "agency"
+            "agency",
+            "creative"
           ],
           "label": "Reklám & film"
         },
@@ -174,7 +179,11 @@
             "motion",
             "talent",
             "interview",
-            "executer"
+            "executer",
+            "ceo",
+            "young lions",
+            "idea",
+            "creative"
           ],
           "label": "AI artistok"
         },
