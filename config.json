@@ -226,6 +226,14 @@
       "lang": "HU",
       "weight": 1,
       "topic": "ai"
+    },
+    {
+      "name": "zdnet",
+      "url": "https://www.zdnet.com/",
+      "rss": "https://www.zdnet.com/feed/",
+      "lang": "EN",
+      "weight": 3,
+      "topic": "ai"
     }
   ],
   "fallback_models": [
