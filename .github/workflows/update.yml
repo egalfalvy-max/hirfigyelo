@@ -1,0 +1,41 @@
+name: Hírfigyelő frissítés
+
+on:
+  schedule:
+    - cron: "0 5 * * *"   # naponta egyszer, 05:00 UTC (kb. 6-7 óra magyar idő szerint); hétfőn heti válogatás is
+  workflow_dispatch:       # kézi indítás (az oldal Frissítés füléről is)
+    inputs:
+      weekly:
+        description: "Heti válogatás készítése most"
+        type: choice
+        options: ["false", "true"]
+        default: "false"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: hirfigyelo
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Cikkek összegyűjtése
+        run: python fetch_news.py
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          WEEKLY: ${{ github.event.inputs.weekly }}
+      - name: Eredmény mentése
+        run: |
+          git config user.name "hirfigyelo-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add news.json weekpool.json
+          [ -f weekly.json ] && git add weekly.json
+          git diff --staged --quiet || (git commit -m "Frissítés" && git pull --rebase && git push)
