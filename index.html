@@ -365,11 +365,14 @@ async function load() {
   const valid = ["heti", "forrasok", "kulcsszavak", "frissites", ...state.config.topics.map(t => t.id)];
   if (!valid.includes(state.tab)) state.tab = state.config.topics[0]?.id || "forrasok";
   render();
-  const errs = state.news?.errors || [];
+  const errs = alarming(state.news?.errors);
   if (errs.length && LS.get("hf_err_seen", "") !== state.news.generated_at) {
     showErrors(errs); LS.set("hf_err_seen", state.news.generated_at);
   }
 }
+/* Felugró ablakban csak a tartós hibát mutatjuk: ha egy forrás legalább két futáson át kiesik
+   (vagy ha más hiba van, pl. a pontozásnál). Az egyszeri kiesés a Források és a Frissítés fülön látszik. */
+function alarming(errors) { return (errors || []).filter(e => !(e.streak === 1)); }
 function showFatal(msg) {
   $("#ruler").textContent = "Hiba";
   $("#main").replaceChildren(el("div", { class: "empty" }, el("strong", {}, "Az oldal nem indult el"), msg));
@@ -863,7 +866,8 @@ async function runUpdate(weekly) {
         clearInterval(pollTimer); state.news = fresh;
         try { state.weekly = await getJSON("weekly.json"); } catch { /* nincs még */ }
         render(true); toast("Megérkeztek az új cikkek.");
-        if (fresh.errors.length) { showErrors(fresh.errors); LS.set("hf_err_seen", fresh.generated_at); }
+        const alarm = alarming(fresh.errors);
+        if (alarm.length) { showErrors(alarm); LS.set("hf_err_seen", fresh.generated_at); }
         return;
       }
     } catch { /* következő próba */ }
