@@ -1,6 +1,94 @@
 {
   "items": [
     {
+      "id": "f1ab774265",
+      "title": "I tried Personal Intelligence in Android Auto – and only have one complaint",
+      "source": "zdnet",
+      "published": "2026-10-24T03:00:00+00:00",
+      "link": "https://www.zdnet.com/tech/use-gemini-personal-intelligence-navigate-android-auto/",
+      "label": "Modellek & motion",
+      "image": "https://www.zdnet.com/wp-content/uploads/sites/3/4db39db8-ff46-412a-8afa-09be16ae70f4.jpg",
+      "score": 6.2,
+      "topic": "ai"
+    },
+    {
+      "id": "f490e9c8ed",
+      "title": "Jack Dorsey’s Block made an AI model that talks to you like an awkward new friend",
+      "source": "The Verge",
+      "published": "2026-10-23T19:32:39+00:00",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech",
+      "label": "AI artistok",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/STKS536_AI_HALLUCINATION_B.png?quality=90&strip=all&crop=0,0,100,100",
+      "score": 7.5,
+      "topic": "ai"
+    },
+    {
+      "id": "99b40578a5",
+      "title": "Chinese AI model Kimi K3.1 Pro is closing in on Anthropic's Claude Opus 5.5",
+      "source": "The Decoder",
+      "published": "2026-10-23T19:00:07+00:00",
+      "link": "https://the-decoder.com/chinese-ai-model-kimi-k3-1-pro-is-closing-in-on-anthropics-claude-opus-5-5/",
+      "label": "Modellek & motion",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/10/kimi_k31pro.png",
+      "score": 9.2,
+      "topic": "ai"
+    },
+    {
+      "id": "ed3ef3827f",
+      "title": "Anthropic says its unreleased model is both more capable and better aligned than Mythos 5.1",
+      "source": "The Decoder",
+      "published": "2026-10-23T17:19:49+00:00",
+      "link": "https://the-decoder.com/anthropic-says-its-unreleased-model-is-both-more-capable-and-better-aligned-than-mythos-5-1/",
+      "label": "AI artistok",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/10/claude_gemini_pro-1-scaled.png",
+      "score": 3.7,
+      "topic": "ai"
+    },
+    {
+      "id": "4773205771",
+      "title": "'People Want This': How This Streamer Is Preventing AI From Ruining Your Playlists",
+      "source": "PC MAG",
+      "published": "2026-10-23T15:51:59+00:00",
+      "link": "https://www.pcmag.com/news/people-want-this-how-deezer-streamer-preventing-ai-from-ruining-your-playlists",
+      "label": "AI artistok",
+      "image": null,
+      "score": 3.5,
+      "topic": "ai"
+    },
+    {
+      "id": "25cc968e5e",
+      "title": "OpenAI CEO Sam Altman says advanced AI will inevitably escape its sandbox, and only alignment can save us",
+      "source": "The Decoder",
+      "published": "2026-10-23T15:42:18+00:00",
+      "link": "https://the-decoder.com/openai-ceo-sam-altman-says-advanced-ai-will-inevitably-escape-its-sandbox-and-only-alignment-can-save-us/",
+      "label": "AI artistok",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/06/openai_Altman.png",
+      "score": 3.7,
+      "topic": "ai"
+    },
+    {
+      "id": "970c9920af",
+      "title": "Anthropic's Claude now writes code and proves it safe automatically",
+      "source": "The Decoder",
+      "published": "2026-10-23T11:32:19+00:00",
+      "link": "https://the-decoder.com/anthropics-claude-now-writes-code-and-proves-it-safe-automatically/",
+      "label": "AI artistok",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/10/anthropic_claude-2.png",
+      "score": 3.7,
+      "topic": "ai"
+    },
+    {
+      "id": "e8b962d9c0",
+      "title": "OpenAI lowers valuation target, raises up to $30 billion",
+      "source": "The Decoder",
+      "published": "2026-10-23T09:49:38+00:00",
+      "link": "https://the-decoder.com/openai-lowers-valuation-target-raises-up-to-30-billion/",
+      "label": "AI artistok",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/08/openai-scientific-software-nano-banana-pro.jpg",
+      "score": 3.7,
+      "topic": "ai"
+    },
+    {
       "id": "1437b0ebe8",
       "title": "Canva’s first AI image model plans designs before generating them",
       "source": "The Verge",
