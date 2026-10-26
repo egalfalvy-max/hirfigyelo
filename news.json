@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T05:20:56.749804+00:00",
+  "generated_at": "2026-10-26T05:24:56.016328+00:00",
   "window_hours": 36,
   "scoring": "kulcsszavas",
   "topics": {
@@ -15,62 +15,72 @@
         "score": 13.5
       },
       {
-        "id": "99b40578a5",
-        "title": "Chinese AI model Kimi K3.1 Pro is closing in on Anthropic's Claude Opus 5.5",
-        "source": "The Decoder",
-        "published": "2026-10-23T19:00:07+00:00",
-        "link": "https://the-decoder.com/chinese-ai-model-kimi-k3-1-pro-is-closing-in-on-anthropics-claude-opus-5-5/",
+        "id": "9bda77250e",
+        "title": "It’s the Last Day To Get ChatGPT, Claude, & More All in One Platform for Just $60",
+        "source": "PC MAG",
+        "published": "2026-10-25T14:00:00+00:00",
+        "link": "https://www.pcmag.com/deals/its-the-last-day-to-get-chatgpt-claude-more-all-in-one-platform-for-just",
         "label": "Modellek & motion",
-        "image": "https://the-decoder.com/wp-content/uploads/2026/10/kimi_k31pro.png",
-        "score": 9.2
+        "image": null,
+        "score": 11.0
       },
       {
-        "id": "1408ffbc8e",
-        "title": "Block's new AI model Dessa was trained entirely on human speech to catch emotions text-based models miss",
-        "source": "The Decoder",
-        "published": "2026-10-24T14:09:46+00:00",
-        "link": "https://the-decoder.com/blocks-new-ai-model-dessa-was-trained-entirely-on-human-speech-to-catch-emotions-text-based-models-miss/",
+        "id": "b366ba776f",
+        "title": "r/opensource just banned AI, non-English speakers, and more",
+        "source": "The Verge",
+        "published": "2026-10-25T13:25:32+00:00",
+        "link": "https://www.theverge.com/ai-artificial-intelligence/1018217/reddit-opensource-ai-ban",
         "label": "AI artistok",
-        "image": "https://the-decoder.com/wp-content/uploads/2026/10/dessa_block.png",
-        "score": 6.7
+        "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/08/STK115_Reddit_01.jpg.webp?quality=90&strip=all&crop=0,0,100,100",
+        "score": 6.5
       },
       {
-        "id": "8a6d4d230e",
-        "title": "Fancy harnesses make coding agents more expensive but not better, study finds",
-        "source": "The Decoder",
-        "published": "2026-10-24T09:21:39+00:00",
-        "link": "https://the-decoder.com/fancy-harnesses-make-coding-agents-more-expensive-but-not-better-study-finds/",
-        "label": "Modellek & motion",
-        "image": "https://the-decoder.com/wp-content/uploads/2026/10/harness-buys-tokens-nano-banana-pro.jpg",
-        "score": 6.2
-      },
-      {
-        "id": "f1ab774265",
-        "title": "I tried Personal Intelligence in Android Auto – and only have one complaint",
-        "source": "zdnet",
-        "published": "2026-10-24T03:00:00+00:00",
-        "link": "https://www.zdnet.com/tech/use-gemini-personal-intelligence-navigate-android-auto/",
-        "label": "Modellek & motion",
-        "image": "https://www.zdnet.com/wp-content/uploads/sites/3/4db39db8-ff46-412a-8afa-09be16ae70f4.jpg",
-        "score": 6.2
-      },
-      {
-        "id": "e7a641e679",
-        "title": "OpenAI's isolated AI agents found ways to talk to each other through CPU cache",
-        "source": "The Decoder",
-        "published": "2026-10-24T11:12:36+00:00",
-        "link": "https://the-decoder.com/openais-isolated-ai-agents-found-ways-to-talk-to-each-other-through-cpu-cache/",
+        "id": "35542ffb0e",
+        "title": "Zen Browser is the Arc replacement I was looking for",
+        "source": "The Verge",
+        "published": "2026-10-25T19:24:50+00:00",
+        "link": "https://www.theverge.com/tech/1018275/zen-browser-arc-replacement",
         "label": "AI artistok",
-        "image": "https://the-decoder.com/wp-content/uploads/2026/10/openai_misalign-2.png",
+        "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/videoframe_4433.png?quality=90&strip=all&crop=0,0,100,100",
+        "score": 4.5
+      },
+      {
+        "id": "44ca99664d",
+        "title": "Nvidia open-sources Flora to make robot video labeling 125x cheaper than GPT-6 Astra",
+        "source": "The Decoder",
+        "published": "2026-10-25T10:08:49+00:00",
+        "link": "https://the-decoder.com/nvidia-open-sources-flora-to-make-robot-video-labeling-125x-cheaper-than-gpt-6-astra/",
+        "label": "AI artistok",
+        "image": "https://the-decoder.com/wp-content/uploads/2026/10/nvidia-flora-hero-robot-hands.jpg",
+        "score": 3.7
+      },
+      {
+        "id": "7241bd68f0",
+        "title": "Anthropic co-founder Jack Clark moves his prediction for self-improving AI forward to 2027",
+        "source": "The Decoder",
+        "published": "2026-10-25T09:37:46+00:00",
+        "link": "https://the-decoder.com/anthropic-co-founder-jack-clark-moves-his-prediction-for-self-improving-ai-forward-to-2027/",
+        "label": "AI artistok",
+        "image": "https://the-decoder.com/wp-content/uploads/2026/10/tasteval_and_rsi.png",
+        "score": 3.7
+      },
+      {
+        "id": "b5153a9c99",
+        "title": "Ex-Google CEO Eric Schmidt calls OpenAI and Anthropic modern colonial trading companies",
+        "source": "The Decoder",
+        "published": "2026-10-25T08:09:32+00:00",
+        "link": "https://the-decoder.com/ex-google-ceo-eric-schmidt-calls-openai-and-anthropic-modern-colonial-trading-companies/",
+        "label": "AI artistok",
+        "image": "https://the-decoder.com/wp-content/uploads/2026/10/ai_empires.png",
         "score": 3.7
       }
     ]
   },
   "errors": [
     {
-      "source": "Telex",
-      "message": "6 futás óta nem érhető el. 403 Client Error: Forbidden for url: https://telex.hu/rss",
-      "streak": 6
+      "source": "CG Channel",
+      "message": "403 Client Error: Forbidden for url: https://www.cgchannel.com/feed/",
+      "streak": 1
     }
   ],
   "sources": [
@@ -79,14 +89,15 @@
       "topic": "ai",
       "ok": true,
       "fetched": 10,
-      "kept": 1
+      "kept": 3
     },
     {
       "name": "CG Channel",
       "topic": "ai",
-      "ok": true,
-      "fetched": 10,
-      "kept": 0
+      "ok": false,
+      "fetched": 0,
+      "kept": 0,
+      "fail_streak": 1
     },
     {
       "name": "Ars Technica",
@@ -100,7 +111,7 @@
       "topic": "ai",
       "ok": true,
       "fetched": 10,
-      "kept": 4
+      "kept": 3
     },
     {
       "name": "Mashable",
@@ -112,24 +123,23 @@
     {
       "name": "Telex",
       "topic": "ai",
-      "ok": false,
-      "fetched": 0,
-      "kept": 0,
-      "fail_streak": 6
+      "ok": true,
+      "fetched": 50,
+      "kept": 0
     },
     {
       "name": "zdnet",
       "topic": "ai",
       "ok": true,
       "fetched": 25,
-      "kept": 1
+      "kept": 0
     },
     {
       "name": "PC MAG",
       "topic": "ai",
       "ok": true,
       "fetched": 100,
-      "kept": 0
+      "kept": 1
     },
     {
       "name": "It's nice that",
