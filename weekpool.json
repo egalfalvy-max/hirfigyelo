@@ -1,6 +1,105 @@
 {
   "items": [
     {
+      "id": "bba291662c",
+      "title": "OpenAI announces three big science discoveries and a new way to work with academics",
+      "source": "The Verge",
+      "published": "2026-10-26T23:34:58+00:00",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics",
+      "label": "AI artistok",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/STKS537_AI_MATH_2.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "score": 4.5,
+      "topic": "ai"
+    },
+    {
+      "id": "96b9f45bb2",
+      "title": "Anthropic is burning gas to feed the AI boom",
+      "source": "The Verge",
+      "published": "2026-10-26T21:45:31+00:00",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1018994/anthropic-ipo-ai-data-center-energy-climate-risk",
+      "label": "AI artistok",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/01/STK269_ANTHROPIC_2_B.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "score": 4.5,
+      "topic": "ai"
+    },
+    {
+      "id": "0b7bacad07",
+      "title": "GPT-6.1 Terra halves OpenAI's API prices and still gains ground on its larger models",
+      "source": "The Decoder",
+      "published": "2026-10-26T20:30:55+00:00",
+      "link": "https://the-decoder.com/gpt-6-1-terra-halves-openais-api-prices-and-still-gains-ground-on-its-larger-models/",
+      "label": "AI artistok",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/10/openai_logo_earth.png",
+      "score": 6.7,
+      "topic": "ai"
+    },
+    {
+      "id": "5d5ff332a0",
+      "title": "Apple releases iOS and macOS 27.2 with new Siri AI features, new Music logo",
+      "source": "Ars Technica",
+      "published": "2026-10-26T20:04:16+00:00",
+      "link": "https://arstechnica.com/apple/2026/10/apple-releases-ios-and-macos-27-2-with-new-siri-ai-features-new-music-logo/",
+      "label": "AI artistok",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/Siri-AI-1152x648.png",
+      "score": 4.4,
+      "topic": "ai"
+    },
+    {
+      "id": "f2e696280f",
+      "title": "Researchers find six patterns that make AI text so exhausting to read",
+      "source": "The Decoder",
+      "published": "2026-10-26T17:50:15+00:00",
+      "link": "https://the-decoder.com/researchers-find-six-patterns-that-make-ai-text-so-exhausting-to-read/",
+      "label": "AI artistok",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/10/language_letters.png",
+      "score": 3.7,
+      "topic": "ai"
+    },
+    {
+      "id": "2500a6aad8",
+      "title": "The RealReal won’t let AI agents hog designer clothing",
+      "source": "The Verge",
+      "published": "2026-10-26T17:30:55+00:00",
+      "link": "https://www.theverge.com/news/1018713/meta-muse-agentic-shopping-ai-the-realreal",
+      "label": "Modellek & motion",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/STKS539_AI_AGENTS_SHOPPING_E.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "score": 10.0,
+      "topic": "ai"
+    },
+    {
+      "id": "33c6fd4788",
+      "title": "Meta plans up to $95 billion in stock sales to fund its AI buildout",
+      "source": "The Decoder",
+      "published": "2026-10-26T14:21:23+00:00",
+      "link": "https://the-decoder.com/meta-plans-up-to-95-billion-in-stock-sales-to-fund-its-ai-buildout/",
+      "label": "AI artistok",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/07/meta_logo-2.png",
+      "score": 3.7,
+      "topic": "ai"
+    },
+    {
+      "id": "2cf4d610c4",
+      "title": "Tőzsdére lép az Anthropic",
+      "source": "Telex",
+      "published": "2026-10-26T14:02:40+00:00",
+      "link": "https://telex.hu/gazdasag/2026/10/26/anthropic-tozsde-mesterseges-intelligencia-ceg-ipo",
+      "label": "Modellek & motion",
+      "image": "https://assets.telex.hu/images/20261026/1793023410-temp-20l0luj6pecibpafaea_cimlap-normal.jpg",
+      "score": 5.4,
+      "topic": "ai"
+    },
+    {
+      "id": "f87a5ef001",
+      "title": "Elon Musk’s Grok Gives First Look at AI-Generated Film Odyssey With 7-Minute Release: Video Inside",
+      "source": "Mashable",
+      "published": "2026-10-26T07:58:22+00:00",
+      "link": "https://in.mashable.com/tech/115373/elon-musks-grok-gives-first-look-at-ai-generated-film-odyssey-with-7-minute-release-video-inside",
+      "label": "Reklám & film",
+      "image": "https://sm.mashable.com/mashable_in/photo/default/grok_vz7q.jpg",
+      "score": 15.85,
+      "topic": "ai"
+    },
+    {
       "id": "35542ffb0e",
       "title": "Zen Browser is the Arc replacement I was looking for",
       "source": "The Verge",
