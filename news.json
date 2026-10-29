@@ -1,107 +1,107 @@
 {
-  "generated_at": "2026-10-28T05:31:41.144206+00:00",
+  "generated_at": "2026-10-29T05:34:09.572004+00:00",
   "window_hours": 36,
   "scoring": "kulcsszavas",
   "topics": {
     "ai": [
       {
-        "id": "abb96e9fdd",
-        "title": "Firefox’s Smart Window adds AI form filling and webpage monitoring",
-        "source": "The Verge",
-        "published": "2026-10-27T16:14:18+00:00",
-        "link": "https://www.theverge.com/ai-artificial-intelligence/1019551/firefox-smart-window-ai-fill-forms",
-        "label": "Modellek & motion",
-        "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/firefox-fill.png?quality=90&strip=all&crop=0,0,100,100",
-        "score": 19.0
-      },
-      {
-        "id": "5bed667429",
-        "title": "Google Deepmind's Genie 4 puts a modern spin on agent designs that predate LLMs",
+        "id": "becd12354f",
+        "title": "Google opens Android development to third-party AI agents and unveils new Gemini APIs",
         "source": "The Decoder",
-        "published": "2026-10-27T17:25:09+00:00",
-        "link": "https://the-decoder.com/google-deepminds-genie-4-puts-a-modern-spin-on-agent-designs-that-predate-llms/",
-        "label": "Modellek & motion",
-        "image": "https://the-decoder.com/wp-content/uploads/2026/10/Genie-4-Google-title.png",
-        "score": 14.2
-      },
-      {
-        "id": "a60188d049",
-        "title": "DeepMind unveils Genie 4 world model promising more realistic physics and humans",
-        "source": "Ars Technica",
-        "published": "2026-10-27T16:00:22+00:00",
-        "link": "https://arstechnica.com/google/2026/10/deepminds-genie-4-world-model-adds-audio-and-more-realistic-people-to-simulations/",
-        "label": "Modellek & motion",
-        "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/vlcsnap-2026-10-27-10h06m52s461-1152x648.png",
-        "score": 9.9
-      },
-      {
-        "id": "0b7bacad07",
-        "title": "GPT-6.1 Terra halves OpenAI's API prices and still gains ground on its larger models",
-        "source": "The Decoder",
-        "published": "2026-10-26T20:30:55+00:00",
-        "link": "https://the-decoder.com/gpt-6-1-terra-halves-openais-api-prices-and-still-gains-ground-on-its-larger-models/",
+        "published": "2026-10-28T16:59:59+00:00",
+        "link": "https://the-decoder.com/google-opens-android-development-to-third-party-ai-agents-and-unveils-new-gemini-apis/",
         "label": "AI artistok",
-        "image": "https://the-decoder.com/wp-content/uploads/2026/10/openai_logo_earth.png",
-        "score": 6.7
+        "image": "https://the-decoder.com/wp-content/uploads/2026/05/Android-Robot-Logo-Background-Nano-Banana-Pro.jpg",
+        "score": 15.7
       },
       {
-        "id": "f1ab774265",
-        "title": "I tried Personal Intelligence in Android Auto – and it knew exactly where I wanted to go",
+        "id": "fc7d1d71bd",
+        "title": "Google launches Gemini 4 Carbon with a ‘significant leap’ in cybersecurity",
+        "source": "The Verge",
+        "published": "2026-10-28T20:03:00+00:00",
+        "link": "https://www.theverge.com/tech/1021339/google-gemini-4-carbon-cybersecurity-frontier",
+        "label": "AI artistok",
+        "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/03/STK255_Google_Gemini_A.jpg?quality=90&strip=all&crop=0,0,100,100",
+        "score": 12.5
+      },
+      {
+        "id": "ea9c11cf4a",
+        "title": "Amazon’s new Echo Studio gives Alexa+ an AI camera to see inside your home",
         "source": "zdnet",
-        "published": "2026-10-27T11:51:31+00:00",
-        "link": "https://www.zdnet.com/tech/use-gemini-personal-intelligence-navigate-android-auto/",
-        "label": "Modellek & motion",
-        "image": "https://www.zdnet.com/wp-content/uploads/sites/3/29351_bbe1f1.jpg",
-        "score": 6.2
+        "published": "2026-10-28T15:26:34+00:00",
+        "link": "https://www.zdnet.com/home-and-office/amazon-echo-studio-home-camera-2026-privacy-concerns/",
+        "label": "AI artistok",
+        "image": "https://www.zdnet.com/wp-content/uploads/sites/3/EchoStudio.png",
+        "score": 10.7
       },
       {
-        "id": "5d9174dd4f",
-        "title": "Anthropic’s elaborate plan to keep Wall Street at bay",
+        "id": "4c4418dd55",
+        "title": "Google says its investments in AI are driving more searches",
         "source": "The Verge",
-        "published": "2026-10-27T16:51:22+00:00",
-        "link": "https://www.theverge.com/ai-artificial-intelligence/1019470/anthropic-ipo-resist-investor-pressure-cut-corners-safety",
+        "published": "2026-10-28T20:22:26+00:00",
+        "link": "https://www.theverge.com/tech/1020811/alphabet-google-earnings-q3-2026",
+        "label": "Reklám & film",
+        "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/23951561/VRG_Illo_STK179_L_Normand_SundarPichai_Neutral.jpg?quality=90&strip=all&crop=0,0,100,100",
+        "score": 9.25
+      },
+      {
+        "id": "39134a7f03",
+        "title": "The last, best hope for space tourism just rolled onto a runway in Arizona",
+        "source": "Ars Technica",
+        "published": "2026-10-28T19:20:36+00:00",
+        "link": "https://arstechnica.com/space/2026/10/the-last-best-hope-for-space-tourism-just-rolled-onto-a-runway-in-arizona/",
+        "label": "Modellek & motion",
+        "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/VIRGIN-GALACTIC_CORDWELL_10232026_APEIRON_STILLS-SELECT-1653-1152x648.jpg",
+        "score": 6.9
+      },
+      {
+        "id": "252105af48",
+        "title": "Meta Delays Update Amid Concern About Scraping Websites for AI Training",
+        "source": "PC MAG",
+        "published": "2026-10-28T17:40:57+00:00",
+        "link": "https://www.pcmag.com/news/meta-delays-update-alarm-over-scraping-websites-for-potential-ai-training",
+        "label": "Reklám & film",
+        "image": null,
+        "score": 5.25
+      },
+      {
+        "id": "09f762edab",
+        "title": "Adam Mosseri says negativity around AI is ‘going to get worse’",
+        "source": "The Verge",
+        "published": "2026-10-28T23:05:39+00:00",
+        "link": "https://www.theverge.com/ai-artificial-intelligence/1021644/adam-mosseri-instagram-ai-negativity",
         "label": "AI artistok",
-        "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/gettyimages-2280291188.jpg?quality=90&strip=all&crop=0,0,100,100",
+        "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/gettyimages-2239561028.jpg?quality=90&strip=all&crop=0,0,100,100",
         "score": 4.5
       },
       {
-        "id": "5d5ff332a0",
-        "title": "Apple releases iOS and macOS 27.2 with new Siri AI features, new Music logo",
+        "id": "bfd6acefc1",
+        "title": "Google announces Gemini 4 Carbon, its latest frontier AI model that you can't use",
         "source": "Ars Technica",
-        "published": "2026-10-26T20:04:16+00:00",
-        "link": "https://arstechnica.com/apple/2026/10/apple-releases-ios-and-macos-27-2-with-new-siri-ai-features-new-music-logo/",
+        "published": "2026-10-28T18:47:27+00:00",
+        "link": "https://arstechnica.com/ai/2026/10/google-announces-gemini-4-carbon-its-latest-frontier-ai-model-that-you-cant-use/",
         "label": "AI artistok",
-        "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/Siri-AI-1152x648.png",
+        "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/04/gemini-general-2-1152x648.jpg",
         "score": 4.4
       },
       {
-        "id": "3b144f343e",
-        "title": "How AI-powered tech stacks can fix gaps in IT talent",
-        "source": "zdnet",
-        "published": "2026-10-27T18:58:55+00:00",
-        "link": "https://www.zdnet.com/paid-content/article/how-ai-powered-tech-stacks-can-fix-gaps-in-it-talent/",
-        "label": "AI artistok",
-        "image": "https://www.zdnet.com/wp-content/uploads/sites/3/Datto-ZDNET-Header.jpg",
-        "score": 3.7
-      },
-      {
-        "id": "3309b27871",
-        "title": "This tool can recover deleted AI chats from your phone – how it works",
-        "source": "zdnet",
-        "published": "2026-10-27T16:55:54+00:00",
-        "link": "https://www.zdnet.com/innovation/orisa-tool-recovers-deleted-local-ai-chats-android-phones/",
-        "label": "AI artistok",
-        "image": "https://www.zdnet.com/wp-content/uploads/sites/3/bluecubes3GettyImages-2279412518.jpg",
-        "score": 3.7
-      },
-      {
-        "id": "cac2f27240",
-        "title": "Former Deepmind researcher thinks AlphaGo's playbook can cure AI hallucinations",
+        "id": "2caeea9abb",
+        "title": "Google Deepmind releases Gemini 4 Carbon just two weeks after Argon with gains across the board",
         "source": "The Decoder",
-        "published": "2026-10-27T13:55:24+00:00",
-        "link": "https://the-decoder.com/former-deepmind-researcher-thinks-alphagos-playbook-can-cure-ai-hallucinations/",
+        "published": "2026-10-28T19:17:58+00:00",
+        "link": "https://the-decoder.com/google-deepmind-releases-gemini-4-carbon-just-two-weeks-after-argon-with-gains-across-the-board/",
         "label": "AI artistok",
-        "image": "https://the-decoder.com/wp-content/uploads/2026/10/metis-reasoning-07-reasoning-illustration.jpg",
+        "image": "https://the-decoder.com/wp-content/uploads/2026/10/gemini_4_argon-2.png",
+        "score": 3.7
+      },
+      {
+        "id": "b080abb910",
+        "title": "These Claude Enterprise features let you track AI ROI – what’s new",
+        "source": "zdnet",
+        "published": "2026-10-28T18:00:00+00:00",
+        "link": "https://www.zdnet.com/innovation/claude-enterprise-efficiency-cost-tracking/",
+        "label": "AI artistok",
+        "image": "https://www.zdnet.com/wp-content/uploads/sites/3/GettyImages-1700889615.jpg",
         "score": 3.7
       }
     ]
@@ -109,13 +109,13 @@
   "errors": [
     {
       "source": "CG Channel",
-      "message": "3 futás óta nem érhető el. 403 Client Error: Forbidden for url: https://www.cgchannel.com/feed/",
-      "streak": 3
+      "message": "4 futás óta nem érhető el. 403 Client Error: Forbidden for url: https://www.cgchannel.com/feed/",
+      "streak": 4
     },
     {
       "source": "Telex",
-      "message": "403 Client Error: Forbidden for url: https://telex.hu/rss",
-      "streak": 1
+      "message": "2 futás óta nem érhető el. 403 Client Error: Forbidden for url: https://telex.hu/rss",
+      "streak": 2
     }
   ],
   "sources": [
@@ -124,7 +124,7 @@
       "topic": "ai",
       "ok": true,
       "fetched": 10,
-      "kept": 2
+      "kept": 3
     },
     {
       "name": "CG Channel",
@@ -132,7 +132,7 @@
       "ok": false,
       "fetched": 0,
       "kept": 0,
-      "fail_streak": 3
+      "fail_streak": 4
     },
     {
       "name": "Ars Technica",
@@ -146,7 +146,7 @@
       "topic": "ai",
       "ok": true,
       "fetched": 10,
-      "kept": 3
+      "kept": 2
     },
     {
       "name": "Mashable",
@@ -161,21 +161,21 @@
       "ok": false,
       "fetched": 0,
       "kept": 0,
-      "fail_streak": 1
+      "fail_streak": 2
     },
     {
       "name": "zdnet",
       "topic": "ai",
       "ok": true,
       "fetched": 25,
-      "kept": 3
+      "kept": 2
     },
     {
       "name": "PC MAG",
       "topic": "ai",
       "ok": true,
       "fetched": 100,
-      "kept": 0
+      "kept": 1
     },
     {
       "name": "It's nice that",

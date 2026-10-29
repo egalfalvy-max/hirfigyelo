@@ -1,6 +1,116 @@
 {
   "items": [
     {
+      "id": "09f762edab",
+      "title": "Adam Mosseri says negativity around AI is ‘going to get worse’",
+      "source": "The Verge",
+      "published": "2026-10-28T23:05:39+00:00",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1021644/adam-mosseri-instagram-ai-negativity",
+      "label": "AI artistok",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/gettyimages-2239561028.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "score": 4.5,
+      "topic": "ai"
+    },
+    {
+      "id": "4c4418dd55",
+      "title": "Google says its investments in AI are driving more searches",
+      "source": "The Verge",
+      "published": "2026-10-28T20:22:26+00:00",
+      "link": "https://www.theverge.com/tech/1020811/alphabet-google-earnings-q3-2026",
+      "label": "Reklám & film",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/23951561/VRG_Illo_STK179_L_Normand_SundarPichai_Neutral.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "score": 9.25,
+      "topic": "ai"
+    },
+    {
+      "id": "fc7d1d71bd",
+      "title": "Google launches Gemini 4 Carbon with a ‘significant leap’ in cybersecurity",
+      "source": "The Verge",
+      "published": "2026-10-28T20:03:00+00:00",
+      "link": "https://www.theverge.com/tech/1021339/google-gemini-4-carbon-cybersecurity-frontier",
+      "label": "AI artistok",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/03/STK255_Google_Gemini_A.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "score": 12.5,
+      "topic": "ai"
+    },
+    {
+      "id": "39134a7f03",
+      "title": "The last, best hope for space tourism just rolled onto a runway in Arizona",
+      "source": "Ars Technica",
+      "published": "2026-10-28T19:20:36+00:00",
+      "link": "https://arstechnica.com/space/2026/10/the-last-best-hope-for-space-tourism-just-rolled-onto-a-runway-in-arizona/",
+      "label": "Modellek & motion",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/VIRGIN-GALACTIC_CORDWELL_10232026_APEIRON_STILLS-SELECT-1653-1152x648.jpg",
+      "score": 6.9,
+      "topic": "ai"
+    },
+    {
+      "id": "2caeea9abb",
+      "title": "Google Deepmind releases Gemini 4 Carbon just two weeks after Argon with gains across the board",
+      "source": "The Decoder",
+      "published": "2026-10-28T19:17:58+00:00",
+      "link": "https://the-decoder.com/google-deepmind-releases-gemini-4-carbon-just-two-weeks-after-argon-with-gains-across-the-board/",
+      "label": "AI artistok",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/10/gemini_4_argon-2.png",
+      "score": 3.7,
+      "topic": "ai"
+    },
+    {
+      "id": "bfd6acefc1",
+      "title": "Google announces Gemini 4 Carbon, its latest frontier AI model that you can't use",
+      "source": "Ars Technica",
+      "published": "2026-10-28T18:47:27+00:00",
+      "link": "https://arstechnica.com/ai/2026/10/google-announces-gemini-4-carbon-its-latest-frontier-ai-model-that-you-cant-use/",
+      "label": "AI artistok",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/04/gemini-general-2-1152x648.jpg",
+      "score": 4.4,
+      "topic": "ai"
+    },
+    {
+      "id": "b080abb910",
+      "title": "These Claude Enterprise features let you track AI ROI – what’s new",
+      "source": "zdnet",
+      "published": "2026-10-28T18:00:00+00:00",
+      "link": "https://www.zdnet.com/innovation/claude-enterprise-efficiency-cost-tracking/",
+      "label": "AI artistok",
+      "image": "https://www.zdnet.com/wp-content/uploads/sites/3/GettyImages-1700889615.jpg",
+      "score": 3.7,
+      "topic": "ai"
+    },
+    {
+      "id": "252105af48",
+      "title": "Meta Delays Update Amid Concern About Scraping Websites for AI Training",
+      "source": "PC MAG",
+      "published": "2026-10-28T17:40:57+00:00",
+      "link": "https://www.pcmag.com/news/meta-delays-update-alarm-over-scraping-websites-for-potential-ai-training",
+      "label": "Reklám & film",
+      "image": null,
+      "score": 5.25,
+      "topic": "ai"
+    },
+    {
+      "id": "becd12354f",
+      "title": "Google opens Android development to third-party AI agents and unveils new Gemini APIs",
+      "source": "The Decoder",
+      "published": "2026-10-28T16:59:59+00:00",
+      "link": "https://the-decoder.com/google-opens-android-development-to-third-party-ai-agents-and-unveils-new-gemini-apis/",
+      "label": "AI artistok",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/05/Android-Robot-Logo-Background-Nano-Banana-Pro.jpg",
+      "score": 15.7,
+      "topic": "ai"
+    },
+    {
+      "id": "ea9c11cf4a",
+      "title": "Amazon’s new Echo Studio gives Alexa+ an AI camera to see inside your home",
+      "source": "zdnet",
+      "published": "2026-10-28T15:26:34+00:00",
+      "link": "https://www.zdnet.com/home-and-office/amazon-echo-studio-home-camera-2026-privacy-concerns/",
+      "label": "AI artistok",
+      "image": "https://www.zdnet.com/wp-content/uploads/sites/3/EchoStudio.png",
+      "score": 10.7,
+      "topic": "ai"
+    },
+    {
       "id": "3b144f343e",
       "title": "How AI-powered tech stacks can fix gaps in IT talent",
       "source": "zdnet",
