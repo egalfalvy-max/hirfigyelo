@@ -1,48 +1,18 @@
 {
-  "generated_at": "2026-10-29T05:34:09.572004+00:00",
+  "generated_at": "2026-10-30T05:33:56.978228+00:00",
   "window_hours": 36,
   "scoring": "kulcsszavas",
   "topics": {
     "ai": [
       {
-        "id": "becd12354f",
-        "title": "Google opens Android development to third-party AI agents and unveils new Gemini APIs",
+        "id": "ec5ac67c76",
+        "title": "Google's AI search problem finally shows up in the earnings report, some investors believe",
         "source": "The Decoder",
-        "published": "2026-10-28T16:59:59+00:00",
-        "link": "https://the-decoder.com/google-opens-android-development-to-third-party-ai-agents-and-unveils-new-gemini-apis/",
-        "label": "AI artistok",
-        "image": "https://the-decoder.com/wp-content/uploads/2026/05/Android-Robot-Logo-Background-Nano-Banana-Pro.jpg",
-        "score": 15.7
-      },
-      {
-        "id": "fc7d1d71bd",
-        "title": "Google launches Gemini 4 Carbon with a ‘significant leap’ in cybersecurity",
-        "source": "The Verge",
-        "published": "2026-10-28T20:03:00+00:00",
-        "link": "https://www.theverge.com/tech/1021339/google-gemini-4-carbon-cybersecurity-frontier",
-        "label": "AI artistok",
-        "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/03/STK255_Google_Gemini_A.jpg?quality=90&strip=all&crop=0,0,100,100",
-        "score": 12.5
-      },
-      {
-        "id": "ea9c11cf4a",
-        "title": "Amazon’s new Echo Studio gives Alexa+ an AI camera to see inside your home",
-        "source": "zdnet",
-        "published": "2026-10-28T15:26:34+00:00",
-        "link": "https://www.zdnet.com/home-and-office/amazon-echo-studio-home-camera-2026-privacy-concerns/",
-        "label": "AI artistok",
-        "image": "https://www.zdnet.com/wp-content/uploads/sites/3/EchoStudio.png",
-        "score": 10.7
-      },
-      {
-        "id": "4c4418dd55",
-        "title": "Google says its investments in AI are driving more searches",
-        "source": "The Verge",
-        "published": "2026-10-28T20:22:26+00:00",
-        "link": "https://www.theverge.com/tech/1020811/alphabet-google-earnings-q3-2026",
+        "published": "2026-10-29T10:16:34+00:00",
+        "link": "https://the-decoder.com/googles-ai-search-problem-finally-shows-up-in-the-earnings-report-some-investors-believe/",
         "label": "Reklám & film",
-        "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/23951561/VRG_Illo_STK179_L_Normand_SundarPichai_Neutral.jpg?quality=90&strip=all&crop=0,0,100,100",
-        "score": 9.25
+        "image": "https://the-decoder.com/wp-content/uploads/2026/06/google_logo_wall-2.png",
+        "score": 8.45
       },
       {
         "id": "39134a7f03",
@@ -55,6 +25,16 @@
         "score": 6.9
       },
       {
+        "id": "aa0a9989a5",
+        "title": "AI Built a Photoshop Clone in a Day. I Asked Experts What Happens Next",
+        "source": "PC MAG",
+        "published": "2026-10-29T12:00:00+00:00",
+        "link": "https://www.pcmag.com/news/ai-built-a-photoshop-clone-in-a-day-i-asked-experts-what-happens-next",
+        "label": "Modellek & motion",
+        "image": null,
+        "score": 6.0
+      },
+      {
         "id": "252105af48",
         "title": "Meta Delays Update Amid Concern About Scraping Websites for AI Training",
         "source": "PC MAG",
@@ -65,13 +45,23 @@
         "score": 5.25
       },
       {
-        "id": "09f762edab",
-        "title": "Adam Mosseri says negativity around AI is ‘going to get worse’",
+        "id": "fd539153f0",
+        "title": "Reddit’s CEO says Google’s AI Mode ‘does not drive traffic’",
         "source": "The Verge",
-        "published": "2026-10-28T23:05:39+00:00",
-        "link": "https://www.theverge.com/ai-artificial-intelligence/1021644/adam-mosseri-instagram-ai-negativity",
+        "published": "2026-10-29T22:19:32+00:00",
+        "link": "https://www.theverge.com/tech/1022848/reddit-ceo-google-ai-mode-traffic",
         "label": "AI artistok",
-        "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/gettyimages-2239561028.jpg?quality=90&strip=all&crop=0,0,100,100",
+        "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/08/STK115_Reddit_01.jpg.webp?quality=90&strip=all&crop=0,0,100,100",
+        "score": 4.5
+      },
+      {
+        "id": "2a1a8a7c88",
+        "title": "You can generate and edit Google Docs files directly in Gemini chats now",
+        "source": "The Verge",
+        "published": "2026-10-29T18:45:31+00:00",
+        "link": "https://www.theverge.com/ai-artificial-intelligence/1022519/google-gemini-file-editing-documents-pdfs",
+        "label": "AI artistok",
+        "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/STK255_Google_Gemini_B_474198.jpg?quality=90&strip=all&crop=0,0,100,100",
         "score": 4.5
       },
       {
@@ -85,23 +75,33 @@
         "score": 4.4
       },
       {
-        "id": "2caeea9abb",
-        "title": "Google Deepmind releases Gemini 4 Carbon just two weeks after Argon with gains across the board",
-        "source": "The Decoder",
-        "published": "2026-10-28T19:17:58+00:00",
-        "link": "https://the-decoder.com/google-deepmind-releases-gemini-4-carbon-just-two-weeks-after-argon-with-gains-across-the-board/",
+        "id": "e24a042574",
+        "title": "Claude's New Smart Reports Tell Bosses When Workers Are 'Off-Topic'",
+        "source": "Mashable",
+        "published": "2026-10-29T03:04:35+00:00",
+        "link": "https://in.mashable.com/tech/115476/claudes-new-smart-reports-tell-bosses-when-workers-are-off-topic",
         "label": "AI artistok",
-        "image": "https://the-decoder.com/wp-content/uploads/2026/10/gemini_4_argon-2.png",
-        "score": 3.7
+        "image": "https://sm.mashable.com/mashable_in/news/c/claudes-ne/claudes-new-smart-reports-tell-bosses-when-workers-are-off-t_zd1g.jpg",
+        "score": 4.1
       },
       {
-        "id": "b080abb910",
-        "title": "These Claude Enterprise features let you track AI ROI – what’s new",
-        "source": "zdnet",
-        "published": "2026-10-28T18:00:00+00:00",
-        "link": "https://www.zdnet.com/innovation/claude-enterprise-efficiency-cost-tracking/",
+        "id": "b3107a83f8",
+        "title": "Meta Launches Waddle World, A Tamagotchi-Style AI Journal",
+        "source": "Mashable",
+        "published": "2026-10-28T21:33:36+00:00",
+        "link": "https://in.mashable.com/tech/115478/meta-launches-waddle-world-a-tamagotchi-style-ai-journal",
         "label": "AI artistok",
-        "image": "https://www.zdnet.com/wp-content/uploads/sites/3/GettyImages-1700889615.jpg",
+        "image": "https://sm.mashable.com/mashable_in/article/m/meta-launc/meta-launches-waddle-world-a-tamagotchi-style-ai-journal_z9v4.jpg",
+        "score": 4.1
+      },
+      {
+        "id": "6db7353038",
+        "title": "OpenAI doubles usage limits on Pro plans as competition with Anthropic heats up",
+        "source": "The Decoder",
+        "published": "2026-10-29T20:01:27+00:00",
+        "link": "https://the-decoder.com/openai-doubles-usage-limits-on-pro-plans-as-competition-with-anthropic-heats-up/",
+        "label": "AI artistok",
+        "image": "https://the-decoder.com/wp-content/uploads/2026/07/openai_red_Logo.png",
         "score": 3.7
       }
     ]
@@ -109,13 +109,13 @@
   "errors": [
     {
       "source": "CG Channel",
-      "message": "4 futás óta nem érhető el. 403 Client Error: Forbidden for url: https://www.cgchannel.com/feed/",
-      "streak": 4
+      "message": "5 futás óta nem érhető el. 403 Client Error: Forbidden for url: https://www.cgchannel.com/feed/",
+      "streak": 5
     },
     {
       "source": "Telex",
-      "message": "2 futás óta nem érhető el. 403 Client Error: Forbidden for url: https://telex.hu/rss",
-      "streak": 2
+      "message": "3 futás óta nem érhető el. 403 Client Error: Forbidden for url: https://telex.hu/rss",
+      "streak": 3
     }
   ],
   "sources": [
@@ -124,7 +124,7 @@
       "topic": "ai",
       "ok": true,
       "fetched": 10,
-      "kept": 3
+      "kept": 2
     },
     {
       "name": "CG Channel",
@@ -132,7 +132,7 @@
       "ok": false,
       "fetched": 0,
       "kept": 0,
-      "fail_streak": 4
+      "fail_streak": 5
     },
     {
       "name": "Ars Technica",
@@ -153,7 +153,7 @@
       "topic": "ai",
       "ok": true,
       "fetched": 40,
-      "kept": 0
+      "kept": 2
     },
     {
       "name": "Telex",
@@ -161,21 +161,21 @@
       "ok": false,
       "fetched": 0,
       "kept": 0,
-      "fail_streak": 2
+      "fail_streak": 3
     },
     {
       "name": "zdnet",
       "topic": "ai",
       "ok": true,
       "fetched": 25,
-      "kept": 2
+      "kept": 0
     },
     {
       "name": "PC MAG",
       "topic": "ai",
       "ok": true,
       "fetched": 100,
-      "kept": 1
+      "kept": 2
     },
     {
       "name": "It's nice that",
