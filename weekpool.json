@@ -1,6 +1,116 @@
 {
   "items": [
     {
+      "id": "e6a83342c0",
+      "title": "Sam Altman says it’s better for RAM to be in a data center than on your desk",
+      "source": "The Verge",
+      "published": "2026-10-30T20:48:43+00:00",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1023820/sam-altman-ram-shortage-cloud-servers",
+      "label": "AI artistok",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/gettyimages-1778705436.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "score": 7.5,
+      "topic": "ai"
+    },
+    {
+      "id": "25a528e218",
+      "title": "The biggest names in AI are backing a new way to opt out of scraping",
+      "source": "The Verge",
+      "published": "2026-10-30T20:26:10+00:00",
+      "link": "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out",
+      "label": "AI artistok",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25330660/STK414_AI_CHATBOT_H.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "score": 4.5,
+      "topic": "ai"
+    },
+    {
+      "id": "9e1171f2fe",
+      "title": "A Claude model autonomously chose a gene therapy and operated on a mouse brain with no human decision-making",
+      "source": "The Decoder",
+      "published": "2026-10-30T19:42:59+00:00",
+      "link": "https://the-decoder.com/a-claude-model-autonomously-chose-a-gene-therapy-and-operated-on-a-mouse-brain-with-no-human-decision-making/",
+      "label": "AI artistok",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/10/claude_mouse_op.png",
+      "score": 3.7,
+      "topic": "ai"
+    },
+    {
+      "id": "538ea1326a",
+      "title": "Basically no one is using AI agents for their DoorDash orders",
+      "source": "Ars Technica",
+      "published": "2026-10-30T19:30:52+00:00",
+      "link": "https://arstechnica.com/ai/2026/10/doordash-says-outside-ai-agents-have-only-led-to-hundreds-of-orders-so-far/",
+      "label": "AI artistok",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/GettyImages-2301817894-1024x648.jpg",
+      "score": 4.4,
+      "topic": "ai"
+    },
+    {
+      "id": "c4dbacf8aa",
+      "title": "Google’s satellite AI server transmits its first response to Earth",
+      "source": "The Verge",
+      "published": "2026-10-30T18:21:38+00:00",
+      "link": "https://www.theverge.com/tech/1023528/google-project-suncatcher-ai-satellite-transmission",
+      "label": "Modellek & motion",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/project-suncatcher-google.png?quality=90&strip=all&crop=0,0,100,100",
+      "score": 10.0,
+      "topic": "ai"
+    },
+    {
+      "id": "df5d46f334",
+      "title": "OpenAI sets new behavioral guidelines for AI models that have already proven hard to control",
+      "source": "The Decoder",
+      "published": "2026-10-30T17:44:59+00:00",
+      "link": "https://the-decoder.com/openai-sets-new-behavioral-guidelines-for-ai-models-that-have-already-proven-hard-to-control/",
+      "label": "AI artistok",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/10/openai.png",
+      "score": 6.7,
+      "topic": "ai"
+    },
+    {
+      "id": "0de3f9697e",
+      "title": "Starbucks wants to use AI to show you a ‘personalized digital menu’ at the drive-thru",
+      "source": "The Verge",
+      "published": "2026-10-30T17:38:04+00:00",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1023440/starbucks-ai-personalized-menu-drive-thru",
+      "label": "AI artistok",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/gettyimages-2268681559.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "score": 4.5,
+      "topic": "ai"
+    },
+    {
+      "id": "512e0ebb6c",
+      "title": "Google's AI Mode doesn't drive traffic \"for anybody,\" Reddit CEO Huffman warns the entire web",
+      "source": "The Decoder",
+      "published": "2026-10-30T17:15:24+00:00",
+      "link": "https://the-decoder.com/googles-ai-mode-doesnt-drive-traffic-for-anybody-reddit-ceo-huffman-warns-the-entire-web/",
+      "label": "AI artistok",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/10/reddit_logo_wall.png",
+      "score": 3.7,
+      "topic": "ai"
+    },
+    {
+      "id": "78334476b8",
+      "title": "Do you need AI agent liability insurance? What to know before you sign up",
+      "source": "zdnet",
+      "published": "2026-10-30T15:01:10+00:00",
+      "link": "https://www.zdnet.com/innovation/ai-agent-liability-insurance-business/",
+      "label": "AI artistok",
+      "image": "https://www.zdnet.com/wp-content/uploads/sites/3/yellowumbrella-GettyImages-1468502046.jpg",
+      "score": 3.7,
+      "topic": "ai"
+    },
+    {
+      "id": "12d807cd2c",
+      "title": "Open-weight model GLM 5.3 built full Firefox exploit chains with zero human input in under 48 hours",
+      "source": "The Decoder",
+      "published": "2026-10-30T12:22:18+00:00",
+      "link": "https://the-decoder.com/open-weight-model-glm-5-3-built-full-firefox-exploit-chains-with-zero-human-input-in-under-48-hours/",
+      "label": "AI artistok",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/10/firefox_kraken.png",
+      "score": 3.7,
+      "topic": "ai"
+    },
+    {
       "id": "fd539153f0",
       "title": "Reddit’s CEO says Google’s AI Mode ‘does not drive traffic’",
       "source": "The Verge",
@@ -559,83 +669,6 @@
       "label": "AI artistok",
       "image": "https://the-decoder.com/wp-content/uploads/2026/08/openai-scientific-software-nano-banana-pro.jpg",
       "score": 3.7,
-      "topic": "ai"
-    },
-    {
-      "id": "1437b0ebe8",
-      "title": "Canva’s first AI image model plans designs before generating them",
-      "source": "The Verge",
-      "published": "2026-10-22T21:51:25+00:00",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model",
-      "label": "Modellek & motion",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/04-CRAFT-COLLAGE.png?quality=90&strip=all&crop=0,0,100,100",
-      "score": 15.0,
-      "topic": "ai"
-    },
-    {
-      "id": "5cabb389fd",
-      "title": "Recursive shows first result of its AI-driven research process with Flint",
-      "source": "The Decoder",
-      "published": "2026-10-22T14:40:16+00:00",
-      "link": "https://the-decoder.com/recursive-shows-first-result-of-its-ai-driven-research-process-with-flint/",
-      "label": "Modellek & motion",
-      "image": "https://the-decoder.com/wp-content/uploads/2026/10/recursive-flint-header-1.jpg",
-      "score": 9.2,
-      "topic": "ai"
-    },
-    {
-      "id": "ff1a4a80b1",
-      "title": "Can Free AI Clones Really Replace Photoshop? I Put LightCraft and PhotoCraft to the Test",
-      "source": "PC MAG",
-      "published": "2026-10-22T13:07:48+00:00",
-      "link": "https://www.pcmag.com/opinions/can-free-ai-clones-really-replace-photoshop-i-put-lightcraft-and-photocraft",
-      "label": "Modellek & motion",
-      "image": null,
-      "score": 22.6,
-      "topic": "ai"
-    },
-    {
-      "id": "90884af215",
-      "title": "I Asked Gemini to Run My Googlebook. It Told Me to Do It Myself",
-      "source": "PC MAG",
-      "published": "2026-10-22T12:48:11+00:00",
-      "link": "https://www.pcmag.com/opinions/i-asked-gemini-to-run-my-googlebook-it-told-me-to-do-it-myself",
-      "label": "Modellek & motion",
-      "image": null,
-      "score": 9.6,
-      "topic": "ai"
-    },
-    {
-      "id": "9b2c96aca5",
-      "title": "An AI agent in \"Skynet mode\" hijacks unprotected language models to launch self-sustaining cyberattacks",
-      "source": "The Decoder",
-      "published": "2026-10-22T11:30:56+00:00",
-      "link": "https://the-decoder.com/an-ai-agent-in-skynet-mode-hijacks-unprotected-language-models-to-launch-self-sustaining-cyberattacks/",
-      "label": "Modellek & motion",
-      "image": "https://the-decoder.com/wp-content/uploads/2026/10/cybersecurity_kraken-1.png",
-      "score": 9.2,
-      "topic": "ai"
-    },
-    {
-      "id": "b09d743ebd",
-      "title": "Unlike Amazon, Walmart Wants Your AI Agent to Shop for You",
-      "source": "PC MAG",
-      "published": "2026-10-22T09:51:01+00:00",
-      "link": "https://www.pcmag.com/news/unlike-amazon-walmart-wants-your-ai-agent-to-shop-for-you",
-      "label": "Modellek & motion",
-      "image": null,
-      "score": 9.6,
-      "topic": "ai"
-    },
-    {
-      "id": "fcaae5b064",
-      "title": "Anthropic takes on Grok Bot, Meta's Muse, and OpenAI's Dots with its always-on agent \"Claude Duet\"",
-      "source": "The Decoder",
-      "published": "2026-10-22T08:35:22+00:00",
-      "link": "https://the-decoder.com/anthropic-takes-on-grok-bot-metas-muse-and-openais-dots-with-its-always-on-agent-claude-duet/",
-      "label": "Modellek & motion",
-      "image": "https://the-decoder.com/wp-content/uploads/2026/10/Claude-Duet.png",
-      "score": 6.2,
       "topic": "ai"
     }
   ]

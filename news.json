@@ -1,107 +1,107 @@
 {
-  "generated_at": "2026-10-30T05:33:56.978228+00:00",
+  "generated_at": "2026-10-31T05:29:14.222440+00:00",
   "window_hours": 36,
   "scoring": "kulcsszavas",
   "topics": {
     "ai": [
       {
-        "id": "ec5ac67c76",
-        "title": "Google's AI search problem finally shows up in the earnings report, some investors believe",
+        "id": "c4dbacf8aa",
+        "title": "Google’s satellite AI server transmits its first response to Earth",
+        "source": "The Verge",
+        "published": "2026-10-30T18:21:38+00:00",
+        "link": "https://www.theverge.com/tech/1023528/google-project-suncatcher-ai-satellite-transmission",
+        "label": "Modellek & motion",
+        "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/project-suncatcher-google.png?quality=90&strip=all&crop=0,0,100,100",
+        "score": 10.0
+      },
+      {
+        "id": "e6a83342c0",
+        "title": "Sam Altman says it’s better for RAM to be in a data center than on your desk",
+        "source": "The Verge",
+        "published": "2026-10-30T20:48:43+00:00",
+        "link": "https://www.theverge.com/ai-artificial-intelligence/1023820/sam-altman-ram-shortage-cloud-servers",
+        "label": "AI artistok",
+        "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/gettyimages-1778705436.jpg?quality=90&strip=all&crop=0,0,100,100",
+        "score": 7.5
+      },
+      {
+        "id": "df5d46f334",
+        "title": "OpenAI sets new behavioral guidelines for AI models that have already proven hard to control",
         "source": "The Decoder",
-        "published": "2026-10-29T10:16:34+00:00",
-        "link": "https://the-decoder.com/googles-ai-search-problem-finally-shows-up-in-the-earnings-report-some-investors-believe/",
-        "label": "Reklám & film",
-        "image": "https://the-decoder.com/wp-content/uploads/2026/06/google_logo_wall-2.png",
-        "score": 8.45
-      },
-      {
-        "id": "39134a7f03",
-        "title": "The last, best hope for space tourism just rolled onto a runway in Arizona",
-        "source": "Ars Technica",
-        "published": "2026-10-28T19:20:36+00:00",
-        "link": "https://arstechnica.com/space/2026/10/the-last-best-hope-for-space-tourism-just-rolled-onto-a-runway-in-arizona/",
-        "label": "Modellek & motion",
-        "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/VIRGIN-GALACTIC_CORDWELL_10232026_APEIRON_STILLS-SELECT-1653-1152x648.jpg",
-        "score": 6.9
-      },
-      {
-        "id": "aa0a9989a5",
-        "title": "AI Built a Photoshop Clone in a Day. I Asked Experts What Happens Next",
-        "source": "PC MAG",
-        "published": "2026-10-29T12:00:00+00:00",
-        "link": "https://www.pcmag.com/news/ai-built-a-photoshop-clone-in-a-day-i-asked-experts-what-happens-next",
-        "label": "Modellek & motion",
-        "image": null,
-        "score": 6.0
-      },
-      {
-        "id": "252105af48",
-        "title": "Meta Delays Update Amid Concern About Scraping Websites for AI Training",
-        "source": "PC MAG",
-        "published": "2026-10-28T17:40:57+00:00",
-        "link": "https://www.pcmag.com/news/meta-delays-update-alarm-over-scraping-websites-for-potential-ai-training",
-        "label": "Reklám & film",
-        "image": null,
-        "score": 5.25
-      },
-      {
-        "id": "fd539153f0",
-        "title": "Reddit’s CEO says Google’s AI Mode ‘does not drive traffic’",
-        "source": "The Verge",
-        "published": "2026-10-29T22:19:32+00:00",
-        "link": "https://www.theverge.com/tech/1022848/reddit-ceo-google-ai-mode-traffic",
+        "published": "2026-10-30T17:44:59+00:00",
+        "link": "https://the-decoder.com/openai-sets-new-behavioral-guidelines-for-ai-models-that-have-already-proven-hard-to-control/",
         "label": "AI artistok",
-        "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/08/STK115_Reddit_01.jpg.webp?quality=90&strip=all&crop=0,0,100,100",
+        "image": "https://the-decoder.com/wp-content/uploads/2026/10/openai.png",
+        "score": 6.7
+      },
+      {
+        "id": "25a528e218",
+        "title": "The biggest names in AI are backing a new way to opt out of scraping",
+        "source": "The Verge",
+        "published": "2026-10-30T20:26:10+00:00",
+        "link": "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out",
+        "label": "AI artistok",
+        "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25330660/STK414_AI_CHATBOT_H.jpg?quality=90&strip=all&crop=0,0,100,100",
         "score": 4.5
       },
       {
-        "id": "2a1a8a7c88",
-        "title": "You can generate and edit Google Docs files directly in Gemini chats now",
+        "id": "0de3f9697e",
+        "title": "Starbucks wants to use AI to show you a ‘personalized digital menu’ at the drive-thru",
         "source": "The Verge",
-        "published": "2026-10-29T18:45:31+00:00",
-        "link": "https://www.theverge.com/ai-artificial-intelligence/1022519/google-gemini-file-editing-documents-pdfs",
+        "published": "2026-10-30T17:38:04+00:00",
+        "link": "https://www.theverge.com/ai-artificial-intelligence/1023440/starbucks-ai-personalized-menu-drive-thru",
         "label": "AI artistok",
-        "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/STK255_Google_Gemini_B_474198.jpg?quality=90&strip=all&crop=0,0,100,100",
+        "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/gettyimages-2268681559.jpg?quality=90&strip=all&crop=0,0,100,100",
         "score": 4.5
       },
       {
-        "id": "bfd6acefc1",
-        "title": "Google announces Gemini 4 Carbon, its latest frontier AI model that you can't use",
+        "id": "538ea1326a",
+        "title": "Basically no one is using AI agents for their DoorDash orders",
         "source": "Ars Technica",
-        "published": "2026-10-28T18:47:27+00:00",
-        "link": "https://arstechnica.com/ai/2026/10/google-announces-gemini-4-carbon-its-latest-frontier-ai-model-that-you-cant-use/",
+        "published": "2026-10-30T19:30:52+00:00",
+        "link": "https://arstechnica.com/ai/2026/10/doordash-says-outside-ai-agents-have-only-led-to-hundreds-of-orders-so-far/",
         "label": "AI artistok",
-        "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/04/gemini-general-2-1152x648.jpg",
+        "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/GettyImages-2301817894-1024x648.jpg",
         "score": 4.4
       },
       {
-        "id": "e24a042574",
-        "title": "Claude's New Smart Reports Tell Bosses When Workers Are 'Off-Topic'",
-        "source": "Mashable",
-        "published": "2026-10-29T03:04:35+00:00",
-        "link": "https://in.mashable.com/tech/115476/claudes-new-smart-reports-tell-bosses-when-workers-are-off-topic",
-        "label": "AI artistok",
-        "image": "https://sm.mashable.com/mashable_in/news/c/claudes-ne/claudes-new-smart-reports-tell-bosses-when-workers-are-off-t_zd1g.jpg",
-        "score": 4.1
-      },
-      {
-        "id": "b3107a83f8",
-        "title": "Meta Launches Waddle World, A Tamagotchi-Style AI Journal",
-        "source": "Mashable",
-        "published": "2026-10-28T21:33:36+00:00",
-        "link": "https://in.mashable.com/tech/115478/meta-launches-waddle-world-a-tamagotchi-style-ai-journal",
-        "label": "AI artistok",
-        "image": "https://sm.mashable.com/mashable_in/article/m/meta-launc/meta-launches-waddle-world-a-tamagotchi-style-ai-journal_z9v4.jpg",
-        "score": 4.1
-      },
-      {
-        "id": "6db7353038",
-        "title": "OpenAI doubles usage limits on Pro plans as competition with Anthropic heats up",
+        "id": "9e1171f2fe",
+        "title": "A Claude model autonomously chose a gene therapy and operated on a mouse brain with no human decision-making",
         "source": "The Decoder",
-        "published": "2026-10-29T20:01:27+00:00",
-        "link": "https://the-decoder.com/openai-doubles-usage-limits-on-pro-plans-as-competition-with-anthropic-heats-up/",
+        "published": "2026-10-30T19:42:59+00:00",
+        "link": "https://the-decoder.com/a-claude-model-autonomously-chose-a-gene-therapy-and-operated-on-a-mouse-brain-with-no-human-decision-making/",
         "label": "AI artistok",
-        "image": "https://the-decoder.com/wp-content/uploads/2026/07/openai_red_Logo.png",
+        "image": "https://the-decoder.com/wp-content/uploads/2026/10/claude_mouse_op.png",
+        "score": 3.7
+      },
+      {
+        "id": "512e0ebb6c",
+        "title": "Google's AI Mode doesn't drive traffic \"for anybody,\" Reddit CEO Huffman warns the entire web",
+        "source": "The Decoder",
+        "published": "2026-10-30T17:15:24+00:00",
+        "link": "https://the-decoder.com/googles-ai-mode-doesnt-drive-traffic-for-anybody-reddit-ceo-huffman-warns-the-entire-web/",
+        "label": "AI artistok",
+        "image": "https://the-decoder.com/wp-content/uploads/2026/10/reddit_logo_wall.png",
+        "score": 3.7
+      },
+      {
+        "id": "78334476b8",
+        "title": "Do you need AI agent liability insurance? What to know before you sign up",
+        "source": "zdnet",
+        "published": "2026-10-30T15:01:10+00:00",
+        "link": "https://www.zdnet.com/innovation/ai-agent-liability-insurance-business/",
+        "label": "AI artistok",
+        "image": "https://www.zdnet.com/wp-content/uploads/sites/3/yellowumbrella-GettyImages-1468502046.jpg",
+        "score": 3.7
+      },
+      {
+        "id": "12d807cd2c",
+        "title": "Open-weight model GLM 5.3 built full Firefox exploit chains with zero human input in under 48 hours",
+        "source": "The Decoder",
+        "published": "2026-10-30T12:22:18+00:00",
+        "link": "https://the-decoder.com/open-weight-model-glm-5-3-built-full-firefox-exploit-chains-with-zero-human-input-in-under-48-hours/",
+        "label": "AI artistok",
+        "image": "https://the-decoder.com/wp-content/uploads/2026/10/firefox_kraken.png",
         "score": 3.7
       }
     ]
@@ -109,13 +109,13 @@
   "errors": [
     {
       "source": "CG Channel",
-      "message": "5 futás óta nem érhető el. 403 Client Error: Forbidden for url: https://www.cgchannel.com/feed/",
-      "streak": 5
+      "message": "6 futás óta nem érhető el. 403 Client Error: Forbidden for url: https://www.cgchannel.com/feed/",
+      "streak": 6
     },
     {
       "source": "Telex",
-      "message": "3 futás óta nem érhető el. 403 Client Error: Forbidden for url: https://telex.hu/rss",
-      "streak": 3
+      "message": "4 futás óta nem érhető el. 403 Client Error: Forbidden for url: https://telex.hu/rss",
+      "streak": 4
     }
   ],
   "sources": [
@@ -124,7 +124,7 @@
       "topic": "ai",
       "ok": true,
       "fetched": 10,
-      "kept": 2
+      "kept": 4
     },
     {
       "name": "CG Channel",
@@ -132,28 +132,28 @@
       "ok": false,
       "fetched": 0,
       "kept": 0,
-      "fail_streak": 5
+      "fail_streak": 6
     },
     {
       "name": "Ars Technica",
       "topic": "ai",
       "ok": true,
       "fetched": 20,
-      "kept": 2
+      "kept": 1
     },
     {
       "name": "The Decoder",
       "topic": "ai",
       "ok": true,
       "fetched": 10,
-      "kept": 2
+      "kept": 4
     },
     {
       "name": "Mashable",
       "topic": "ai",
       "ok": true,
       "fetched": 40,
-      "kept": 2
+      "kept": 0
     },
     {
       "name": "Telex",
@@ -161,21 +161,21 @@
       "ok": false,
       "fetched": 0,
       "kept": 0,
-      "fail_streak": 3
+      "fail_streak": 4
     },
     {
       "name": "zdnet",
       "topic": "ai",
       "ok": true,
       "fetched": 25,
-      "kept": 0
+      "kept": 1
     },
     {
       "name": "PC MAG",
       "topic": "ai",
       "ok": true,
       "fetched": 100,
-      "kept": 2
+      "kept": 0
     },
     {
       "name": "It's nice that",
