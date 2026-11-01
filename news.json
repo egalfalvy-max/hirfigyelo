@@ -1,28 +1,28 @@
 {
-  "generated_at": "2026-10-31T05:29:14.222440+00:00",
+  "generated_at": "2026-11-01T05:36:21.925299+00:00",
   "window_hours": 36,
   "scoring": "kulcsszavas",
   "topics": {
     "ai": [
       {
-        "id": "c4dbacf8aa",
-        "title": "Google’s satellite AI server transmits its first response to Earth",
-        "source": "The Verge",
-        "published": "2026-10-30T18:21:38+00:00",
-        "link": "https://www.theverge.com/tech/1023528/google-project-suncatcher-ai-satellite-transmission",
+        "id": "d66aef25de",
+        "title": "Anthropic's watermark rollout leaves a loophole on two older Claude models",
+        "source": "The Decoder",
+        "published": "2026-10-31T19:20:55+00:00",
+        "link": "https://the-decoder.com/anthropics-watermark-rollout-leaves-a-loophole-on-two-older-claude-models/",
         "label": "Modellek & motion",
-        "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/project-suncatcher-google.png?quality=90&strip=all&crop=0,0,100,100",
-        "score": 10.0
+        "image": "https://the-decoder.com/wp-content/uploads/2026/08/Claude-Watermark.png",
+        "score": 10.2
       },
       {
-        "id": "e6a83342c0",
-        "title": "Sam Altman says it’s better for RAM to be in a data center than on your desk",
-        "source": "The Verge",
-        "published": "2026-10-30T20:48:43+00:00",
-        "link": "https://www.theverge.com/ai-artificial-intelligence/1023820/sam-altman-ram-shortage-cloud-servers",
-        "label": "AI artistok",
-        "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/gettyimages-1778705436.jpg?quality=90&strip=all&crop=0,0,100,100",
-        "score": 7.5
+        "id": "0bee424b33",
+        "title": "Spotify Wants to Let Subscribers Remix Songs With AI, for a Price",
+        "source": "PC MAG",
+        "published": "2026-10-31T17:04:49+00:00",
+        "link": "https://www.pcmag.com/news/spotify-eyes-early-2027-release-for-ai-remix-tool",
+        "label": "Reklám & film",
+        "image": null,
+        "score": 7.25
       },
       {
         "id": "df5d46f334",
@@ -33,26 +33,6 @@
         "label": "AI artistok",
         "image": "https://the-decoder.com/wp-content/uploads/2026/10/openai.png",
         "score": 6.7
-      },
-      {
-        "id": "25a528e218",
-        "title": "The biggest names in AI are backing a new way to opt out of scraping",
-        "source": "The Verge",
-        "published": "2026-10-30T20:26:10+00:00",
-        "link": "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out",
-        "label": "AI artistok",
-        "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25330660/STK414_AI_CHATBOT_H.jpg?quality=90&strip=all&crop=0,0,100,100",
-        "score": 4.5
-      },
-      {
-        "id": "0de3f9697e",
-        "title": "Starbucks wants to use AI to show you a ‘personalized digital menu’ at the drive-thru",
-        "source": "The Verge",
-        "published": "2026-10-30T17:38:04+00:00",
-        "link": "https://www.theverge.com/ai-artificial-intelligence/1023440/starbucks-ai-personalized-menu-drive-thru",
-        "label": "AI artistok",
-        "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/gettyimages-2268681559.jpg?quality=90&strip=all&crop=0,0,100,100",
-        "score": 4.5
       },
       {
         "id": "538ea1326a",
@@ -75,47 +55,27 @@
         "score": 3.7
       },
       {
-        "id": "512e0ebb6c",
-        "title": "Google's AI Mode doesn't drive traffic \"for anybody,\" Reddit CEO Huffman warns the entire web",
-        "source": "The Decoder",
-        "published": "2026-10-30T17:15:24+00:00",
-        "link": "https://the-decoder.com/googles-ai-mode-doesnt-drive-traffic-for-anybody-reddit-ceo-huffman-warns-the-entire-web/",
+        "id": "c64aa6c78a",
+        "title": "Google Scores Big Win in Quest to Put Data Centers in Space",
+        "source": "PC MAG",
+        "published": "2026-10-31T12:52:44+00:00",
+        "link": "https://www.pcmag.com/news/google-scores-big-win-in-quest-to-put-data-centers-in-space",
         "label": "AI artistok",
-        "image": "https://the-decoder.com/wp-content/uploads/2026/10/reddit_logo_wall.png",
-        "score": 3.7
-      },
-      {
-        "id": "78334476b8",
-        "title": "Do you need AI agent liability insurance? What to know before you sign up",
-        "source": "zdnet",
-        "published": "2026-10-30T15:01:10+00:00",
-        "link": "https://www.zdnet.com/innovation/ai-agent-liability-insurance-business/",
-        "label": "AI artistok",
-        "image": "https://www.zdnet.com/wp-content/uploads/sites/3/yellowumbrella-GettyImages-1468502046.jpg",
-        "score": 3.7
-      },
-      {
-        "id": "12d807cd2c",
-        "title": "Open-weight model GLM 5.3 built full Firefox exploit chains with zero human input in under 48 hours",
-        "source": "The Decoder",
-        "published": "2026-10-30T12:22:18+00:00",
-        "link": "https://the-decoder.com/open-weight-model-glm-5-3-built-full-firefox-exploit-chains-with-zero-human-input-in-under-48-hours/",
-        "label": "AI artistok",
-        "image": "https://the-decoder.com/wp-content/uploads/2026/10/firefox_kraken.png",
-        "score": 3.7
+        "image": null,
+        "score": 3.5
       }
     ]
   },
   "errors": [
     {
       "source": "CG Channel",
-      "message": "6 futás óta nem érhető el. 403 Client Error: Forbidden for url: https://www.cgchannel.com/feed/",
-      "streak": 6
+      "message": "7 futás óta nem érhető el. 403 Client Error: Forbidden for url: https://www.cgchannel.com/feed/",
+      "streak": 7
     },
     {
       "source": "Telex",
-      "message": "4 futás óta nem érhető el. 403 Client Error: Forbidden for url: https://telex.hu/rss",
-      "streak": 4
+      "message": "5 futás óta nem érhető el. 403 Client Error: Forbidden for url: https://telex.hu/rss",
+      "streak": 5
     }
   ],
   "sources": [
@@ -124,7 +84,7 @@
       "topic": "ai",
       "ok": true,
       "fetched": 10,
-      "kept": 4
+      "kept": 0
     },
     {
       "name": "CG Channel",
@@ -132,7 +92,7 @@
       "ok": false,
       "fetched": 0,
       "kept": 0,
-      "fail_streak": 6
+      "fail_streak": 7
     },
     {
       "name": "Ars Technica",
@@ -146,7 +106,7 @@
       "topic": "ai",
       "ok": true,
       "fetched": 10,
-      "kept": 4
+      "kept": 3
     },
     {
       "name": "Mashable",
@@ -161,21 +121,21 @@
       "ok": false,
       "fetched": 0,
       "kept": 0,
-      "fail_streak": 4
+      "fail_streak": 5
     },
     {
       "name": "zdnet",
       "topic": "ai",
       "ok": true,
       "fetched": 25,
-      "kept": 1
+      "kept": 0
     },
     {
       "name": "PC MAG",
       "topic": "ai",
       "ok": true,
       "fetched": 100,
-      "kept": 0
+      "kept": 2
     },
     {
       "name": "It's nice that",
