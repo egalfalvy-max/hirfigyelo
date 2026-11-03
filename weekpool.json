@@ -1,6 +1,83 @@
 {
   "items": [
     {
+      "id": "6a92fb2cd2",
+      "title": "DeepSeek Harness' New Creator Mode Creates Plugins From Prompts",
+      "source": "Mashable",
+      "published": "2026-11-03T01:11:37+00:00",
+      "link": "https://in.mashable.com/tech/115689/deepseek-harness-new-creator-mode-creates-plugins-from-prompts",
+      "label": "AI artistok",
+      "image": "https://sm.mashable.com/mashable_in/news/d/deepseek-h/deepseek-harness-new-creator-mode-creates-plugins-from-promp_umu4.jpg",
+      "score": 4.1,
+      "topic": "ai"
+    },
+    {
+      "id": "e3f3f6c0c5",
+      "title": "Anthropic clamps down on Claude’s AI video game clones",
+      "source": "The Verge",
+      "published": "2026-11-02T18:56:02+00:00",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1024632/anthropic-claude-ai-video-game-clones",
+      "label": "Modellek & motion",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/01/STK269_ANTHROPIC_2_B.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "score": 7.0,
+      "topic": "ai"
+    },
+    {
+      "id": "778dbacaae",
+      "title": "Claude’s new rules against game cloning won’t stop the AI copying boom",
+      "source": "Ars Technica",
+      "published": "2026-11-02T18:05:31+00:00",
+      "link": "https://arstechnica.com/ai/2026/11/claudes-new-rules-against-game-cloning-wont-stop-the-ai-copying-boom/",
+      "label": "AI artistok",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/GettyImages-1180626096-1152x648.jpg",
+      "score": 7.4,
+      "topic": "ai"
+    },
+    {
+      "id": "1063b7decd",
+      "title": "Build, Test, and Organize AI Prompts With This Handy $39 Tool",
+      "source": "PC MAG",
+      "published": "2026-11-02T18:00:00+00:00",
+      "link": "https://www.pcmag.com/deals/build-test-and-organize-ai-prompts-with-this-handy-39-tool",
+      "label": "Modellek & motion",
+      "image": null,
+      "score": 11.0,
+      "topic": "ai"
+    },
+    {
+      "id": "ce3bf5cdd4",
+      "title": "Halloween's Scariest Costumes? AI Chatbots, Data Centers, And Meta's Muse",
+      "source": "Mashable",
+      "published": "2026-11-02T17:32:05+00:00",
+      "link": "https://in.mashable.com/digital-culture/115694/halloweens-scariest-costumes-ai-chatbots-data-centers-and-metas-muse",
+      "label": "Reklám & film",
+      "image": "https://sm.mashable.com/mashable_in/article/h/halloweens/halloweens-scariest-costumes-ai-chatbots-data-centers-and-me_33s4.jpg",
+      "score": 8.85,
+      "topic": "ai"
+    },
+    {
+      "id": "e137d0a0c4",
+      "title": "One brutal Minecraft night scared 50 AI agents into inventing chicken handoff protocols, a Fertilizer Officer, and fishing shifts",
+      "source": "The Decoder",
+      "published": "2026-11-02T15:42:27+00:00",
+      "link": "https://the-decoder.com/one-brutal-minecraft-night-scared-50-ai-agents-into-inventing-chicken-handoff-protocols-a-fertilizer-officer-and-fishing-shifts/",
+      "label": "AI artistok",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/11/Olam-Labs-Minecraft-Experiment.png",
+      "score": 11.7,
+      "topic": "ai"
+    },
+    {
+      "id": "3d8ca4187a",
+      "title": "DeepSeek Super-Agent AI Arrives to Compete With Anthropic’s Claude Code: Details Inside",
+      "source": "Mashable",
+      "published": "2026-11-02T09:15:40+00:00",
+      "link": "https://in.mashable.com/tech/115663/deepseek-super-agent-ai-arrives-to-compete-with-anthropics-claude-code-details-inside",
+      "label": "Reklám & film",
+      "image": "https://sm.mashable.com/mashable_in/photo/default/deepseek-mash_8fvd.jpg",
+      "score": 5.85,
+      "topic": "ai"
+    },
+    {
       "id": "22a7ec6444",
       "title": "Adobe is testing how well AI agents can use editing tools like a Photoshop professional would",
       "source": "The Decoder",
@@ -581,72 +658,6 @@
       "label": "Reklám & film",
       "image": "https://sm.mashable.com/mashable_in/photo/default/grok_vz7q.jpg",
       "score": 15.85,
-      "topic": "ai"
-    },
-    {
-      "id": "35542ffb0e",
-      "title": "Zen Browser is the Arc replacement I was looking for",
-      "source": "The Verge",
-      "published": "2026-10-25T19:24:50+00:00",
-      "link": "https://www.theverge.com/tech/1018275/zen-browser-arc-replacement",
-      "label": "AI artistok",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/videoframe_4433.png?quality=90&strip=all&crop=0,0,100,100",
-      "score": 4.5,
-      "topic": "ai"
-    },
-    {
-      "id": "9bda77250e",
-      "title": "It’s the Last Day To Get ChatGPT, Claude, & More All in One Platform for Just $60",
-      "source": "PC MAG",
-      "published": "2026-10-25T14:00:00+00:00",
-      "link": "https://www.pcmag.com/deals/its-the-last-day-to-get-chatgpt-claude-more-all-in-one-platform-for-just",
-      "label": "Modellek & motion",
-      "image": null,
-      "score": 11.0,
-      "topic": "ai"
-    },
-    {
-      "id": "b366ba776f",
-      "title": "r/opensource just banned AI, non-English speakers, and more",
-      "source": "The Verge",
-      "published": "2026-10-25T13:25:32+00:00",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1018217/reddit-opensource-ai-ban",
-      "label": "AI artistok",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/08/STK115_Reddit_01.jpg.webp?quality=90&strip=all&crop=0,0,100,100",
-      "score": 6.5,
-      "topic": "ai"
-    },
-    {
-      "id": "44ca99664d",
-      "title": "Nvidia open-sources Flora to make robot video labeling 125x cheaper than GPT-6 Astra",
-      "source": "The Decoder",
-      "published": "2026-10-25T10:08:49+00:00",
-      "link": "https://the-decoder.com/nvidia-open-sources-flora-to-make-robot-video-labeling-125x-cheaper-than-gpt-6-astra/",
-      "label": "AI artistok",
-      "image": "https://the-decoder.com/wp-content/uploads/2026/10/nvidia-flora-hero-robot-hands.jpg",
-      "score": 3.7,
-      "topic": "ai"
-    },
-    {
-      "id": "7241bd68f0",
-      "title": "Anthropic co-founder Jack Clark moves his prediction for self-improving AI forward to 2027",
-      "source": "The Decoder",
-      "published": "2026-10-25T09:37:46+00:00",
-      "link": "https://the-decoder.com/anthropic-co-founder-jack-clark-moves-his-prediction-for-self-improving-ai-forward-to-2027/",
-      "label": "AI artistok",
-      "image": "https://the-decoder.com/wp-content/uploads/2026/10/tasteval_and_rsi.png",
-      "score": 3.7,
-      "topic": "ai"
-    },
-    {
-      "id": "b5153a9c99",
-      "title": "Ex-Google CEO Eric Schmidt calls OpenAI and Anthropic modern colonial trading companies",
-      "source": "The Decoder",
-      "published": "2026-10-25T08:09:32+00:00",
-      "link": "https://the-decoder.com/ex-google-ceo-eric-schmidt-calls-openai-and-anthropic-modern-colonial-trading-companies/",
-      "label": "AI artistok",
-      "image": "https://the-decoder.com/wp-content/uploads/2026/10/ai_empires.png",
-      "score": 3.7,
       "topic": "ai"
     }
   ]
