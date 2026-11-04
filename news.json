@@ -1,19 +1,9 @@
 {
-  "generated_at": "2026-11-03T05:42:40.305660+00:00",
+  "generated_at": "2026-11-04T05:47:10.618444+00:00",
   "window_hours": 36,
   "scoring": "kulcsszavas",
   "topics": {
     "ai": [
-      {
-        "id": "e137d0a0c4",
-        "title": "One brutal Minecraft night scared 50 AI agents into inventing chicken handoff protocols, a Fertilizer Officer, and fishing shifts",
-        "source": "The Decoder",
-        "published": "2026-11-02T15:42:27+00:00",
-        "link": "https://the-decoder.com/one-brutal-minecraft-night-scared-50-ai-agents-into-inventing-chicken-handoff-protocols-a-fertilizer-officer-and-fishing-shifts/",
-        "label": "AI artistok",
-        "image": "https://the-decoder.com/wp-content/uploads/2026/11/Olam-Labs-Minecraft-Experiment.png",
-        "score": 11.7
-      },
       {
         "id": "1063b7decd",
         "title": "Build, Test, and Organize AI Prompts With This Handy $39 Tool",
@@ -25,14 +15,24 @@
         "score": 11.0
       },
       {
-        "id": "ce3bf5cdd4",
-        "title": "Halloween's Scariest Costumes? AI Chatbots, Data Centers, And Meta's Muse",
-        "source": "Mashable",
-        "published": "2026-11-02T17:32:05+00:00",
-        "link": "https://in.mashable.com/digital-culture/115694/halloweens-scariest-costumes-ai-chatbots-data-centers-and-metas-muse",
+        "id": "07464b8766",
+        "title": "Binance says hackers used fake job interviews and an internal AI tool to pull off the $6.3 billion heist",
+        "source": "The Verge",
+        "published": "2026-11-03T22:04:02+00:00",
+        "link": "https://www.theverge.com/news/1025576/binance-cyrpto-theft-explained",
         "label": "Reklám & film",
-        "image": "https://sm.mashable.com/mashable_in/article/h/halloweens/halloweens-scariest-costumes-ai-chatbots-data-centers-and-me_33s4.jpg",
-        "score": 8.85
+        "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/23932848/acastro_STK018__02.jpg?quality=90&strip=all&crop=0,0,100,100",
+        "score": 9.25
+      },
+      {
+        "id": "5d47252e76",
+        "title": "The biggest modding site in PC gaming is taking a stance on AI",
+        "source": "The Verge",
+        "published": "2026-11-04T00:42:10+00:00",
+        "link": "https://www.theverge.com/games/1026085/nexus-mods-ai-disclosures",
+        "label": "AI artistok",
+        "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/STK414_AI_CVIRGINIA_2_C-2.jpg?quality=90&strip=all&crop=0,0,100,100",
+        "score": 7.5
       },
       {
         "id": "778dbacaae",
@@ -45,24 +45,34 @@
         "score": 7.4
       },
       {
-        "id": "e3f3f6c0c5",
-        "title": "Anthropic clamps down on Claude’s AI video game clones",
-        "source": "The Verge",
-        "published": "2026-11-02T18:56:02+00:00",
-        "link": "https://www.theverge.com/ai-artificial-intelligence/1024632/anthropic-claude-ai-video-game-clones",
+        "id": "b97ef1a30d",
+        "title": "AI Built a Photoshop Clone in 24 Hours. Is This Piracy, Plagiarism, or Progress?",
+        "source": "PC MAG",
+        "published": "2026-11-03T13:27:38+00:00",
+        "link": "https://www.pcmag.com/news/ai-built-a-photoshop-clone-in-24-hours-is-this-piracy-plagiarism-or-progress",
         "label": "Modellek & motion",
-        "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/01/STK269_ANTHROPIC_2_B.jpg?quality=90&strip=all&crop=0,0,100,100",
-        "score": 7.0
+        "image": null,
+        "score": 6.0
       },
       {
-        "id": "3d8ca4187a",
-        "title": "DeepSeek Super-Agent AI Arrives to Compete With Anthropic’s Claude Code: Details Inside",
-        "source": "Mashable",
-        "published": "2026-11-02T09:15:40+00:00",
-        "link": "https://in.mashable.com/tech/115663/deepseek-super-agent-ai-arrives-to-compete-with-anthropics-claude-code-details-inside",
-        "label": "Reklám & film",
-        "image": "https://sm.mashable.com/mashable_in/photo/default/deepseek-mash_8fvd.jpg",
-        "score": 5.85
+        "id": "421b7a5a6e",
+        "title": "Ray-Ban Meta (Gen 3) Review: The Top Camera Glasses Take a Small Step Forward",
+        "source": "PC MAG",
+        "published": "2026-11-03T17:24:02+00:00",
+        "link": "https://www.pcmag.com/reviews/ray-ban-meta-gen-3",
+        "label": "AI artistok",
+        "image": null,
+        "score": 5.5
+      },
+      {
+        "id": "434e9abae2",
+        "title": "Sonos adds new Presets and prepares for the 27voice AI beta",
+        "source": "The Verge",
+        "published": "2026-11-03T22:20:50+00:00",
+        "link": "https://www.theverge.com/tech/1025903/sonos-presets-27voice-ai-early-access",
+        "label": "AI artistok",
+        "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25651509/_STK084_SONOS_C.png?quality=90&strip=all&crop=0,0,100,100",
+        "score": 4.5
       },
       {
         "id": "6a92fb2cd2",
@@ -73,14 +83,34 @@
         "label": "AI artistok",
         "image": "https://sm.mashable.com/mashable_in/news/d/deepseek-h/deepseek-harness-new-creator-mode-creates-plugins-from-promp_umu4.jpg",
         "score": 4.1
+      },
+      {
+        "id": "9f8f59b5f3",
+        "title": "OpenAI says GPT-6 Astra designed a hardware device from scratch in under a week",
+        "source": "The Decoder",
+        "published": "2026-11-03T20:15:45+00:00",
+        "link": "https://the-decoder.com/openai-says-gpt-6-astra-designed-a-hardware-device-from-scratch-in-under-a-week/",
+        "label": "AI artistok",
+        "image": "https://the-decoder.com/wp-content/uploads/2026/11/openai_ai_hardware.png",
+        "score": 3.7
+      },
+      {
+        "id": "a12ecaaa91",
+        "title": "Bug hunters can now earn up to $172,000 from OpenAI as company ramps up security",
+        "source": "The Decoder",
+        "published": "2026-11-03T10:42:44+00:00",
+        "link": "https://the-decoder.com/bug-hunters-can-now-earn-up-to-172000-from-openai-as-company-ramps-up-security/",
+        "label": "AI artistok",
+        "image": "https://the-decoder.com/wp-content/uploads/2026/11/openai_hacking_arms-3.png",
+        "score": 3.7
       }
     ]
   },
   "errors": [
     {
       "source": "CG Channel",
-      "message": "9 futás óta nem érhető el. 403 Client Error: Forbidden for url: https://www.cgchannel.com/feed/",
-      "streak": 9
+      "message": "10 futás óta nem érhető el. 403 Client Error: Forbidden for url: https://www.cgchannel.com/feed/",
+      "streak": 10
     }
   ],
   "sources": [
@@ -89,7 +119,7 @@
       "topic": "ai",
       "ok": true,
       "fetched": 10,
-      "kept": 1
+      "kept": 3
     },
     {
       "name": "CG Channel",
@@ -97,7 +127,7 @@
       "ok": false,
       "fetched": 0,
       "kept": 0,
-      "fail_streak": 9
+      "fail_streak": 10
     },
     {
       "name": "Ars Technica",
@@ -111,14 +141,14 @@
       "topic": "ai",
       "ok": true,
       "fetched": 10,
-      "kept": 1
+      "kept": 2
     },
     {
       "name": "Mashable",
       "topic": "ai",
       "ok": true,
       "fetched": 40,
-      "kept": 3
+      "kept": 1
     },
     {
       "name": "Telex",
@@ -139,7 +169,7 @@
       "topic": "ai",
       "ok": true,
       "fetched": 100,
-      "kept": 1
+      "kept": 3
     },
     {
       "name": "It's nice that",
