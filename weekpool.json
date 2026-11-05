@@ -1,6 +1,116 @@
 {
   "items": [
     {
+      "id": "55dd25200f",
+      "title": "ChatGPT can now turn text prompts and photos into animated GIFs with OpenAI's Images 2.6 model",
+      "source": "The Decoder",
+      "published": "2026-11-04T19:44:20+00:00",
+      "link": "https://the-decoder.com/chatgpt-can-now-turn-text-prompts-and-photos-into-animated-gifs-with-openais-images-2-6-model/",
+      "label": "Modellek & motion",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/11/openai_gif_cat.png",
+      "score": 17.2,
+      "topic": "ai"
+    },
+    {
+      "id": "73998216b5",
+      "title": "Anthropic's text watermark is easy to bypass on several older Claude models",
+      "source": "The Decoder",
+      "published": "2026-11-04T19:03:55+00:00",
+      "link": "https://the-decoder.com/anthropics-text-watermark-is-easy-to-bypass-on-several-older-claude-models/",
+      "label": "Modellek & motion",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/08/Claude-Watermark.png",
+      "score": 10.2,
+      "topic": "ai"
+    },
+    {
+      "id": "d0178f3506",
+      "title": "Nothing teases a screen-free AI device ahead of launch next month",
+      "source": "The Verge",
+      "published": "2026-11-04T18:26:07+00:00",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1026586/nothing-screen-free-ai-device-carl-pei",
+      "label": "AI artistok",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/03/nothing-phone-4a-2.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "score": 12.5,
+      "topic": "ai"
+    },
+    {
+      "id": "924bfefb40",
+      "title": "Want an AI job? Deployment engineers are earning executive-level pay – up to $1.45M a year",
+      "source": "zdnet",
+      "published": "2026-11-04T18:02:01+00:00",
+      "link": "https://www.zdnet.com/innovation/ai-deployment-engineers-salary-christian-timbers-report/",
+      "label": "AI artistok",
+      "image": "https://www.zdnet.com/wp-content/uploads/sites/3/GettyImages-1148964378.jpg",
+      "score": 3.7,
+      "topic": "ai"
+    },
+    {
+      "id": "93e05f3266",
+      "title": "Safari finally gets 3 popular browser features – and I can’t wait to try them",
+      "source": "zdnet",
+      "published": "2026-11-04T17:14:36+00:00",
+      "link": "https://www.zdnet.com/tech/safari-os-27-3-developer-beta-features/",
+      "label": "AI artistok",
+      "image": "https://www.zdnet.com/wp-content/uploads/sites/3/dsc09863_f6afcb.jpg",
+      "score": 3.7,
+      "topic": "ai"
+    },
+    {
+      "id": "3ac1f7a84d",
+      "title": "Can Netflix’s new AI tool stop your TV-streaming doomscrolling? How to try it",
+      "source": "zdnet",
+      "published": "2026-11-04T17:05:06+00:00",
+      "link": "https://www.zdnet.com/home-and-office/netflix-ai-tool-discover-feature/",
+      "label": "Modellek & motion",
+      "image": "https://www.zdnet.com/wp-content/uploads/sites/3/1_ef67d6.jpg",
+      "score": 9.2,
+      "topic": "ai"
+    },
+    {
+      "id": "8cfb763cf1",
+      "title": "New open-source benchmark reveals reasoning as the biggest bottleneck for AI in cloud operations",
+      "source": "The Decoder",
+      "published": "2026-11-04T16:42:52+00:00",
+      "link": "https://the-decoder.com/new-open-source-benchmark-reveals-reasoning-as-the-biggest-bottleneck-for-ai-in-cloud-operations/",
+      "label": "AI artistok",
+      "image": "https://the-decoder.com/wp-content/uploads/2025/02/Huginn-RM-title.png",
+      "score": 3.7,
+      "topic": "ai"
+    },
+    {
+      "id": "fd3bbf26ab",
+      "title": "Anthropic's new prototype proves which model wrote an AI response without exposing its weights",
+      "source": "The Decoder",
+      "published": "2026-11-04T15:23:49+00:00",
+      "link": "https://the-decoder.com/anthropics-new-prototype-proves-which-model-wrote-an-ai-response-without-exposing-its-weights/",
+      "label": "AI artistok",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/11/Anthropic-FlashProve.webp",
+      "score": 6.7,
+      "topic": "ai"
+    },
+    {
+      "id": "6fd71b4476",
+      "title": "Can’t Find Anything to Watch on Netflix? This New AI Feature May Be the Answer",
+      "source": "PC MAG",
+      "published": "2026-11-04T13:01:16+00:00",
+      "link": "https://www.pcmag.com/news/cant-find-anything-to-watch-on-netflix-this-new-ai-feature-may-be-the-answer",
+      "label": "Modellek & motion",
+      "image": null,
+      "score": 9.0,
+      "topic": "ai"
+    },
+    {
+      "id": "c0846d91a5",
+      "title": "Exit polls show AI ranked last among voter priorities in the 2026 U.S. midterms",
+      "source": "The Decoder",
+      "published": "2026-11-04T10:45:54+00:00",
+      "link": "https://the-decoder.com/exit-polls-show-ai-ranked-last-among-voter-priorities-in-the-2026-u-s-midterms/",
+      "label": "Reklám & film",
+      "image": "https://the-decoder.com/wp-content/uploads/2024/04/usa_flag_data_stream.png",
+      "score": 5.45,
+      "topic": "ai"
+    },
+    {
       "id": "5d47252e76",
       "title": "The biggest modding site in PC gaming is taking a stance on AI",
       "source": "The Verge",
@@ -559,83 +669,6 @@
       "label": "AI artistok",
       "image": "https://www.zdnet.com/wp-content/uploads/sites/3/EchoStudio.png",
       "score": 10.7,
-      "topic": "ai"
-    },
-    {
-      "id": "3b144f343e",
-      "title": "How AI-powered tech stacks can fix gaps in IT talent",
-      "source": "zdnet",
-      "published": "2026-10-27T18:58:55+00:00",
-      "link": "https://www.zdnet.com/paid-content/article/how-ai-powered-tech-stacks-can-fix-gaps-in-it-talent/",
-      "label": "AI artistok",
-      "image": "https://www.zdnet.com/wp-content/uploads/sites/3/Datto-ZDNET-Header.jpg",
-      "score": 3.7,
-      "topic": "ai"
-    },
-    {
-      "id": "5bed667429",
-      "title": "Google Deepmind's Genie 4 puts a modern spin on agent designs that predate LLMs",
-      "source": "The Decoder",
-      "published": "2026-10-27T17:25:09+00:00",
-      "link": "https://the-decoder.com/google-deepminds-genie-4-puts-a-modern-spin-on-agent-designs-that-predate-llms/",
-      "label": "Modellek & motion",
-      "image": "https://the-decoder.com/wp-content/uploads/2026/10/Genie-4-Google-title.png",
-      "score": 14.2,
-      "topic": "ai"
-    },
-    {
-      "id": "3309b27871",
-      "title": "This tool can recover deleted AI chats from your phone – how it works",
-      "source": "zdnet",
-      "published": "2026-10-27T16:55:54+00:00",
-      "link": "https://www.zdnet.com/innovation/orisa-tool-recovers-deleted-local-ai-chats-android-phones/",
-      "label": "AI artistok",
-      "image": "https://www.zdnet.com/wp-content/uploads/sites/3/bluecubes3GettyImages-2279412518.jpg",
-      "score": 3.7,
-      "topic": "ai"
-    },
-    {
-      "id": "5d9174dd4f",
-      "title": "Anthropic’s elaborate plan to keep Wall Street at bay",
-      "source": "The Verge",
-      "published": "2026-10-27T16:51:22+00:00",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1019470/anthropic-ipo-resist-investor-pressure-cut-corners-safety",
-      "label": "AI artistok",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/gettyimages-2280291188.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "score": 4.5,
-      "topic": "ai"
-    },
-    {
-      "id": "abb96e9fdd",
-      "title": "Firefox’s Smart Window adds AI form filling and webpage monitoring",
-      "source": "The Verge",
-      "published": "2026-10-27T16:14:18+00:00",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1019551/firefox-smart-window-ai-fill-forms",
-      "label": "Modellek & motion",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/firefox-fill.png?quality=90&strip=all&crop=0,0,100,100",
-      "score": 19.0,
-      "topic": "ai"
-    },
-    {
-      "id": "a60188d049",
-      "title": "DeepMind unveils Genie 4 world model promising more realistic physics and humans",
-      "source": "Ars Technica",
-      "published": "2026-10-27T16:00:22+00:00",
-      "link": "https://arstechnica.com/google/2026/10/deepminds-genie-4-world-model-adds-audio-and-more-realistic-people-to-simulations/",
-      "label": "Modellek & motion",
-      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/vlcsnap-2026-10-27-10h06m52s461-1152x648.png",
-      "score": 9.9,
-      "topic": "ai"
-    },
-    {
-      "id": "cac2f27240",
-      "title": "Former Deepmind researcher thinks AlphaGo's playbook can cure AI hallucinations",
-      "source": "The Decoder",
-      "published": "2026-10-27T13:55:24+00:00",
-      "link": "https://the-decoder.com/former-deepmind-researcher-thinks-alphagos-playbook-can-cure-ai-hallucinations/",
-      "label": "AI artistok",
-      "image": "https://the-decoder.com/wp-content/uploads/2026/10/metis-reasoning-07-reasoning-illustration.jpg",
-      "score": 3.7,
       "topic": "ai"
     }
   ]

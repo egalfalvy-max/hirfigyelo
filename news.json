@@ -1,107 +1,107 @@
 {
-  "generated_at": "2026-11-04T05:47:10.618444+00:00",
+  "generated_at": "2026-11-05T05:50:31.437584+00:00",
   "window_hours": 36,
   "scoring": "kulcsszavas",
   "topics": {
     "ai": [
       {
-        "id": "1063b7decd",
-        "title": "Build, Test, and Organize AI Prompts With This Handy $39 Tool",
-        "source": "PC MAG",
-        "published": "2026-11-02T18:00:00+00:00",
-        "link": "https://www.pcmag.com/deals/build-test-and-organize-ai-prompts-with-this-handy-39-tool",
-        "label": "Modellek & motion",
-        "image": null,
-        "score": 11.0
-      },
-      {
-        "id": "07464b8766",
-        "title": "Binance says hackers used fake job interviews and an internal AI tool to pull off the $6.3 billion heist",
-        "source": "The Verge",
-        "published": "2026-11-03T22:04:02+00:00",
-        "link": "https://www.theverge.com/news/1025576/binance-cyrpto-theft-explained",
-        "label": "Reklám & film",
-        "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/23932848/acastro_STK018__02.jpg?quality=90&strip=all&crop=0,0,100,100",
-        "score": 9.25
-      },
-      {
-        "id": "5d47252e76",
-        "title": "The biggest modding site in PC gaming is taking a stance on AI",
-        "source": "The Verge",
-        "published": "2026-11-04T00:42:10+00:00",
-        "link": "https://www.theverge.com/games/1026085/nexus-mods-ai-disclosures",
-        "label": "AI artistok",
-        "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/STK414_AI_CVIRGINIA_2_C-2.jpg?quality=90&strip=all&crop=0,0,100,100",
-        "score": 7.5
-      },
-      {
-        "id": "778dbacaae",
-        "title": "Claude’s new rules against game cloning won’t stop the AI copying boom",
-        "source": "Ars Technica",
-        "published": "2026-11-02T18:05:31+00:00",
-        "link": "https://arstechnica.com/ai/2026/11/claudes-new-rules-against-game-cloning-wont-stop-the-ai-copying-boom/",
-        "label": "AI artistok",
-        "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/GettyImages-1180626096-1152x648.jpg",
-        "score": 7.4
-      },
-      {
-        "id": "b97ef1a30d",
-        "title": "AI Built a Photoshop Clone in 24 Hours. Is This Piracy, Plagiarism, or Progress?",
-        "source": "PC MAG",
-        "published": "2026-11-03T13:27:38+00:00",
-        "link": "https://www.pcmag.com/news/ai-built-a-photoshop-clone-in-24-hours-is-this-piracy-plagiarism-or-progress",
-        "label": "Modellek & motion",
-        "image": null,
-        "score": 6.0
-      },
-      {
-        "id": "421b7a5a6e",
-        "title": "Ray-Ban Meta (Gen 3) Review: The Top Camera Glasses Take a Small Step Forward",
-        "source": "PC MAG",
-        "published": "2026-11-03T17:24:02+00:00",
-        "link": "https://www.pcmag.com/reviews/ray-ban-meta-gen-3",
-        "label": "AI artistok",
-        "image": null,
-        "score": 5.5
-      },
-      {
-        "id": "434e9abae2",
-        "title": "Sonos adds new Presets and prepares for the 27voice AI beta",
-        "source": "The Verge",
-        "published": "2026-11-03T22:20:50+00:00",
-        "link": "https://www.theverge.com/tech/1025903/sonos-presets-27voice-ai-early-access",
-        "label": "AI artistok",
-        "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25651509/_STK084_SONOS_C.png?quality=90&strip=all&crop=0,0,100,100",
-        "score": 4.5
-      },
-      {
-        "id": "6a92fb2cd2",
-        "title": "DeepSeek Harness' New Creator Mode Creates Plugins From Prompts",
-        "source": "Mashable",
-        "published": "2026-11-03T01:11:37+00:00",
-        "link": "https://in.mashable.com/tech/115689/deepseek-harness-new-creator-mode-creates-plugins-from-prompts",
-        "label": "AI artistok",
-        "image": "https://sm.mashable.com/mashable_in/news/d/deepseek-h/deepseek-harness-new-creator-mode-creates-plugins-from-promp_umu4.jpg",
-        "score": 4.1
-      },
-      {
-        "id": "9f8f59b5f3",
-        "title": "OpenAI says GPT-6 Astra designed a hardware device from scratch in under a week",
+        "id": "55dd25200f",
+        "title": "ChatGPT can now turn text prompts and photos into animated GIFs with OpenAI's Images 2.6 model",
         "source": "The Decoder",
-        "published": "2026-11-03T20:15:45+00:00",
-        "link": "https://the-decoder.com/openai-says-gpt-6-astra-designed-a-hardware-device-from-scratch-in-under-a-week/",
+        "published": "2026-11-04T19:44:20+00:00",
+        "link": "https://the-decoder.com/chatgpt-can-now-turn-text-prompts-and-photos-into-animated-gifs-with-openais-images-2-6-model/",
+        "label": "Modellek & motion",
+        "image": "https://the-decoder.com/wp-content/uploads/2026/11/openai_gif_cat.png",
+        "score": 17.2
+      },
+      {
+        "id": "d0178f3506",
+        "title": "Nothing teases a screen-free AI device ahead of launch next month",
+        "source": "The Verge",
+        "published": "2026-11-04T18:26:07+00:00",
+        "link": "https://www.theverge.com/ai-artificial-intelligence/1026586/nothing-screen-free-ai-device-carl-pei",
         "label": "AI artistok",
-        "image": "https://the-decoder.com/wp-content/uploads/2026/11/openai_ai_hardware.png",
+        "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/03/nothing-phone-4a-2.jpg?quality=90&strip=all&crop=0,0,100,100",
+        "score": 12.5
+      },
+      {
+        "id": "73998216b5",
+        "title": "Anthropic's text watermark is easy to bypass on several older Claude models",
+        "source": "The Decoder",
+        "published": "2026-11-04T19:03:55+00:00",
+        "link": "https://the-decoder.com/anthropics-text-watermark-is-easy-to-bypass-on-several-older-claude-models/",
+        "label": "Modellek & motion",
+        "image": "https://the-decoder.com/wp-content/uploads/2026/08/Claude-Watermark.png",
+        "score": 10.2
+      },
+      {
+        "id": "3ac1f7a84d",
+        "title": "Can Netflix’s new AI tool stop your TV-streaming doomscrolling? How to try it",
+        "source": "zdnet",
+        "published": "2026-11-04T17:05:06+00:00",
+        "link": "https://www.zdnet.com/home-and-office/netflix-ai-tool-discover-feature/",
+        "label": "Modellek & motion",
+        "image": "https://www.zdnet.com/wp-content/uploads/sites/3/1_ef67d6.jpg",
+        "score": 9.2
+      },
+      {
+        "id": "6fd71b4476",
+        "title": "Can’t Find Anything to Watch on Netflix? This New AI Feature May Be the Answer",
+        "source": "PC MAG",
+        "published": "2026-11-04T13:01:16+00:00",
+        "link": "https://www.pcmag.com/news/cant-find-anything-to-watch-on-netflix-this-new-ai-feature-may-be-the-answer",
+        "label": "Modellek & motion",
+        "image": null,
+        "score": 9.0
+      },
+      {
+        "id": "fd3bbf26ab",
+        "title": "Anthropic's new prototype proves which model wrote an AI response without exposing its weights",
+        "source": "The Decoder",
+        "published": "2026-11-04T15:23:49+00:00",
+        "link": "https://the-decoder.com/anthropics-new-prototype-proves-which-model-wrote-an-ai-response-without-exposing-its-weights/",
+        "label": "AI artistok",
+        "image": "https://the-decoder.com/wp-content/uploads/2026/11/Anthropic-FlashProve.webp",
+        "score": 6.7
+      },
+      {
+        "id": "c0846d91a5",
+        "title": "Exit polls show AI ranked last among voter priorities in the 2026 U.S. midterms",
+        "source": "The Decoder",
+        "published": "2026-11-04T10:45:54+00:00",
+        "link": "https://the-decoder.com/exit-polls-show-ai-ranked-last-among-voter-priorities-in-the-2026-u-s-midterms/",
+        "label": "Reklám & film",
+        "image": "https://the-decoder.com/wp-content/uploads/2024/04/usa_flag_data_stream.png",
+        "score": 5.45
+      },
+      {
+        "id": "924bfefb40",
+        "title": "Want an AI job? Deployment engineers are earning executive-level pay – up to $1.45M a year",
+        "source": "zdnet",
+        "published": "2026-11-04T18:02:01+00:00",
+        "link": "https://www.zdnet.com/innovation/ai-deployment-engineers-salary-christian-timbers-report/",
+        "label": "AI artistok",
+        "image": "https://www.zdnet.com/wp-content/uploads/sites/3/GettyImages-1148964378.jpg",
         "score": 3.7
       },
       {
-        "id": "a12ecaaa91",
-        "title": "Bug hunters can now earn up to $172,000 from OpenAI as company ramps up security",
-        "source": "The Decoder",
-        "published": "2026-11-03T10:42:44+00:00",
-        "link": "https://the-decoder.com/bug-hunters-can-now-earn-up-to-172000-from-openai-as-company-ramps-up-security/",
+        "id": "93e05f3266",
+        "title": "Safari finally gets 3 popular browser features – and I can’t wait to try them",
+        "source": "zdnet",
+        "published": "2026-11-04T17:14:36+00:00",
+        "link": "https://www.zdnet.com/tech/safari-os-27-3-developer-beta-features/",
         "label": "AI artistok",
-        "image": "https://the-decoder.com/wp-content/uploads/2026/11/openai_hacking_arms-3.png",
+        "image": "https://www.zdnet.com/wp-content/uploads/sites/3/dsc09863_f6afcb.jpg",
+        "score": 3.7
+      },
+      {
+        "id": "8cfb763cf1",
+        "title": "New open-source benchmark reveals reasoning as the biggest bottleneck for AI in cloud operations",
+        "source": "The Decoder",
+        "published": "2026-11-04T16:42:52+00:00",
+        "link": "https://the-decoder.com/new-open-source-benchmark-reveals-reasoning-as-the-biggest-bottleneck-for-ai-in-cloud-operations/",
+        "label": "AI artistok",
+        "image": "https://the-decoder.com/wp-content/uploads/2025/02/Huginn-RM-title.png",
         "score": 3.7
       }
     ]
@@ -109,8 +109,8 @@
   "errors": [
     {
       "source": "CG Channel",
-      "message": "10 futás óta nem érhető el. 403 Client Error: Forbidden for url: https://www.cgchannel.com/feed/",
-      "streak": 10
+      "message": "11 futás óta nem érhető el. 403 Client Error: Forbidden for url: https://www.cgchannel.com/feed/",
+      "streak": 11
     }
   ],
   "sources": [
@@ -119,7 +119,7 @@
       "topic": "ai",
       "ok": true,
       "fetched": 10,
-      "kept": 3
+      "kept": 1
     },
     {
       "name": "CG Channel",
@@ -127,28 +127,28 @@
       "ok": false,
       "fetched": 0,
       "kept": 0,
-      "fail_streak": 10
+      "fail_streak": 11
     },
     {
       "name": "Ars Technica",
       "topic": "ai",
       "ok": true,
       "fetched": 20,
-      "kept": 1
+      "kept": 0
     },
     {
       "name": "The Decoder",
       "topic": "ai",
       "ok": true,
       "fetched": 10,
-      "kept": 2
+      "kept": 5
     },
     {
       "name": "Mashable",
       "topic": "ai",
       "ok": true,
       "fetched": 40,
-      "kept": 1
+      "kept": 0
     },
     {
       "name": "Telex",
@@ -162,14 +162,14 @@
       "topic": "ai",
       "ok": true,
       "fetched": 25,
-      "kept": 0
+      "kept": 3
     },
     {
       "name": "PC MAG",
       "topic": "ai",
       "ok": true,
       "fetched": 100,
-      "kept": 3
+      "kept": 1
     },
     {
       "name": "It's nice that",
