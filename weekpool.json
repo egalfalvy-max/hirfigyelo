@@ -1,6 +1,83 @@
 {
   "items": [
     {
+      "id": "1bc7ba2a28",
+      "title": "China reportedly recruited AI exec to spy on Jensen Huang",
+      "source": "The Verge",
+      "published": "2026-11-06T23:00:44+00:00",
+      "link": "https://www.theverge.com/tech/1029338/nvidia-ceo-jensen-huang-china-spy",
+      "label": "AI artistok",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/STKP210_JENSEN_HUANG_A.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "score": 11.5,
+      "topic": "ai"
+    },
+    {
+      "id": "52e0623fab",
+      "title": "Meta’s Muse AI can create custom ‘spaces’ for the version of the app you need right now",
+      "source": "The Verge",
+      "published": "2026-11-06T18:10:10+00:00",
+      "link": "https://www.theverge.com/tech/1028871/meta-muse-ai-spaces",
+      "label": "Modellek & motion",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/meta-muse-spaces.png?quality=90&strip=all&crop=8.0752843063528,0,91.924715693647,74.471659887186",
+      "score": 15.0,
+      "topic": "ai"
+    },
+    {
+      "id": "b0e2f4cda5",
+      "title": "Thinking Machines’ new model takes the lead in western open-weight AI",
+      "source": "zdnet",
+      "published": "2026-11-06T17:08:33+00:00",
+      "link": "https://www.zdnet.com/innovation/thinking-machines-inkling-2-small-open-weight/",
+      "label": "AI artistok",
+      "image": "https://www.zdnet.com/wp-content/uploads/sites/3/redonblueGettyImages-2270299267.jpg",
+      "score": 6.7,
+      "topic": "ai"
+    },
+    {
+      "id": "01aef0d2f9",
+      "title": "Could potential AI clones of GTA VI force a quicker official port?",
+      "source": "Ars Technica",
+      "published": "2026-11-06T16:19:12+00:00",
+      "link": "https://arstechnica.com/gaming/2026/11/could-potential-ai-clones-of-gta-vi-force-a-quicker-official-port/",
+      "label": "AI artistok",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/gta6-1152x648.jpg",
+      "score": 7.4,
+      "topic": "ai"
+    },
+    {
+      "id": "1ce7dda683",
+      "title": "Claude Gets New Finance Feature To Track Spending And Manage Money",
+      "source": "Mashable",
+      "published": "2026-11-06T11:59:52+00:00",
+      "link": "https://in.mashable.com/tech/115861/claude-gets-new-finance-feature-to-track-spending-and-manage-money",
+      "label": "Modellek & motion",
+      "image": "https://sm.mashable.com/mashable_in/photo/default/claude-mash_r6ch.jpg",
+      "score": 9.6,
+      "topic": "ai"
+    },
+    {
+      "id": "358cd33528",
+      "title": "Anthropic adds bank account access to Claude so users can track their spending",
+      "source": "The Decoder",
+      "published": "2026-11-06T11:33:13+00:00",
+      "link": "https://the-decoder.com/anthropic-adds-bank-account-access-to-claude-so-users-can-track-their-spending/",
+      "label": "Modellek & motion",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/11/Claude-Finances-title-scaled.png",
+      "score": 14.2,
+      "topic": "ai"
+    },
+    {
+      "id": "72753b5ea0",
+      "title": "How to Turn Your Photos, Sketches and Ideas Into Animated GIFs Using ChatGPT: Prompts Inside",
+      "source": "Mashable",
+      "published": "2026-11-06T05:40:32+00:00",
+      "link": "https://in.mashable.com/tech/115835/how-to-turn-your-photos-sketches-and-ideas-into-animated-gifs-using-chatgpt-prompts-inside",
+      "label": "Modellek & motion",
+      "image": "https://sm.mashable.com/mashable_in/photo/default/chatgpt-mash_srp7.jpg",
+      "score": 6.6,
+      "topic": "ai"
+    },
+    {
       "id": "85f398082d",
       "title": "OpenAI is stepping back from NDAs for data center projects",
       "source": "The Verge",
@@ -592,61 +669,6 @@
       "label": "AI artistok",
       "image": "https://the-decoder.com/wp-content/uploads/2026/10/firefox_kraken.png",
       "score": 3.7,
-      "topic": "ai"
-    },
-    {
-      "id": "fd539153f0",
-      "title": "Reddit’s CEO says Google’s AI Mode ‘does not drive traffic’",
-      "source": "The Verge",
-      "published": "2026-10-29T22:19:32+00:00",
-      "link": "https://www.theverge.com/tech/1022848/reddit-ceo-google-ai-mode-traffic",
-      "label": "AI artistok",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/08/STK115_Reddit_01.jpg.webp?quality=90&strip=all&crop=0,0,100,100",
-      "score": 4.5,
-      "topic": "ai"
-    },
-    {
-      "id": "6db7353038",
-      "title": "OpenAI doubles usage limits on Pro plans as competition with Anthropic heats up",
-      "source": "The Decoder",
-      "published": "2026-10-29T20:01:27+00:00",
-      "link": "https://the-decoder.com/openai-doubles-usage-limits-on-pro-plans-as-competition-with-anthropic-heats-up/",
-      "label": "AI artistok",
-      "image": "https://the-decoder.com/wp-content/uploads/2026/07/openai_red_Logo.png",
-      "score": 3.7,
-      "topic": "ai"
-    },
-    {
-      "id": "2a1a8a7c88",
-      "title": "You can generate and edit Google Docs files directly in Gemini chats now",
-      "source": "The Verge",
-      "published": "2026-10-29T18:45:31+00:00",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1022519/google-gemini-file-editing-documents-pdfs",
-      "label": "AI artistok",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/STK255_Google_Gemini_B_474198.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "score": 4.5,
-      "topic": "ai"
-    },
-    {
-      "id": "aa0a9989a5",
-      "title": "AI Built a Photoshop Clone in a Day. I Asked Experts What Happens Next",
-      "source": "PC MAG",
-      "published": "2026-10-29T12:00:00+00:00",
-      "link": "https://www.pcmag.com/news/ai-built-a-photoshop-clone-in-a-day-i-asked-experts-what-happens-next",
-      "label": "Modellek & motion",
-      "image": null,
-      "score": 6.0,
-      "topic": "ai"
-    },
-    {
-      "id": "ec5ac67c76",
-      "title": "Google's AI search problem finally shows up in the earnings report, some investors believe",
-      "source": "The Decoder",
-      "published": "2026-10-29T10:16:34+00:00",
-      "link": "https://the-decoder.com/googles-ai-search-problem-finally-shows-up-in-the-earnings-report-some-investors-believe/",
-      "label": "Reklám & film",
-      "image": "https://the-decoder.com/wp-content/uploads/2026/06/google_logo_wall-2.png",
-      "score": 8.45,
       "topic": "ai"
     }
   ]

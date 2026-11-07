@@ -1,38 +1,48 @@
 {
-  "generated_at": "2026-11-06T05:48:37.482115+00:00",
+  "generated_at": "2026-11-07T05:38:51.574270+00:00",
   "window_hours": 36,
   "scoring": "kulcsszavas",
   "topics": {
     "ai": [
       {
-        "id": "eba602391c",
-        "title": "ChatGPT Now Lets You Generate GIFs",
-        "source": "Mashable",
-        "published": "2026-11-05T02:21:10+00:00",
-        "link": "https://in.mashable.com/tech/115773/chatgpt-now-lets-you-generate-gifs",
-        "label": "Modellek & motion",
-        "image": "https://sm.mashable.com/mashable_in/news/c/chatgpt-no/chatgpt-now-lets-you-generate-gifs_ybnu.jpg",
-        "score": 17.6
-      },
-      {
-        "id": "084876d438",
-        "title": "No AI agent scores above 12 percent on SemiAnalysis' new real-world work benchmark",
-        "source": "The Decoder",
-        "published": "2026-11-05T16:46:24+00:00",
-        "link": "https://the-decoder.com/no-ai-agent-scores-above-12-percent-on-semianalysis-new-real-world-work-benchmark/",
-        "label": "AI artistok",
-        "image": "https://the-decoder.com/wp-content/uploads/2026/11/semianalysis.png",
-        "score": 11.7
-      },
-      {
-        "id": "c6134d6103",
-        "title": "Muse has a voice mode now",
+        "id": "52e0623fab",
+        "title": "Meta’s Muse AI can create custom ‘spaces’ for the version of the app you need right now",
         "source": "The Verge",
-        "published": "2026-11-05T19:03:04+00:00",
-        "link": "https://www.theverge.com/tech/1028015/meta-muse-ai-voice-mode-expressive-avatar",
+        "published": "2026-11-06T18:10:10+00:00",
+        "link": "https://www.theverge.com/tech/1028871/meta-muse-ai-spaces",
         "label": "Modellek & motion",
-        "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/STKB394_MUSE_AI_CVIRGINIA_D.png?quality=90&strip=all&crop=0,0,100,100",
-        "score": 10.0
+        "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/meta-muse-spaces.png?quality=90&strip=all&crop=8.0752843063528,0,91.924715693647,74.471659887186",
+        "score": 15.0
+      },
+      {
+        "id": "358cd33528",
+        "title": "Anthropic adds bank account access to Claude so users can track their spending",
+        "source": "The Decoder",
+        "published": "2026-11-06T11:33:13+00:00",
+        "link": "https://the-decoder.com/anthropic-adds-bank-account-access-to-claude-so-users-can-track-their-spending/",
+        "label": "Modellek & motion",
+        "image": "https://the-decoder.com/wp-content/uploads/2026/11/Claude-Finances-title-scaled.png",
+        "score": 14.2
+      },
+      {
+        "id": "1bc7ba2a28",
+        "title": "China reportedly recruited AI exec to spy on Jensen Huang",
+        "source": "The Verge",
+        "published": "2026-11-06T23:00:44+00:00",
+        "link": "https://www.theverge.com/tech/1029338/nvidia-ceo-jensen-huang-china-spy",
+        "label": "AI artistok",
+        "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/STKP210_JENSEN_HUANG_A.jpg?quality=90&strip=all&crop=0,0,100,100",
+        "score": 11.5
+      },
+      {
+        "id": "1ce7dda683",
+        "title": "Claude Gets New Finance Feature To Track Spending And Manage Money",
+        "source": "Mashable",
+        "published": "2026-11-06T11:59:52+00:00",
+        "link": "https://in.mashable.com/tech/115861/claude-gets-new-finance-feature-to-track-spending-and-manage-money",
+        "label": "Modellek & motion",
+        "image": "https://sm.mashable.com/mashable_in/photo/default/claude-mash_r6ch.jpg",
+        "score": 9.6
       },
       {
         "id": "24d6171445",
@@ -65,57 +75,47 @@
         "score": 9.15
       },
       {
-        "id": "682c97494d",
-        "title": "Tencent releases Hy4 with vision and computer use, claims second place among Chinese AI models",
-        "source": "The Decoder",
-        "published": "2026-11-05T16:06:31+00:00",
-        "link": "https://the-decoder.com/tencent-releases-hy4-with-vision-and-computer-use-claims-second-place-among-chinese-ai-models/",
-        "label": "Reklám & film",
-        "image": "https://the-decoder.com/wp-content/uploads/2026/09/tencent.png",
-        "score": 8.45
-      },
-      {
-        "id": "85674951cd",
-        "title": "Vivint Outdoor Camera Pro 3 Review: A Solid Upgrade for Vivint Homes Only",
-        "source": "PC MAG",
-        "published": "2026-11-05T15:32:52+00:00",
-        "link": "https://www.pcmag.com/reviews/vivint-outdoor-camera-pro-3",
-        "label": "Reklám & film",
-        "image": null,
-        "score": 8.25
-      },
-      {
-        "id": "ebca927643",
-        "title": "OpenAI's GPT-6 Astra quietly sabotaged safety research by inventing fake obstacles",
-        "source": "The Decoder",
-        "published": "2026-11-05T14:08:22+00:00",
-        "link": "https://the-decoder.com/openais-gpt-6-astra-quietly-sabotaged-safety-research-by-inventing-fake-obstacles/",
+        "id": "01aef0d2f9",
+        "title": "Could potential AI clones of GTA VI force a quicker official port?",
+        "source": "Ars Technica",
+        "published": "2026-11-06T16:19:12+00:00",
+        "link": "https://arstechnica.com/gaming/2026/11/could-potential-ai-clones-of-gta-vi-force-a-quicker-official-port/",
         "label": "AI artistok",
-        "image": "https://the-decoder.com/wp-content/uploads/2026/10/openai_logo-1.png",
+        "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/gta6-1152x648.jpg",
+        "score": 7.4
+      },
+      {
+        "id": "b0e2f4cda5",
+        "title": "Thinking Machines’ new model takes the lead in western open-weight AI",
+        "source": "zdnet",
+        "published": "2026-11-06T17:08:33+00:00",
+        "link": "https://www.zdnet.com/innovation/thinking-machines-inkling-2-small-open-weight/",
+        "label": "AI artistok",
+        "image": "https://www.zdnet.com/wp-content/uploads/sites/3/redonblueGettyImages-2270299267.jpg",
         "score": 6.7
       },
       {
-        "id": "85f398082d",
-        "title": "OpenAI is stepping back from NDAs for data center projects",
-        "source": "The Verge",
-        "published": "2026-11-06T00:37:56+00:00",
-        "link": "https://www.theverge.com/ai-artificial-intelligence/1028454/openai-data-center-nda",
-        "label": "AI artistok",
-        "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/STKS528_DATA_CENTERS2_B.jpg?quality=90&strip=all&crop=0,0,100,100",
-        "score": 4.5
+        "id": "72753b5ea0",
+        "title": "How to Turn Your Photos, Sketches and Ideas Into Animated GIFs Using ChatGPT: Prompts Inside",
+        "source": "Mashable",
+        "published": "2026-11-06T05:40:32+00:00",
+        "link": "https://in.mashable.com/tech/115835/how-to-turn-your-photos-sketches-and-ideas-into-animated-gifs-using-chatgpt-prompts-inside",
+        "label": "Modellek & motion",
+        "image": "https://sm.mashable.com/mashable_in/photo/default/chatgpt-mash_srp7.jpg",
+        "score": 6.6
       }
     ]
   },
   "errors": [
     {
       "source": "CG Channel",
-      "message": "12 futás óta nem érhető el. 403 Client Error: Forbidden for url: https://www.cgchannel.com/feed/",
-      "streak": 12
+      "message": "13 futás óta nem érhető el. 403 Client Error: Forbidden for url: https://www.cgchannel.com/feed/",
+      "streak": 13
     },
     {
       "source": "Telex",
-      "message": "403 Client Error: Forbidden for url: https://telex.hu/rss",
-      "streak": 1
+      "message": "2 futás óta nem érhető el. 403 Client Error: Forbidden for url: https://telex.hu/rss",
+      "streak": 2
     }
   ],
   "sources": [
@@ -132,28 +132,28 @@
       "ok": false,
       "fetched": 0,
       "kept": 0,
-      "fail_streak": 12
+      "fail_streak": 13
     },
     {
       "name": "Ars Technica",
       "topic": "ai",
       "ok": true,
       "fetched": 20,
-      "kept": 1
+      "kept": 2
     },
     {
       "name": "The Decoder",
       "topic": "ai",
       "ok": true,
       "fetched": 10,
-      "kept": 5
+      "kept": 3
     },
     {
       "name": "Mashable",
       "topic": "ai",
       "ok": true,
       "fetched": 40,
-      "kept": 1
+      "kept": 2
     },
     {
       "name": "Telex",
@@ -161,21 +161,21 @@
       "ok": false,
       "fetched": 0,
       "kept": 0,
-      "fail_streak": 1
+      "fail_streak": 2
     },
     {
       "name": "zdnet",
       "topic": "ai",
       "ok": true,
       "fetched": 25,
-      "kept": 0
+      "kept": 1
     },
     {
       "name": "PC MAG",
       "topic": "ai",
       "ok": true,
       "fetched": 100,
-      "kept": 1
+      "kept": 0
     },
     {
       "name": "It's nice that",
