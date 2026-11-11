@@ -1,6 +1,116 @@
 {
   "items": [
     {
+      "id": "6f941c733c",
+      "title": "Need more AI in Creator Studio? Apple may charge you for it",
+      "source": "zdnet",
+      "published": "2026-11-10T20:38:54+00:00",
+      "link": "https://www.zdnet.com/innovation/ai-creator-studio-apple-usage-packs-fee/",
+      "label": "AI artistok",
+      "image": "https://www.zdnet.com/wp-content/uploads/sites/3/b8127718-8775-4c05-9d18-89836e0dbde2.jpg",
+      "score": 10.7,
+      "topic": "ai"
+    },
+    {
+      "id": "2c91002de0",
+      "title": "Anthropic turns Claude into a full workspace with Plugins, spreadsheets, whiteboards, and soon Meeting notes",
+      "source": "The Decoder",
+      "published": "2026-11-10T19:48:40+00:00",
+      "link": "https://the-decoder.com/anthropic-turns-claude-into-a-full-workspace-with-plugins-spreadsheets-whiteboards-and-soon-meeting-notes/",
+      "label": "Modellek & motion",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/09/claude_code_logo.png",
+      "score": 10.2,
+      "topic": "ai"
+    },
+    {
+      "id": "b40010d3be",
+      "title": "Pixel phones getting new icon styles, Create My Widget, and more in November Pixel Drop",
+      "source": "Ars Technica",
+      "published": "2026-11-10T19:00:26+00:00",
+      "link": "https://arstechnica.com/gadgets/2026/11/november-pixel-drop-brings-gemini-intelligence-to-pixel-10-family/",
+      "label": "AI artistok",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/08/Pixel-11-series-6-1152x648.jpg",
+      "score": 7.4,
+      "topic": "ai"
+    },
+    {
+      "id": "dbfcdcd8f5",
+      "title": "Gemini 4 Carbon arrives just in time to feel like yesterday's news in the fastest model cycle yet",
+      "source": "The Decoder",
+      "published": "2026-11-10T18:19:13+00:00",
+      "link": "https://the-decoder.com/gemini-4-carbon-arrives-just-in-time-to-feel-like-yesterdays-news-in-the-fastest-model-cycle-yet/",
+      "label": "AI artistok",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/11/gemini-4_carbon_logo.png",
+      "score": 11.7,
+      "topic": "ai"
+    },
+    {
+      "id": "004c51f512",
+      "title": "DeepMind reveals Gemini Robotics 2.5 and open safety benchmark \"ASIMOV-jailbreak\"",
+      "source": "Ars Technica",
+      "published": "2026-11-10T15:00:39+00:00",
+      "link": "https://arstechnica.com/google/2026/11/deepmind-reveals-gemini-robotics-2-5-and-open-safety-benchmark-asimov-jailbreak/",
+      "label": "AI artistok",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/Credit_-Apptronik_-Mercedes-Benz-Apollo-2-using-Gemini-Robotics-2.5-to-autonomously-perform-automotive-kitting-at-a-Mercedes-Benz-factory-1152x648.jpg",
+      "score": 7.4,
+      "topic": "ai"
+    },
+    {
+      "id": "3380da9e67",
+      "title": "Reddit launches AI-powered Reviews feature – with 10,000 products to start",
+      "source": "zdnet",
+      "published": "2026-11-10T15:00:00+00:00",
+      "link": "https://www.zdnet.com/innovation/reddit-reviews-feature/",
+      "label": "Modellek & motion",
+      "image": "https://www.zdnet.com/wp-content/uploads/sites/3/GettyImages-2232888199.jpg",
+      "score": 9.2,
+      "topic": "ai"
+    },
+    {
+      "id": "0fafd06790",
+      "title": "Anthropic's Fable 5.2 completes 41 percent of real freelance jobs, up from 2.5 percent a year ago",
+      "source": "The Decoder",
+      "published": "2026-11-10T14:07:47+00:00",
+      "link": "https://the-decoder.com/anthropics-fable-5-2-completes-41-percent-of-real-freelance-jobs-up-from-2-5-percent-a-year-ago/",
+      "label": "Modellek & motion",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/07/Remote-labor-index-bench-title.png",
+      "score": 11.2,
+      "topic": "ai"
+    },
+    {
+      "id": "5344e6962a",
+      "title": "Pay $59 Just Once for This Handy AI Studio for Reusable Brand Assets",
+      "source": "PC MAG",
+      "published": "2026-11-10T14:00:00+00:00",
+      "link": "https://www.pcmag.com/deals/pay-59-just-once-for-this-handy-ai-studio-for-reusable-brand-assets",
+      "label": "Reklám & film",
+      "image": null,
+      "score": 12.25,
+      "topic": "ai"
+    },
+    {
+      "id": "ae12b3ec96",
+      "title": "Bring your own agent: Adobe opens Creative Cloud to outside AI",
+      "source": "Creative Boom",
+      "published": "2026-11-10T12:00:00+00:00",
+      "link": "https://www.creativeboom.com/news/adobe-max-2026-all-the-big-announcements/",
+      "label": "Modellek & motion",
+      "image": "https://media.creativeboom.com/a4e74bbe-7434-4779-93c5-bc78bf1a75c4/conversions/9cb66801719104e43d0378d3f6841a0fd77af57e-medium.webp",
+      "score": 22.6,
+      "topic": "ai"
+    },
+    {
+      "id": "d32ec9b916",
+      "title": "What Is Muse Ember? Meet Meta’s New Low-Cost AI Model",
+      "source": "Mashable",
+      "published": "2026-11-10T01:42:58+00:00",
+      "link": "https://in.mashable.com/tech/115961/what-is-muse-ember-meet-metas-new-low-cost-ai-model",
+      "label": "AI artistok",
+      "image": "https://sm.mashable.com/mashable_in/article/w/what-is-mu/what-is-muse-ember-meet-metas-new-low-cost-ai-model_1hfu.jpg",
+      "score": 7.1,
+      "topic": "ai"
+    },
+    {
       "id": "8d28cfa555",
       "title": "David Ellison says AI could be the ‘biggest creative unlock in modern history’",
       "source": "The Verge",
@@ -658,83 +768,6 @@
       "label": "AI artistok",
       "image": "https://the-decoder.com/wp-content/uploads/2026/11/openai_hacking_arms-3.png",
       "score": 3.7,
-      "topic": "ai"
-    },
-    {
-      "id": "6a92fb2cd2",
-      "title": "DeepSeek Harness' New Creator Mode Creates Plugins From Prompts",
-      "source": "Mashable",
-      "published": "2026-11-03T01:11:37+00:00",
-      "link": "https://in.mashable.com/tech/115689/deepseek-harness-new-creator-mode-creates-plugins-from-prompts",
-      "label": "AI artistok",
-      "image": "https://sm.mashable.com/mashable_in/news/d/deepseek-h/deepseek-harness-new-creator-mode-creates-plugins-from-promp_umu4.jpg",
-      "score": 4.1,
-      "topic": "ai"
-    },
-    {
-      "id": "e3f3f6c0c5",
-      "title": "Anthropic clamps down on Claude’s AI video game clones",
-      "source": "The Verge",
-      "published": "2026-11-02T18:56:02+00:00",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1024632/anthropic-claude-ai-video-game-clones",
-      "label": "Modellek & motion",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/01/STK269_ANTHROPIC_2_B.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "score": 7.0,
-      "topic": "ai"
-    },
-    {
-      "id": "778dbacaae",
-      "title": "Claude’s new rules against game cloning won’t stop the AI copying boom",
-      "source": "Ars Technica",
-      "published": "2026-11-02T18:05:31+00:00",
-      "link": "https://arstechnica.com/ai/2026/11/claudes-new-rules-against-game-cloning-wont-stop-the-ai-copying-boom/",
-      "label": "AI artistok",
-      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/GettyImages-1180626096-1152x648.jpg",
-      "score": 7.4,
-      "topic": "ai"
-    },
-    {
-      "id": "1063b7decd",
-      "title": "Build, Test, and Organize AI Prompts With This Handy $39 Tool",
-      "source": "PC MAG",
-      "published": "2026-11-02T18:00:00+00:00",
-      "link": "https://www.pcmag.com/deals/build-test-and-organize-ai-prompts-with-this-handy-39-tool",
-      "label": "Modellek & motion",
-      "image": null,
-      "score": 11.0,
-      "topic": "ai"
-    },
-    {
-      "id": "ce3bf5cdd4",
-      "title": "Halloween's Scariest Costumes? AI Chatbots, Data Centers, And Meta's Muse",
-      "source": "Mashable",
-      "published": "2026-11-02T17:32:05+00:00",
-      "link": "https://in.mashable.com/digital-culture/115694/halloweens-scariest-costumes-ai-chatbots-data-centers-and-metas-muse",
-      "label": "Reklám & film",
-      "image": "https://sm.mashable.com/mashable_in/article/h/halloweens/halloweens-scariest-costumes-ai-chatbots-data-centers-and-me_33s4.jpg",
-      "score": 8.85,
-      "topic": "ai"
-    },
-    {
-      "id": "e137d0a0c4",
-      "title": "One brutal Minecraft night scared 50 AI agents into inventing chicken handoff protocols, a Fertilizer Officer, and fishing shifts",
-      "source": "The Decoder",
-      "published": "2026-11-02T15:42:27+00:00",
-      "link": "https://the-decoder.com/one-brutal-minecraft-night-scared-50-ai-agents-into-inventing-chicken-handoff-protocols-a-fertilizer-officer-and-fishing-shifts/",
-      "label": "AI artistok",
-      "image": "https://the-decoder.com/wp-content/uploads/2026/11/Olam-Labs-Minecraft-Experiment.png",
-      "score": 11.7,
-      "topic": "ai"
-    },
-    {
-      "id": "3d8ca4187a",
-      "title": "DeepSeek Super-Agent AI Arrives to Compete With Anthropic’s Claude Code: Details Inside",
-      "source": "Mashable",
-      "published": "2026-11-02T09:15:40+00:00",
-      "link": "https://in.mashable.com/tech/115663/deepseek-super-agent-ai-arrives-to-compete-with-anthropics-claude-code-details-inside",
-      "label": "Reklám & film",
-      "image": "https://sm.mashable.com/mashable_in/photo/default/deepseek-mash_8fvd.jpg",
-      "score": 5.85,
       "topic": "ai"
     }
   ]
