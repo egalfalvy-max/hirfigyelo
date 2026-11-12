@@ -1,6 +1,83 @@
 {
   "items": [
     {
+      "id": "741dfa258d",
+      "title": "Google joins the decision-model wave with Gemini Decision 1, scoring 1,000 questions in a single pass",
+      "source": "The Decoder",
+      "published": "2026-11-11T20:12:46+00:00",
+      "link": "https://the-decoder.com/google-joins-the-decision-model-wave-with-gemini-decision-1-scoring-1000-questions-in-a-single-pass/",
+      "label": "AI artistok",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/10/gemini_4_logo_wall.png",
+      "score": 6.7,
+      "topic": "ai"
+    },
+    {
+      "id": "150739597a",
+      "title": "US corporate AI spending hits a new high in October, but growth slows to 1.65 percent",
+      "source": "The Decoder",
+      "published": "2026-11-11T19:35:11+00:00",
+      "link": "https://the-decoder.com/us-corporate-ai-spending-hits-a-new-high-in-october-but-growth-slows-to-1-65-percent/",
+      "label": "AI artistok",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/02/openai_anthropic_logos-1.jpeg",
+      "score": 3.7,
+      "topic": "ai"
+    },
+    {
+      "id": "7fc3551d4a",
+      "title": "Compare GPT, Claude, and Gemini Side by Side for a One-Time $32",
+      "source": "PC MAG",
+      "published": "2026-11-11T19:00:00+00:00",
+      "link": "https://www.pcmag.com/deals/compare-gpt-claude-and-gemini-side-by-side-for-a-one-time-32",
+      "label": "Modellek & motion",
+      "image": null,
+      "score": 6.0,
+      "topic": "ai"
+    },
+    {
+      "id": "02b0e08fd5",
+      "title": "Pixel users are getting a major Android Auto update – and it rivals Siri AI",
+      "source": "zdnet",
+      "published": "2026-11-11T17:11:19+00:00",
+      "link": "https://www.zdnet.com/tech/android-auto-gemini-intelligence-update/",
+      "label": "AI artistok",
+      "image": "https://www.zdnet.com/wp-content/uploads/sites/3/38545acc-df59-4d4a-b19d-d4057d0b306e.jpg",
+      "score": 3.7,
+      "topic": "ai"
+    },
+    {
+      "id": "2d8f602ac5",
+      "title": "Google’s Tabletop AI experiment lets you build custom collaboration apps",
+      "source": "The Verge",
+      "published": "2026-11-11T16:00:00+00:00",
+      "link": "https://www.theverge.com/tech/1031526/google-tabletop-ai-experiment-waitlist-availability",
+      "label": "Modellek & motion",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Google-Labs-Tabletop.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "score": 10.0,
+      "topic": "ai"
+    },
+    {
+      "id": "a86af765ff",
+      "title": "Google’s AlphaGenome 2 zooms in on the cellular roots of disease",
+      "source": "The Verge",
+      "published": "2026-11-11T15:00:00+00:00",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1031524/google-deepmind-alphagenome-2-genetic-ai-model",
+      "label": "AI artistok",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/alphagenome-atlas-cover__background.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "score": 7.5,
+      "topic": "ai"
+    },
+    {
+      "id": "827402de33",
+      "title": "I locked down my OpenClaw agent with Claude Code – then dared it to escape",
+      "source": "zdnet",
+      "published": "2026-11-11T13:09:57+00:00",
+      "link": "https://www.zdnet.com/innovation/openclaw-agent-claude-code-security-test/",
+      "label": "Reklám & film",
+      "image": "https://www.zdnet.com/wp-content/uploads/sites/3/mac-rack.png",
+      "score": 8.45,
+      "topic": "ai"
+    },
+    {
       "id": "6f941c733c",
       "title": "Need more AI in Creator Studio? Apple may charge you for it",
       "source": "zdnet",
@@ -9,6 +86,17 @@
       "label": "AI artistok",
       "image": "https://www.zdnet.com/wp-content/uploads/sites/3/b8127718-8775-4c05-9d18-89836e0dbde2.jpg",
       "score": 10.7,
+      "topic": "ai"
+    },
+    {
+      "id": "c4b2e9a503",
+      "title": "What happens to mathematics when AI becomes an oracle?",
+      "source": "Ars Technica",
+      "published": "2026-11-10T20:30:01+00:00",
+      "link": "https://arstechnica.com/science/2026/11/what-happens-to-mathematics-when-ai-becames-an-oracle/",
+      "label": "AI artistok",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/06/Mathematics-formula-1152x648.jpg",
+      "score": 4.4,
       "topic": "ai"
     },
     {
@@ -691,83 +779,6 @@
       "label": "Reklám & film",
       "image": "https://the-decoder.com/wp-content/uploads/2024/04/usa_flag_data_stream.png",
       "score": 5.45,
-      "topic": "ai"
-    },
-    {
-      "id": "5d47252e76",
-      "title": "The biggest modding site in PC gaming is taking a stance on AI",
-      "source": "The Verge",
-      "published": "2026-11-04T00:42:10+00:00",
-      "link": "https://www.theverge.com/games/1026085/nexus-mods-ai-disclosures",
-      "label": "AI artistok",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/STK414_AI_CVIRGINIA_2_C-2.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "score": 7.5,
-      "topic": "ai"
-    },
-    {
-      "id": "434e9abae2",
-      "title": "Sonos adds new Presets and prepares for the 27voice AI beta",
-      "source": "The Verge",
-      "published": "2026-11-03T22:20:50+00:00",
-      "link": "https://www.theverge.com/tech/1025903/sonos-presets-27voice-ai-early-access",
-      "label": "AI artistok",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25651509/_STK084_SONOS_C.png?quality=90&strip=all&crop=0,0,100,100",
-      "score": 4.5,
-      "topic": "ai"
-    },
-    {
-      "id": "07464b8766",
-      "title": "Binance says hackers used fake job interviews and an internal AI tool to pull off the $6.3 billion heist",
-      "source": "The Verge",
-      "published": "2026-11-03T22:04:02+00:00",
-      "link": "https://www.theverge.com/news/1025576/binance-cyrpto-theft-explained",
-      "label": "Reklám & film",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/23932848/acastro_STK018__02.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "score": 9.25,
-      "topic": "ai"
-    },
-    {
-      "id": "9f8f59b5f3",
-      "title": "OpenAI says GPT-6 Astra designed a hardware device from scratch in under a week",
-      "source": "The Decoder",
-      "published": "2026-11-03T20:15:45+00:00",
-      "link": "https://the-decoder.com/openai-says-gpt-6-astra-designed-a-hardware-device-from-scratch-in-under-a-week/",
-      "label": "AI artistok",
-      "image": "https://the-decoder.com/wp-content/uploads/2026/11/openai_ai_hardware.png",
-      "score": 3.7,
-      "topic": "ai"
-    },
-    {
-      "id": "421b7a5a6e",
-      "title": "Ray-Ban Meta (Gen 3) Review: The Top Camera Glasses Take a Small Step Forward",
-      "source": "PC MAG",
-      "published": "2026-11-03T17:24:02+00:00",
-      "link": "https://www.pcmag.com/reviews/ray-ban-meta-gen-3",
-      "label": "AI artistok",
-      "image": null,
-      "score": 5.5,
-      "topic": "ai"
-    },
-    {
-      "id": "b97ef1a30d",
-      "title": "AI Built a Photoshop Clone in 24 Hours. Is This Piracy, Plagiarism, or Progress?",
-      "source": "PC MAG",
-      "published": "2026-11-03T13:27:38+00:00",
-      "link": "https://www.pcmag.com/news/ai-built-a-photoshop-clone-in-24-hours-is-this-piracy-plagiarism-or-progress",
-      "label": "Modellek & motion",
-      "image": null,
-      "score": 6.0,
-      "topic": "ai"
-    },
-    {
-      "id": "a12ecaaa91",
-      "title": "Bug hunters can now earn up to $172,000 from OpenAI as company ramps up security",
-      "source": "The Decoder",
-      "published": "2026-11-03T10:42:44+00:00",
-      "link": "https://the-decoder.com/bug-hunters-can-now-earn-up-to-172000-from-openai-as-company-ramps-up-security/",
-      "label": "AI artistok",
-      "image": "https://the-decoder.com/wp-content/uploads/2026/11/openai_hacking_arms-3.png",
-      "score": 3.7,
       "topic": "ai"
     }
   ]
