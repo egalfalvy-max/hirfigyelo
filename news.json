@@ -1,58 +1,38 @@
 {
-  "generated_at": "2026-11-12T05:50:42.361957+00:00",
+  "generated_at": "2026-11-13T05:49:51.974880+00:00",
   "window_hours": 36,
   "scoring": "kulcsszavas",
   "topics": {
     "ai": [
       {
-        "id": "6f941c733c",
-        "title": "Need more AI in Creator Studio? Apple may charge you for it",
-        "source": "zdnet",
-        "published": "2026-11-10T20:38:54+00:00",
-        "link": "https://www.zdnet.com/innovation/ai-creator-studio-apple-usage-packs-fee/",
+        "id": "a97d2d0865",
+        "title": "Adobe's New AI Agent Is a Giant Leap in the Wrong Direction for Artists",
+        "source": "PC MAG",
+        "published": "2026-11-12T16:30:39+00:00",
+        "link": "https://www.pcmag.com/opinions/adobes-new-ai-agent-is-a-giant-leap-in-the-wrong-direction-for-artists",
+        "label": "Modellek & motion",
+        "image": null,
+        "score": 25.0
+      },
+      {
+        "id": "3aa38f9204",
+        "title": "Australia's proposed AI safety bill would force frontier model makers to open up to independent testing",
+        "source": "The Decoder",
+        "published": "2026-11-12T10:09:56+00:00",
+        "link": "https://the-decoder.com/australias-proposed-ai-safety-bill-would-force-frontier-model-makers-to-open-up-to-independent-testing/",
         "label": "AI artistok",
-        "image": "https://www.zdnet.com/wp-content/uploads/sites/3/b8127718-8775-4c05-9d18-89836e0dbde2.jpg",
+        "image": "https://the-decoder.com/wp-content/uploads/2026/11/australia_ai_safety.png",
         "score": 10.7
       },
       {
-        "id": "2d8f602ac5",
-        "title": "Google’s Tabletop AI experiment lets you build custom collaboration apps",
+        "id": "3403360ccc",
+        "title": "Google’s new Gemini model is better at understanding complicated questions",
         "source": "The Verge",
-        "published": "2026-11-11T16:00:00+00:00",
-        "link": "https://www.theverge.com/tech/1031526/google-tabletop-ai-experiment-waitlist-availability",
-        "label": "Modellek & motion",
-        "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Google-Labs-Tabletop.jpg?quality=90&strip=all&crop=0,0,100,100",
-        "score": 10.0
-      },
-      {
-        "id": "827402de33",
-        "title": "I locked down my OpenClaw agent with Claude Code – then dared it to escape",
-        "source": "zdnet",
-        "published": "2026-11-11T13:09:57+00:00",
-        "link": "https://www.zdnet.com/innovation/openclaw-agent-claude-code-security-test/",
-        "label": "Reklám & film",
-        "image": "https://www.zdnet.com/wp-content/uploads/sites/3/mac-rack.png",
-        "score": 8.45
-      },
-      {
-        "id": "a86af765ff",
-        "title": "Google’s AlphaGenome 2 zooms in on the cellular roots of disease",
-        "source": "The Verge",
-        "published": "2026-11-11T15:00:00+00:00",
-        "link": "https://www.theverge.com/ai-artificial-intelligence/1031524/google-deepmind-alphagenome-2-genetic-ai-model",
+        "published": "2026-11-12T21:55:32+00:00",
+        "link": "https://www.theverge.com/ai-artificial-intelligence/1032505/google-search-ai-mode-gemini-4-hydrogen",
         "label": "AI artistok",
-        "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/alphagenome-atlas-cover__background.jpg?quality=90&strip=all&crop=0,0,100,100",
+        "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25290329/STK255_Google_Gemini_A.jpg?quality=90&strip=all&crop=0,0,100,100",
         "score": 7.5
-      },
-      {
-        "id": "b40010d3be",
-        "title": "Pixel phones getting new icon styles, Create My Widget, and more in November Pixel Drop",
-        "source": "Ars Technica",
-        "published": "2026-11-10T19:00:26+00:00",
-        "link": "https://arstechnica.com/gadgets/2026/11/november-pixel-drop-brings-gemini-intelligence-to-pixel-10-family/",
-        "label": "AI artistok",
-        "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/08/Pixel-11-series-6-1152x648.jpg",
-        "score": 7.4
       },
       {
         "id": "741dfa258d",
@@ -65,6 +45,16 @@
         "score": 6.7
       },
       {
+        "id": "7bc94a64a1",
+        "title": "Claude Meetings lets Anthropic's AI join your video calls",
+        "source": "The Decoder",
+        "published": "2026-11-12T20:26:50+00:00",
+        "link": "https://the-decoder.com/claude-meetings-lets-anthropics-ai-join-your-video-calls/",
+        "label": "Modellek & motion",
+        "image": "https://the-decoder.com/wp-content/uploads/2026/08/anthropic_claude.png",
+        "score": 6.2
+      },
+      {
         "id": "7fc3551d4a",
         "title": "Compare GPT, Claude, and Gemini Side by Side for a One-Time $32",
         "source": "PC MAG",
@@ -75,33 +65,43 @@
         "score": 6.0
       },
       {
-        "id": "c4b2e9a503",
-        "title": "What happens to mathematics when AI becomes an oracle?",
-        "source": "Ars Technica",
-        "published": "2026-11-10T20:30:01+00:00",
-        "link": "https://arstechnica.com/science/2026/11/what-happens-to-mathematics-when-ai-becames-an-oracle/",
+        "id": "eed2e7116e",
+        "title": "United Airlines Is Blocking AI Agents for Flight Bookings Over Security Concerns",
+        "source": "PC MAG",
+        "published": "2026-11-12T09:40:56+00:00",
+        "link": "https://www.pcmag.com/news/united-airlines-is-blocking-ai-agents-for-flight-bookings-over-security",
         "label": "AI artistok",
-        "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/06/Mathematics-formula-1152x648.jpg",
+        "image": null,
+        "score": 5.5
+      },
+      {
+        "id": "68e844945f",
+        "title": "The Elder Scrolls' most obscure adventure gets a 4K PC makeover",
+        "source": "Ars Technica",
+        "published": "2026-11-12T19:49:11+00:00",
+        "link": "https://arstechnica.com/gaming/2026/11/the-elder-scrolls-most-obscure-adventure-gets-a-4k-pc-makeover/",
+        "label": "AI artistok",
+        "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/torch-hall-1152x648.webp",
         "score": 4.4
       },
       {
-        "id": "150739597a",
-        "title": "US corporate AI spending hits a new high in October, but growth slows to 1.65 percent",
-        "source": "The Decoder",
-        "published": "2026-11-11T19:35:11+00:00",
-        "link": "https://the-decoder.com/us-corporate-ai-spending-hits-a-new-high-in-october-but-growth-slows-to-1-65-percent/",
+        "id": "acbc5dbe2a",
+        "title": "You can force Gemini to forget about you now – how to edit its Memory",
+        "source": "zdnet",
+        "published": "2026-11-12T17:58:52+00:00",
+        "link": "https://www.zdnet.com/innovation/google-gemini-memory-summary-user-control/",
         "label": "AI artistok",
-        "image": "https://the-decoder.com/wp-content/uploads/2026/02/openai_anthropic_logos-1.jpeg",
+        "image": "https://www.zdnet.com/wp-content/uploads/sites/3/Gemini-memory-summary.jpg",
         "score": 3.7
       },
       {
-        "id": "02b0e08fd5",
-        "title": "Pixel users are getting a major Android Auto update – and it rivals Siri AI",
+        "id": "324e3911b2",
+        "title": "Apple HomePod Mini 2 first look: Siri has improved, but it’s a fierce AI assistant race",
         "source": "zdnet",
-        "published": "2026-11-11T17:11:19+00:00",
-        "link": "https://www.zdnet.com/tech/android-auto-gemini-intelligence-update/",
+        "published": "2026-11-12T14:00:00+00:00",
+        "link": "https://www.zdnet.com/home-and-office/apple-homepod-mini-2-first-look/",
         "label": "AI artistok",
-        "image": "https://www.zdnet.com/wp-content/uploads/sites/3/38545acc-df59-4d4a-b19d-d4057d0b306e.jpg",
+        "image": "https://www.zdnet.com/wp-content/uploads/sites/3/311.jpg",
         "score": 3.7
       }
     ]
@@ -109,13 +109,13 @@
   "errors": [
     {
       "source": "CG Channel",
-      "message": "18 futás óta nem érhető el. 403 Client Error: Forbidden for url: https://www.cgchannel.com/feed/",
-      "streak": 18
+      "message": "19 futás óta nem érhető el. 403 Client Error: Forbidden for url: https://www.cgchannel.com/feed/",
+      "streak": 19
     },
     {
       "source": "Telex",
-      "message": "3 futás óta nem érhető el. 403 Client Error: Forbidden for url: https://telex.hu/rss",
-      "streak": 3
+      "message": "4 futás óta nem érhető el. 403 Client Error: Forbidden for url: https://telex.hu/rss",
+      "streak": 4
     }
   ],
   "sources": [
@@ -124,7 +124,7 @@
       "topic": "ai",
       "ok": true,
       "fetched": 10,
-      "kept": 2
+      "kept": 1
     },
     {
       "name": "CG Channel",
@@ -132,21 +132,21 @@
       "ok": false,
       "fetched": 0,
       "kept": 0,
-      "fail_streak": 18
+      "fail_streak": 19
     },
     {
       "name": "Ars Technica",
       "topic": "ai",
       "ok": true,
       "fetched": 20,
-      "kept": 2
+      "kept": 1
     },
     {
       "name": "The Decoder",
       "topic": "ai",
       "ok": true,
       "fetched": 10,
-      "kept": 2
+      "kept": 3
     },
     {
       "name": "Mashable",
@@ -161,21 +161,21 @@
       "ok": false,
       "fetched": 0,
       "kept": 0,
-      "fail_streak": 3
+      "fail_streak": 4
     },
     {
       "name": "zdnet",
       "topic": "ai",
       "ok": true,
       "fetched": 25,
-      "kept": 3
+      "kept": 2
     },
     {
       "name": "PC MAG",
       "topic": "ai",
       "ok": true,
       "fetched": 100,
-      "kept": 1
+      "kept": 3
     },
     {
       "name": "It's nice that",

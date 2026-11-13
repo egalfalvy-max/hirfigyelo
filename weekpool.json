@@ -1,6 +1,94 @@
 {
   "items": [
     {
+      "id": "3403360ccc",
+      "title": "Google’s new Gemini model is better at understanding complicated questions",
+      "source": "The Verge",
+      "published": "2026-11-12T21:55:32+00:00",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1032505/google-search-ai-mode-gemini-4-hydrogen",
+      "label": "AI artistok",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25290329/STK255_Google_Gemini_A.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "score": 7.5,
+      "topic": "ai"
+    },
+    {
+      "id": "7bc94a64a1",
+      "title": "Claude Meetings lets Anthropic's AI join your video calls",
+      "source": "The Decoder",
+      "published": "2026-11-12T20:26:50+00:00",
+      "link": "https://the-decoder.com/claude-meetings-lets-anthropics-ai-join-your-video-calls/",
+      "label": "Modellek & motion",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/08/anthropic_claude.png",
+      "score": 6.2,
+      "topic": "ai"
+    },
+    {
+      "id": "68e844945f",
+      "title": "The Elder Scrolls' most obscure adventure gets a 4K PC makeover",
+      "source": "Ars Technica",
+      "published": "2026-11-12T19:49:11+00:00",
+      "link": "https://arstechnica.com/gaming/2026/11/the-elder-scrolls-most-obscure-adventure-gets-a-4k-pc-makeover/",
+      "label": "AI artistok",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/torch-hall-1152x648.webp",
+      "score": 4.4,
+      "topic": "ai"
+    },
+    {
+      "id": "acbc5dbe2a",
+      "title": "You can force Gemini to forget about you now – how to edit its Memory",
+      "source": "zdnet",
+      "published": "2026-11-12T17:58:52+00:00",
+      "link": "https://www.zdnet.com/innovation/google-gemini-memory-summary-user-control/",
+      "label": "AI artistok",
+      "image": "https://www.zdnet.com/wp-content/uploads/sites/3/Gemini-memory-summary.jpg",
+      "score": 3.7,
+      "topic": "ai"
+    },
+    {
+      "id": "a97d2d0865",
+      "title": "Adobe's New AI Agent Is a Giant Leap in the Wrong Direction for Artists",
+      "source": "PC MAG",
+      "published": "2026-11-12T16:30:39+00:00",
+      "link": "https://www.pcmag.com/opinions/adobes-new-ai-agent-is-a-giant-leap-in-the-wrong-direction-for-artists",
+      "label": "Modellek & motion",
+      "image": null,
+      "score": 25.0,
+      "topic": "ai"
+    },
+    {
+      "id": "324e3911b2",
+      "title": "Apple HomePod Mini 2 first look: Siri has improved, but it’s a fierce AI assistant race",
+      "source": "zdnet",
+      "published": "2026-11-12T14:00:00+00:00",
+      "link": "https://www.zdnet.com/home-and-office/apple-homepod-mini-2-first-look/",
+      "label": "AI artistok",
+      "image": "https://www.zdnet.com/wp-content/uploads/sites/3/311.jpg",
+      "score": 3.7,
+      "topic": "ai"
+    },
+    {
+      "id": "3aa38f9204",
+      "title": "Australia's proposed AI safety bill would force frontier model makers to open up to independent testing",
+      "source": "The Decoder",
+      "published": "2026-11-12T10:09:56+00:00",
+      "link": "https://the-decoder.com/australias-proposed-ai-safety-bill-would-force-frontier-model-makers-to-open-up-to-independent-testing/",
+      "label": "AI artistok",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/11/australia_ai_safety.png",
+      "score": 10.7,
+      "topic": "ai"
+    },
+    {
+      "id": "eed2e7116e",
+      "title": "United Airlines Is Blocking AI Agents for Flight Bookings Over Security Concerns",
+      "source": "PC MAG",
+      "published": "2026-11-12T09:40:56+00:00",
+      "link": "https://www.pcmag.com/news/united-airlines-is-blocking-ai-agents-for-flight-bookings-over-security",
+      "label": "AI artistok",
+      "image": null,
+      "score": 5.5,
+      "topic": "ai"
+    },
+    {
       "id": "741dfa258d",
       "title": "Google joins the decision-model wave with Gemini Decision 1, scoring 1,000 questions in a single pass",
       "source": "The Decoder",
@@ -658,127 +746,6 @@
       "label": "AI artistok",
       "image": "https://the-decoder.com/wp-content/uploads/2026/10/openai_logo-1.png",
       "score": 6.7,
-      "topic": "ai"
-    },
-    {
-      "id": "eba602391c",
-      "title": "ChatGPT Now Lets You Generate GIFs",
-      "source": "Mashable",
-      "published": "2026-11-05T02:21:10+00:00",
-      "link": "https://in.mashable.com/tech/115773/chatgpt-now-lets-you-generate-gifs",
-      "label": "Modellek & motion",
-      "image": "https://sm.mashable.com/mashable_in/news/c/chatgpt-no/chatgpt-now-lets-you-generate-gifs_ybnu.jpg",
-      "score": 17.6,
-      "topic": "ai"
-    },
-    {
-      "id": "55dd25200f",
-      "title": "ChatGPT can now turn text prompts and photos into animated GIFs with OpenAI's Images 2.6 model",
-      "source": "The Decoder",
-      "published": "2026-11-04T19:44:20+00:00",
-      "link": "https://the-decoder.com/chatgpt-can-now-turn-text-prompts-and-photos-into-animated-gifs-with-openais-images-2-6-model/",
-      "label": "Modellek & motion",
-      "image": "https://the-decoder.com/wp-content/uploads/2026/11/openai_gif_cat.png",
-      "score": 17.2,
-      "topic": "ai"
-    },
-    {
-      "id": "73998216b5",
-      "title": "Anthropic's text watermark is easy to bypass on several older Claude models",
-      "source": "The Decoder",
-      "published": "2026-11-04T19:03:55+00:00",
-      "link": "https://the-decoder.com/anthropics-text-watermark-is-easy-to-bypass-on-several-older-claude-models/",
-      "label": "Modellek & motion",
-      "image": "https://the-decoder.com/wp-content/uploads/2026/08/Claude-Watermark.png",
-      "score": 10.2,
-      "topic": "ai"
-    },
-    {
-      "id": "d0178f3506",
-      "title": "Nothing teases a screen-free AI device ahead of launch next month",
-      "source": "The Verge",
-      "published": "2026-11-04T18:26:07+00:00",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1026586/nothing-screen-free-ai-device-carl-pei",
-      "label": "AI artistok",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/03/nothing-phone-4a-2.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "score": 12.5,
-      "topic": "ai"
-    },
-    {
-      "id": "924bfefb40",
-      "title": "Want an AI job? Deployment engineers are earning executive-level pay – up to $1.45M a year",
-      "source": "zdnet",
-      "published": "2026-11-04T18:02:01+00:00",
-      "link": "https://www.zdnet.com/innovation/ai-deployment-engineers-salary-christian-timbers-report/",
-      "label": "AI artistok",
-      "image": "https://www.zdnet.com/wp-content/uploads/sites/3/GettyImages-1148964378.jpg",
-      "score": 3.7,
-      "topic": "ai"
-    },
-    {
-      "id": "93e05f3266",
-      "title": "Safari finally gets 3 popular browser features – and I can’t wait to try them",
-      "source": "zdnet",
-      "published": "2026-11-04T17:14:36+00:00",
-      "link": "https://www.zdnet.com/tech/safari-os-27-3-developer-beta-features/",
-      "label": "AI artistok",
-      "image": "https://www.zdnet.com/wp-content/uploads/sites/3/dsc09863_f6afcb.jpg",
-      "score": 3.7,
-      "topic": "ai"
-    },
-    {
-      "id": "3ac1f7a84d",
-      "title": "Can Netflix’s new AI tool stop your TV-streaming doomscrolling? How to try it",
-      "source": "zdnet",
-      "published": "2026-11-04T17:05:06+00:00",
-      "link": "https://www.zdnet.com/home-and-office/netflix-ai-tool-discover-feature/",
-      "label": "Modellek & motion",
-      "image": "https://www.zdnet.com/wp-content/uploads/sites/3/1_ef67d6.jpg",
-      "score": 9.2,
-      "topic": "ai"
-    },
-    {
-      "id": "8cfb763cf1",
-      "title": "New open-source benchmark reveals reasoning as the biggest bottleneck for AI in cloud operations",
-      "source": "The Decoder",
-      "published": "2026-11-04T16:42:52+00:00",
-      "link": "https://the-decoder.com/new-open-source-benchmark-reveals-reasoning-as-the-biggest-bottleneck-for-ai-in-cloud-operations/",
-      "label": "AI artistok",
-      "image": "https://the-decoder.com/wp-content/uploads/2025/02/Huginn-RM-title.png",
-      "score": 3.7,
-      "topic": "ai"
-    },
-    {
-      "id": "fd3bbf26ab",
-      "title": "Anthropic's new prototype proves which model wrote an AI response without exposing its weights",
-      "source": "The Decoder",
-      "published": "2026-11-04T15:23:49+00:00",
-      "link": "https://the-decoder.com/anthropics-new-prototype-proves-which-model-wrote-an-ai-response-without-exposing-its-weights/",
-      "label": "AI artistok",
-      "image": "https://the-decoder.com/wp-content/uploads/2026/11/Anthropic-FlashProve.webp",
-      "score": 6.7,
-      "topic": "ai"
-    },
-    {
-      "id": "6fd71b4476",
-      "title": "Can’t Find Anything to Watch on Netflix? This New AI Feature May Be the Answer",
-      "source": "PC MAG",
-      "published": "2026-11-04T13:01:16+00:00",
-      "link": "https://www.pcmag.com/news/cant-find-anything-to-watch-on-netflix-this-new-ai-feature-may-be-the-answer",
-      "label": "Modellek & motion",
-      "image": null,
-      "score": 9.0,
-      "topic": "ai"
-    },
-    {
-      "id": "c0846d91a5",
-      "title": "Exit polls show AI ranked last among voter priorities in the 2026 U.S. midterms",
-      "source": "The Decoder",
-      "published": "2026-11-04T10:45:54+00:00",
-      "link": "https://the-decoder.com/exit-polls-show-ai-ranked-last-among-voter-priorities-in-the-2026-u-s-midterms/",
-      "label": "Reklám & film",
-      "image": "https://the-decoder.com/wp-content/uploads/2024/04/usa_flag_data_stream.png",
-      "score": 5.45,
       "topic": "ai"
     }
   ]
