@@ -1,6 +1,83 @@
 {
   "items": [
     {
+      "id": "cfb5766d57",
+      "title": "Jensen Huang was reckless with the environment, too",
+      "source": "The Verge",
+      "published": "2026-11-13T17:44:22+00:00",
+      "link": "https://www.theverge.com/tech/1033051/nvidia-jensen-huang-chips-gpu-supply-chain-climate-pollution",
+      "label": "AI artistok",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/gettyimages-2301295182.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "score": 4.5,
+      "topic": "ai"
+    },
+    {
+      "id": "fbf6f47675",
+      "title": "Anthropic's Claude for Manufacturing plugs AI directly into factory software to automate industrial workflows",
+      "source": "The Decoder",
+      "published": "2026-11-13T16:37:01+00:00",
+      "link": "https://the-decoder.com/anthropics-claude-for-manufacturing-plugs-ai-directly-into-factory-software-to-automate-industrial-workflows/",
+      "label": "AI artistok",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/11/claude_for_manufactoring.png",
+      "score": 6.7,
+      "topic": "ai"
+    },
+    {
+      "id": "6db00f3416",
+      "title": "Former OpenAI researcher says he found Nvidia Blackwell fingerprints hidden inside six Chinese AI models",
+      "source": "The Decoder",
+      "published": "2026-11-13T15:21:04+00:00",
+      "link": "https://the-decoder.com/former-openai-researcher-says-he-found-nvidia-blackwell-fingerprints-hidden-inside-six-chinese-ai-models/",
+      "label": "Reklám & film",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/06/china_vs_usa_ai_race.png",
+      "score": 8.45,
+      "topic": "ai"
+    },
+    {
+      "id": "45a56ab3ef",
+      "title": "Meta's Muse now calls businesses for you, but many companies might just hang up on the AI",
+      "source": "The Decoder",
+      "published": "2026-11-13T15:12:44+00:00",
+      "link": "https://the-decoder.com/metas-muse-now-calls-businesses-for-you-but-many-companies-might-just-hang-up-on-the-ai/",
+      "label": "Modellek & motion",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/10/met_muse_gadget_logo.jpg",
+      "score": 6.2,
+      "topic": "ai"
+    },
+    {
+      "id": "cd6b269846",
+      "title": "OpenAI enters the cybersecurity market with two Daybreak products",
+      "source": "The Decoder",
+      "published": "2026-11-13T15:08:57+00:00",
+      "link": "https://the-decoder.com/openai-enters-the-cybersecurity-market-with-two-daybreak-products/",
+      "label": "Reklám & film",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/06/openai_logo_background_dark.png",
+      "score": 5.45,
+      "topic": "ai"
+    },
+    {
+      "id": "4c7137b671",
+      "title": "Adobe's Black Friday Deals Deliver Creative Cloud Pro and More for Up To 60% Off",
+      "source": "PC MAG",
+      "published": "2026-11-13T13:10:18+00:00",
+      "link": "https://www.pcmag.com/deals/adobes-black-friday-deals-deliver-creative-cloud-pro-more-nov-13",
+      "label": "Modellek & motion",
+      "image": null,
+      "score": 22.0,
+      "topic": "ai"
+    },
+    {
+      "id": "d207fd780e",
+      "title": "OPPO find X10 flagship smartphones capture beauty with 200mp hasselblad cameras",
+      "source": "Design Boom",
+      "published": "2026-11-13T11:01:11+00:00",
+      "link": "https://www.designboom.com/technology/oppo-hasselblad-cameras-find-x10-flagship-smartphones/",
+      "label": "Reklám & film",
+      "image": "https://www.designboom.com/wp-content/uploads/2026/11/火星-CMF静物图-月白Luna-White-RGB-1-500x400-22b08q85r646.jpeg",
+      "score": 8.45,
+      "topic": "ai"
+    },
+    {
       "id": "3403360ccc",
       "title": "Google’s new Gemini model is better at understanding complicated questions",
       "source": "The Verge",
@@ -23,6 +100,17 @@
       "topic": "ai"
     },
     {
+      "id": "90ff6f2cdb",
+      "title": "Nvidia Chaos, Dem Sweep, Lawsuits, Protests: AI's Terrible, No-Good November",
+      "source": "Mashable",
+      "published": "2026-11-12T19:54:30+00:00",
+      "link": "https://in.mashable.com/tech/116071/nvidia-chaos-dem-sweep-lawsuits-protests-ais-terrible-no-good-november",
+      "label": "AI artistok",
+      "image": "https://sm.mashable.com/mashable_in/article/n/nvidia-cha/nvidia-chaos-dem-sweep-lawsuits-protests-ais-terrible-no-goo_uv8f.jpg",
+      "score": 6.1,
+      "topic": "ai"
+    },
+    {
       "id": "68e844945f",
       "title": "The Elder Scrolls' most obscure adventure gets a 4K PC makeover",
       "source": "Ars Technica",
@@ -31,6 +119,17 @@
       "label": "AI artistok",
       "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/torch-hall-1152x648.webp",
       "score": 4.4,
+      "topic": "ai"
+    },
+    {
+      "id": "2122328cb9",
+      "title": "Everything Trump Has Said About Jensen Huang's Nvidia Saga",
+      "source": "Mashable",
+      "published": "2026-11-12T19:20:21+00:00",
+      "link": "https://in.mashable.com/tech/116072/everything-trump-has-said-about-jensen-huangs-nvidia-saga",
+      "label": "AI artistok",
+      "image": "https://sm.mashable.com/mashable_in/article/e/everything/everything-trump-has-said-about-jensen-huangs-nvidia-saga_px67.jpg",
+      "score": 7.1,
       "topic": "ai"
     },
     {
@@ -647,105 +746,6 @@
       "label": "Modellek & motion",
       "image": "https://sm.mashable.com/mashable_in/photo/default/chatgpt-mash_srp7.jpg",
       "score": 6.6,
-      "topic": "ai"
-    },
-    {
-      "id": "85f398082d",
-      "title": "OpenAI is stepping back from NDAs for data center projects",
-      "source": "The Verge",
-      "published": "2026-11-06T00:37:56+00:00",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1028454/openai-data-center-nda",
-      "label": "AI artistok",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/STKS528_DATA_CENTERS2_B.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "score": 4.5,
-      "topic": "ai"
-    },
-    {
-      "id": "a6dd244721",
-      "title": "NASA unveils mysterious X-70 experimental aircraft using AI-generated image",
-      "source": "Ars Technica",
-      "published": "2026-11-05T22:49:03+00:00",
-      "link": "https://arstechnica.com/gadgets/2026/11/nasas-experimental-x-70-aircraft-is-a-big-question-mark/",
-      "label": "Reklám & film",
-      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/nasa-x-70-image-1152x648.jpeg",
-      "score": 9.15,
-      "topic": "ai"
-    },
-    {
-      "id": "24d6171445",
-      "title": "OpenAIs GPT-6 Cyber can both break into systems and propose how to fix them",
-      "source": "The Decoder",
-      "published": "2026-11-05T20:36:25+00:00",
-      "link": "https://the-decoder.com/openais-gpt-6-cyber-can-both-break-into-systems-and-propose-how-to-fix-them/",
-      "label": "Modellek & motion",
-      "image": "https://the-decoder.com/wp-content/uploads/2026/11/openai_cybersecurity.png",
-      "score": 9.2,
-      "topic": "ai"
-    },
-    {
-      "id": "39537e29a1",
-      "title": "Google's Gemini Omni 1.2 Flash stretches AI video clips to 15 seconds and cuts pricing by 30 percent",
-      "source": "The Decoder",
-      "published": "2026-11-05T19:05:31+00:00",
-      "link": "https://the-decoder.com/googles-gemini-omni-1-2-flash-stretches-ai-video-clips-to-15-seconds-and-cuts-pricing-by-30-percent/",
-      "label": "Modellek & motion",
-      "image": "https://the-decoder.com/wp-content/uploads/2026/10/gemini_4_logo_wall.png",
-      "score": 9.2,
-      "topic": "ai"
-    },
-    {
-      "id": "c6134d6103",
-      "title": "Muse has a voice mode now",
-      "source": "The Verge",
-      "published": "2026-11-05T19:03:04+00:00",
-      "link": "https://www.theverge.com/tech/1028015/meta-muse-ai-voice-mode-expressive-avatar",
-      "label": "Modellek & motion",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/STKB394_MUSE_AI_CVIRGINIA_D.png?quality=90&strip=all&crop=0,0,100,100",
-      "score": 10.0,
-      "topic": "ai"
-    },
-    {
-      "id": "084876d438",
-      "title": "No AI agent scores above 12 percent on SemiAnalysis' new real-world work benchmark",
-      "source": "The Decoder",
-      "published": "2026-11-05T16:46:24+00:00",
-      "link": "https://the-decoder.com/no-ai-agent-scores-above-12-percent-on-semianalysis-new-real-world-work-benchmark/",
-      "label": "AI artistok",
-      "image": "https://the-decoder.com/wp-content/uploads/2026/11/semianalysis.png",
-      "score": 11.7,
-      "topic": "ai"
-    },
-    {
-      "id": "682c97494d",
-      "title": "Tencent releases Hy4 with vision and computer use, claims second place among Chinese AI models",
-      "source": "The Decoder",
-      "published": "2026-11-05T16:06:31+00:00",
-      "link": "https://the-decoder.com/tencent-releases-hy4-with-vision-and-computer-use-claims-second-place-among-chinese-ai-models/",
-      "label": "Reklám & film",
-      "image": "https://the-decoder.com/wp-content/uploads/2026/09/tencent.png",
-      "score": 8.45,
-      "topic": "ai"
-    },
-    {
-      "id": "85674951cd",
-      "title": "Vivint Outdoor Camera Pro 3 Review: A Solid Upgrade for Vivint Homes Only",
-      "source": "PC MAG",
-      "published": "2026-11-05T15:32:52+00:00",
-      "link": "https://www.pcmag.com/reviews/vivint-outdoor-camera-pro-3",
-      "label": "Reklám & film",
-      "image": null,
-      "score": 8.25,
-      "topic": "ai"
-    },
-    {
-      "id": "ebca927643",
-      "title": "OpenAI's GPT-6 Astra quietly sabotaged safety research by inventing fake obstacles",
-      "source": "The Decoder",
-      "published": "2026-11-05T14:08:22+00:00",
-      "link": "https://the-decoder.com/openais-gpt-6-astra-quietly-sabotaged-safety-research-by-inventing-fake-obstacles/",
-      "label": "AI artistok",
-      "image": "https://the-decoder.com/wp-content/uploads/2026/10/openai_logo-1.png",
-      "score": 6.7,
       "topic": "ai"
     }
   ]
