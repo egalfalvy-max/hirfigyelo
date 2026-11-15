@@ -1,121 +1,101 @@
 {
-  "generated_at": "2026-11-14T05:40:29.171142+00:00",
+  "generated_at": "2026-11-15T05:43:40.814203+00:00",
   "window_hours": 36,
   "scoring": "kulcsszavas",
   "topics": {
     "ai": [
       {
-        "id": "4c7137b671",
-        "title": "Adobe's Black Friday Deals Deliver Creative Cloud Pro and More for Up To 60% Off",
+        "id": "59895b4562",
+        "title": "Anthropic says outdated prompting habits are slowing down Claude Opus 5.5",
+        "source": "The Decoder",
+        "published": "2026-11-14T16:42:56+00:00",
+        "link": "https://the-decoder.com/anthropic-says-outdated-prompting-habits-are-slowing-down-claude-opus-5-5/",
+        "label": "Modellek & motion",
+        "image": "https://the-decoder.com/wp-content/uploads/2026/11/anthropic_claude_logo.png",
+        "score": 9.2
+      },
+      {
+        "id": "1c4e572d1e",
+        "title": "Runway's open-source Praxis-1 turns video AI into a robot controller",
+        "source": "The Decoder",
+        "published": "2026-11-14T09:45:45+00:00",
+        "link": "https://the-decoder.com/runways-open-source-praxis-1-turns-video-ai-into-a-robot-controller/",
+        "label": "Modellek & motion",
+        "image": "https://the-decoder.com/wp-content/uploads/2026/11/Runway-Praxis-1.jpg",
+        "score": 9.2
+      },
+      {
+        "id": "a6d348c402",
+        "title": "Trust ChatGPT With Your Payments? OpenAI Rolls Out ChatGPT Wallet",
         "source": "PC MAG",
-        "published": "2026-11-13T13:10:18+00:00",
-        "link": "https://www.pcmag.com/deals/adobes-black-friday-deals-deliver-creative-cloud-pro-more-nov-13",
+        "published": "2026-11-14T13:09:49+00:00",
+        "link": "https://www.pcmag.com/news/trust-chatgpt-with-your-payments-openai-rolls-out-chatgpt-wallet",
         "label": "Modellek & motion",
         "image": null,
-        "score": 22.0
+        "score": 6.0
       },
       {
-        "id": "6db00f3416",
-        "title": "Former OpenAI researcher says he found Nvidia Blackwell fingerprints hidden inside six Chinese AI models",
-        "source": "The Decoder",
-        "published": "2026-11-13T15:21:04+00:00",
-        "link": "https://the-decoder.com/former-openai-researcher-says-he-found-nvidia-blackwell-fingerprints-hidden-inside-six-chinese-ai-models/",
-        "label": "Reklám & film",
-        "image": "https://the-decoder.com/wp-content/uploads/2026/06/china_vs_usa_ai_race.png",
-        "score": 8.45
-      },
-      {
-        "id": "d207fd780e",
-        "title": "OPPO find X10 flagship smartphones capture beauty with 200mp hasselblad cameras",
-        "source": "Design Boom",
-        "published": "2026-11-13T11:01:11+00:00",
-        "link": "https://www.designboom.com/technology/oppo-hasselblad-cameras-find-x10-flagship-smartphones/",
-        "label": "Reklám & film",
-        "image": "https://www.designboom.com/wp-content/uploads/2026/11/火星-CMF静物图-月白Luna-White-RGB-1-500x400-22b08q85r646.jpeg",
-        "score": 8.45
-      },
-      {
-        "id": "2122328cb9",
-        "title": "Everything Trump Has Said About Jensen Huang's Nvidia Saga",
-        "source": "Mashable",
-        "published": "2026-11-12T19:20:21+00:00",
-        "link": "https://in.mashable.com/tech/116072/everything-trump-has-said-about-jensen-huangs-nvidia-saga",
-        "label": "AI artistok",
-        "image": "https://sm.mashable.com/mashable_in/article/e/everything/everything-trump-has-said-about-jensen-huangs-nvidia-saga_px67.jpg",
-        "score": 7.1
-      },
-      {
-        "id": "fbf6f47675",
-        "title": "Anthropic's Claude for Manufacturing plugs AI directly into factory software to automate industrial workflows",
-        "source": "The Decoder",
-        "published": "2026-11-13T16:37:01+00:00",
-        "link": "https://the-decoder.com/anthropics-claude-for-manufacturing-plugs-ai-directly-into-factory-software-to-automate-industrial-workflows/",
-        "label": "AI artistok",
-        "image": "https://the-decoder.com/wp-content/uploads/2026/11/claude_for_manufactoring.png",
-        "score": 6.7
-      },
-      {
-        "id": "45a56ab3ef",
-        "title": "Meta's Muse now calls businesses for you, but many companies might just hang up on the AI",
-        "source": "The Decoder",
-        "published": "2026-11-13T15:12:44+00:00",
-        "link": "https://the-decoder.com/metas-muse-now-calls-businesses-for-you-but-many-companies-might-just-hang-up-on-the-ai/",
-        "label": "Modellek & motion",
-        "image": "https://the-decoder.com/wp-content/uploads/2026/10/met_muse_gadget_logo.jpg",
-        "score": 6.2
-      },
-      {
-        "id": "7bc94a64a1",
-        "title": "Claude Meetings lets Anthropic's AI join your video calls",
-        "source": "The Decoder",
-        "published": "2026-11-12T20:26:50+00:00",
-        "link": "https://the-decoder.com/claude-meetings-lets-anthropics-ai-join-your-video-calls/",
-        "label": "Modellek & motion",
-        "image": "https://the-decoder.com/wp-content/uploads/2026/08/anthropic_claude.png",
-        "score": 6.2
-      },
-      {
-        "id": "90ff6f2cdb",
-        "title": "Nvidia Chaos, Dem Sweep, Lawsuits, Protests: AI's Terrible, No-Good November",
-        "source": "Mashable",
-        "published": "2026-11-12T19:54:30+00:00",
-        "link": "https://in.mashable.com/tech/116071/nvidia-chaos-dem-sweep-lawsuits-protests-ais-terrible-no-good-november",
-        "label": "AI artistok",
-        "image": "https://sm.mashable.com/mashable_in/article/n/nvidia-cha/nvidia-chaos-dem-sweep-lawsuits-protests-ais-terrible-no-goo_uv8f.jpg",
-        "score": 6.1
-      },
-      {
-        "id": "cd6b269846",
-        "title": "OpenAI enters the cybersecurity market with two Daybreak products",
-        "source": "The Decoder",
-        "published": "2026-11-13T15:08:57+00:00",
-        "link": "https://the-decoder.com/openai-enters-the-cybersecurity-market-with-two-daybreak-products/",
-        "label": "Reklám & film",
-        "image": "https://the-decoder.com/wp-content/uploads/2026/06/openai_logo_background_dark.png",
-        "score": 5.45
-      },
-      {
-        "id": "cfb5766d57",
-        "title": "Jensen Huang was reckless with the environment, too",
+        "id": "d46b516a4c",
+        "title": "The OpenAI board member who fired Sam Altman says we still can’t trust AI CEOs",
         "source": "The Verge",
-        "published": "2026-11-13T17:44:22+00:00",
-        "link": "https://www.theverge.com/tech/1033051/nvidia-jensen-huang-chips-gpu-supply-chain-climate-pollution",
+        "published": "2026-11-14T15:00:00+00:00",
+        "link": "https://www.theverge.com/podcast/1032907/helen-toner-openai-cset-ai-safety-policy-interview",
         "label": "AI artistok",
-        "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/gettyimages-2301295182.jpg?quality=90&strip=all&crop=0,0,100,100",
+        "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/DCD-Helen-Toner.jpg?quality=90&strip=all&crop=0,0,100,100",
         "score": 4.5
+      },
+      {
+        "id": "a60709173e",
+        "title": "Anthropic CEO Amodei admits \"there's a huge uncertainty in what's going to happen next year\" days before a record IPO",
+        "source": "The Decoder",
+        "published": "2026-11-14T19:05:17+00:00",
+        "link": "https://the-decoder.com/anthropic-ceo-amodei-admits-theres-a-huge-uncertainty-in-whats-going-to-happen-next-year-days-before-a-record-ipo/",
+        "label": "AI artistok",
+        "image": "https://the-decoder.com/wp-content/uploads/2026/11/anthropic_logos-5.png",
+        "score": 3.7
+      },
+      {
+        "id": "d586df59cc",
+        "title": "Gemini 4 Carbon takes the MathArena crown but costs 15 times more than GPT-6.1 Sol",
+        "source": "The Decoder",
+        "published": "2026-11-14T16:48:01+00:00",
+        "link": "https://the-decoder.com/gemini-4-carbon-takes-the-matharena-crown-but-costs-15-times-more-than-gpt-6-1-sol/",
+        "label": "AI artistok",
+        "image": "https://the-decoder.com/wp-content/uploads/2026/11/gemini-4_carbon_logo.png",
+        "score": 3.7
+      },
+      {
+        "id": "e2d674adf4",
+        "title": "Anthropic can already retrain Mythos with \"a fraction of the compute originally needed,\" says former researcher Coxon",
+        "source": "The Decoder",
+        "published": "2026-11-14T11:21:41+00:00",
+        "link": "https://the-decoder.com/anthropic-can-already-retrain-mythos-with-a-fraction-of-the-compute-originally-needed-says-former-researcher-coxon/",
+        "label": "AI artistok",
+        "image": "https://the-decoder.com/wp-content/uploads/2026/09/claude_laser.png",
+        "score": 3.7
+      },
+      {
+        "id": "633d2a6ad9",
+        "title": "Jensen Huang's ouster likely traces back to Nvidia's risky business practices more than his personal life",
+        "source": "The Decoder",
+        "published": "2026-11-13T20:07:34+00:00",
+        "link": "https://the-decoder.com/jensen-huangs-ouster-likely-traces-back-to-nvidias-risky-business-practices-more-than-his-personal-life/",
+        "label": "AI artistok",
+        "image": "https://the-decoder.com/wp-content/uploads/2026/11/nvidia_logo_glitch.png",
+        "score": 3.7
       }
     ]
   },
   "errors": [
     {
       "source": "CG Channel",
-      "message": "20 futás óta nem érhető el. 403 Client Error: Forbidden for url: https://www.cgchannel.com/feed/",
-      "streak": 20
+      "message": "21 futás óta nem érhető el. 403 Client Error: Forbidden for url: https://www.cgchannel.com/feed/",
+      "streak": 21
     },
     {
       "source": "Telex",
-      "message": "5 futás óta nem érhető el. 403 Client Error: Forbidden for url: https://telex.hu/rss",
-      "streak": 5
+      "message": "6 futás óta nem érhető el. 403 Client Error: Forbidden for url: https://telex.hu/rss",
+      "streak": 6
     }
   ],
   "sources": [
@@ -132,7 +112,7 @@
       "ok": false,
       "fetched": 0,
       "kept": 0,
-      "fail_streak": 20
+      "fail_streak": 21
     },
     {
       "name": "Ars Technica",
@@ -146,14 +126,14 @@
       "topic": "ai",
       "ok": true,
       "fetched": 10,
-      "kept": 5
+      "kept": 6
     },
     {
       "name": "Mashable",
       "topic": "ai",
       "ok": true,
       "fetched": 40,
-      "kept": 2
+      "kept": 0
     },
     {
       "name": "Telex",
@@ -161,7 +141,7 @@
       "ok": false,
       "fetched": 0,
       "kept": 0,
-      "fail_streak": 5
+      "fail_streak": 6
     },
     {
       "name": "zdnet",
@@ -196,7 +176,7 @@
       "topic": "ai",
       "ok": true,
       "fetched": 10,
-      "kept": 1
+      "kept": 0
     },
     {
       "name": "Design Milk",
