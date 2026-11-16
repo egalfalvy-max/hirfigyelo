@@ -1,108 +1,108 @@
 {
-  "generated_at": "2026-11-09T05:54:03.820481+00:00",
-  "from": "2026-11-02T05:54:03.820481+00:00",
-  "to": "2026-11-09T05:54:03.820481+00:00",
+  "generated_at": "2026-11-16T05:58:54.410833+00:00",
+  "from": "2026-11-09T05:58:54.410833+00:00",
+  "to": "2026-11-16T05:58:54.410833+00:00",
   "topics": {
     "ai": [
       {
-        "id": "eba602391c",
-        "title": "ChatGPT Now Lets You Generate GIFs",
-        "source": "Mashable",
-        "published": "2026-11-05T02:21:10+00:00",
-        "link": "https://in.mashable.com/tech/115773/chatgpt-now-lets-you-generate-gifs",
-        "label": "Modellek & motion",
-        "image": "https://sm.mashable.com/mashable_in/news/c/chatgpt-no/chatgpt-now-lets-you-generate-gifs_ybnu.jpg",
-        "score": 17.6
-      },
-      {
-        "id": "55dd25200f",
-        "title": "ChatGPT can now turn text prompts and photos into animated GIFs with OpenAI's Images 2.6 model",
-        "source": "The Decoder",
-        "published": "2026-11-04T19:44:20+00:00",
-        "link": "https://the-decoder.com/chatgpt-can-now-turn-text-prompts-and-photos-into-animated-gifs-with-openais-images-2-6-model/",
-        "label": "Modellek & motion",
-        "image": "https://the-decoder.com/wp-content/uploads/2026/11/openai_gif_cat.png",
-        "score": 17.2
-      },
-      {
-        "id": "52e0623fab",
-        "title": "Meta’s Muse AI can create custom ‘spaces’ for the version of the app you need right now",
-        "source": "The Verge",
-        "published": "2026-11-06T18:10:10+00:00",
-        "link": "https://www.theverge.com/tech/1028871/meta-muse-ai-spaces",
-        "label": "Modellek & motion",
-        "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/meta-muse-spaces.png?quality=90&strip=all&crop=8.0752843063528,0,91.924715693647,74.471659887186",
-        "score": 15.0
-      },
-      {
-        "id": "358cd33528",
-        "title": "Anthropic adds bank account access to Claude so users can track their spending",
-        "source": "The Decoder",
-        "published": "2026-11-06T11:33:13+00:00",
-        "link": "https://the-decoder.com/anthropic-adds-bank-account-access-to-claude-so-users-can-track-their-spending/",
-        "label": "Modellek & motion",
-        "image": "https://the-decoder.com/wp-content/uploads/2026/11/Claude-Finances-title-scaled.png",
-        "score": 14.2
-      },
-      {
-        "id": "d0178f3506",
-        "title": "Nothing teases a screen-free AI device ahead of launch next month",
-        "source": "The Verge",
-        "published": "2026-11-04T18:26:07+00:00",
-        "link": "https://www.theverge.com/ai-artificial-intelligence/1026586/nothing-screen-free-ai-device-carl-pei",
-        "label": "AI artistok",
-        "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/03/nothing-phone-4a-2.jpg?quality=90&strip=all&crop=0,0,100,100",
-        "score": 12.5
-      },
-      {
-        "id": "084876d438",
-        "title": "No AI agent scores above 12 percent on SemiAnalysis' new real-world work benchmark",
-        "source": "The Decoder",
-        "published": "2026-11-05T16:46:24+00:00",
-        "link": "https://the-decoder.com/no-ai-agent-scores-above-12-percent-on-semianalysis-new-real-world-work-benchmark/",
-        "label": "AI artistok",
-        "image": "https://the-decoder.com/wp-content/uploads/2026/11/semianalysis.png",
-        "score": 11.7
-      },
-      {
-        "id": "e137d0a0c4",
-        "title": "One brutal Minecraft night scared 50 AI agents into inventing chicken handoff protocols, a Fertilizer Officer, and fishing shifts",
-        "source": "The Decoder",
-        "published": "2026-11-02T15:42:27+00:00",
-        "link": "https://the-decoder.com/one-brutal-minecraft-night-scared-50-ai-agents-into-inventing-chicken-handoff-protocols-a-fertilizer-officer-and-fishing-shifts/",
-        "label": "AI artistok",
-        "image": "https://the-decoder.com/wp-content/uploads/2026/11/Olam-Labs-Minecraft-Experiment.png",
-        "score": 11.7
-      },
-      {
-        "id": "1bc7ba2a28",
-        "title": "China reportedly recruited AI exec to spy on Jensen Huang",
-        "source": "The Verge",
-        "published": "2026-11-06T23:00:44+00:00",
-        "link": "https://www.theverge.com/tech/1029338/nvidia-ceo-jensen-huang-china-spy",
-        "label": "AI artistok",
-        "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/STKP210_JENSEN_HUANG_A.jpg?quality=90&strip=all&crop=0,0,100,100",
-        "score": 11.5
-      },
-      {
-        "id": "1063b7decd",
-        "title": "Build, Test, and Organize AI Prompts With This Handy $39 Tool",
+        "id": "a97d2d0865",
+        "title": "Adobe's New AI Agent Is a Giant Leap in the Wrong Direction for Artists",
         "source": "PC MAG",
-        "published": "2026-11-02T18:00:00+00:00",
-        "link": "https://www.pcmag.com/deals/build-test-and-organize-ai-prompts-with-this-handy-39-tool",
+        "published": "2026-11-12T16:30:39+00:00",
+        "link": "https://www.pcmag.com/opinions/adobes-new-ai-agent-is-a-giant-leap-in-the-wrong-direction-for-artists",
         "label": "Modellek & motion",
         "image": null,
-        "score": 11.0
+        "score": 25.0
       },
       {
-        "id": "73998216b5",
-        "title": "Anthropic's text watermark is easy to bypass on several older Claude models",
-        "source": "The Decoder",
-        "published": "2026-11-04T19:03:55+00:00",
-        "link": "https://the-decoder.com/anthropics-text-watermark-is-easy-to-bypass-on-several-older-claude-models/",
+        "id": "ae12b3ec96",
+        "title": "Bring your own agent: Adobe opens Creative Cloud to outside AI",
+        "source": "Creative Boom",
+        "published": "2026-11-10T12:00:00+00:00",
+        "link": "https://www.creativeboom.com/news/adobe-max-2026-all-the-big-announcements/",
         "label": "Modellek & motion",
-        "image": "https://the-decoder.com/wp-content/uploads/2026/08/Claude-Watermark.png",
-        "score": 10.2
+        "image": "https://media.creativeboom.com/a4e74bbe-7434-4779-93c5-bc78bf1a75c4/conversions/9cb66801719104e43d0378d3f6841a0fd77af57e-medium.webp",
+        "score": 22.6
+      },
+      {
+        "id": "4c7137b671",
+        "title": "Adobe's Black Friday Deals Deliver Creative Cloud Pro and More for Up To 60% Off",
+        "source": "PC MAG",
+        "published": "2026-11-13T13:10:18+00:00",
+        "link": "https://www.pcmag.com/deals/adobes-black-friday-deals-deliver-creative-cloud-pro-more-nov-13",
+        "label": "Modellek & motion",
+        "image": null,
+        "score": 22.0
+      },
+      {
+        "id": "8d28cfa555",
+        "title": "David Ellison says AI could be the ‘biggest creative unlock in modern history’",
+        "source": "The Verge",
+        "published": "2026-11-10T00:28:49+00:00",
+        "link": "https://www.theverge.com/entertainment/1030510/paramount-skydance-david-ellison-ai",
+        "label": "Reklám & film",
+        "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/gettyimages-2274329497.jpg?quality=90&strip=all&crop=0,0,100,100",
+        "score": 21.25
+      },
+      {
+        "id": "e188dcc610",
+        "title": "Disney bets on Adobe's Firefly to create brand-safe AI models for its entertainment empire",
+        "source": "The Decoder",
+        "published": "2026-11-09T16:54:16+00:00",
+        "link": "https://the-decoder.com/disney-bets-on-adobes-firefly-to-create-brand-safe-ai-models-for-its-entertainment-empire/",
+        "label": "Modellek & motion",
+        "image": "https://the-decoder.com/wp-content/uploads/2026/11/TWDC-MAX_Marquee_2000_1000.jpg",
+        "score": 19.2
+      },
+      {
+        "id": "9d5aee5d27",
+        "title": "Instagram’s Effect Builder makes new filters from AI prompts",
+        "source": "The Verge",
+        "published": "2026-11-09T18:07:23+00:00",
+        "link": "https://www.theverge.com/tech/1030061/instagram-ai-effect-builder-filters",
+        "label": "AI artistok",
+        "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/instagram-effect-builder-launch-2.jpeg?quality=90&strip=all&crop=0,0,100,100",
+        "score": 16.5
+      },
+      {
+        "id": "5344e6962a",
+        "title": "Pay $59 Just Once for This Handy AI Studio for Reusable Brand Assets",
+        "source": "PC MAG",
+        "published": "2026-11-10T14:00:00+00:00",
+        "link": "https://www.pcmag.com/deals/pay-59-just-once-for-this-handy-ai-studio-for-reusable-brand-assets",
+        "label": "Reklám & film",
+        "image": null,
+        "score": 12.25
+      },
+      {
+        "id": "dbfcdcd8f5",
+        "title": "Gemini 4 Carbon arrives just in time to feel like yesterday's news in the fastest model cycle yet",
+        "source": "The Decoder",
+        "published": "2026-11-10T18:19:13+00:00",
+        "link": "https://the-decoder.com/gemini-4-carbon-arrives-just-in-time-to-feel-like-yesterdays-news-in-the-fastest-model-cycle-yet/",
+        "label": "AI artistok",
+        "image": "https://the-decoder.com/wp-content/uploads/2026/11/gemini-4_carbon_logo.png",
+        "score": 11.7
+      },
+      {
+        "id": "0fafd06790",
+        "title": "Anthropic's Fable 5.2 completes 41 percent of real freelance jobs, up from 2.5 percent a year ago",
+        "source": "The Decoder",
+        "published": "2026-11-10T14:07:47+00:00",
+        "link": "https://the-decoder.com/anthropics-fable-5-2-completes-41-percent-of-real-freelance-jobs-up-from-2-5-percent-a-year-ago/",
+        "label": "Modellek & motion",
+        "image": "https://the-decoder.com/wp-content/uploads/2026/07/Remote-labor-index-bench-title.png",
+        "score": 11.2
+      },
+      {
+        "id": "3aa38f9204",
+        "title": "Australia's proposed AI safety bill would force frontier model makers to open up to independent testing",
+        "source": "The Decoder",
+        "published": "2026-11-12T10:09:56+00:00",
+        "link": "https://the-decoder.com/australias-proposed-ai-safety-bill-would-force-frontier-model-makers-to-open-up-to-independent-testing/",
+        "label": "AI artistok",
+        "image": "https://the-decoder.com/wp-content/uploads/2026/11/australia_ai_safety.png",
+        "score": 10.7
       }
     ]
   }
