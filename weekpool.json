@@ -1,6 +1,94 @@
 {
   "items": [
     {
+      "id": "bfcd8b19b2",
+      "title": "You Can Finally Use Google Gemini To Control Your MacBook",
+      "source": "Mashable",
+      "published": "2026-11-19T23:07:46+00:00",
+      "link": "https://in.mashable.com/tech/116374/you-can-finally-use-google-gemini-to-control-your-macbook",
+      "label": "Modellek & motion",
+      "image": "https://sm.mashable.com/mashable_in/article/y/you-can-fi/you-can-finally-use-google-gemini-to-control-your-macbook_g8dj.jpg",
+      "score": 14.6,
+      "topic": "ai"
+    },
+    {
+      "id": "d1fa79484c",
+      "title": "An OpenAI agent assigned a simple writing task decided on its own to build a secret email surveillance tool",
+      "source": "The Decoder",
+      "published": "2026-11-19T21:15:01+00:00",
+      "link": "https://the-decoder.com/an-openai-agent-assigned-a-simple-writing-task-decided-on-its-own-to-build-a-secret-email-surveillance-tool/",
+      "label": "Modellek & motion",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/11/agent_mail_compromise.png",
+      "score": 9.2,
+      "topic": "ai"
+    },
+    {
+      "id": "b0341a0ae3",
+      "title": "Meta’s Muse Charm might cost $300",
+      "source": "The Verge",
+      "published": "2026-11-19T20:22:17+00:00",
+      "link": "https://www.theverge.com/tech/1038087/meta-muse-charm-ai-price",
+      "label": "AI artistok",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/lcimg-3879511d-dd3d-430c-8072-616e2dfb3484.jpeg?quality=90&strip=all&crop=0,0,100,100",
+      "score": 4.5,
+      "topic": "ai"
+    },
+    {
+      "id": "2205bac41e",
+      "title": "Sick of AI in Canva? You can turn it off now",
+      "source": "zdnet",
+      "published": "2026-11-19T18:01:05+00:00",
+      "link": "https://www.zdnet.com/innovation/turn-off-ai-in-canva/",
+      "label": "Modellek & motion",
+      "image": "https://www.zdnet.com/wp-content/uploads/sites/3/Canva1.jpg",
+      "score": 6.2,
+      "topic": "ai"
+    },
+    {
+      "id": "90743d4a03",
+      "title": "OpenAI's own researchers now say they value their AI tools more than nearly half their colleagues",
+      "source": "The Decoder",
+      "published": "2026-11-19T13:08:35+00:00",
+      "link": "https://the-decoder.com/openais-own-researchers-now-say-they-value-their-ai-tools-more-than-nearly-half-their-colleagues/",
+      "label": "Reklám & film",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/10/openai_logo_numbers.png",
+      "score": 5.45,
+      "topic": "ai"
+    },
+    {
+      "id": "2089858483",
+      "title": "Google AI Ultra Now Includes a YouTube Benefit It Should Have Always Had",
+      "source": "PC MAG",
+      "published": "2026-11-19T12:50:37+00:00",
+      "link": "https://www.pcmag.com/news/google-ai-ultra-now-includes-a-youtube-benefit-it-should-have-always-had",
+      "label": "Reklám & film",
+      "image": null,
+      "score": 12.25,
+      "topic": "ai"
+    },
+    {
+      "id": "e539e3b879",
+      "title": "Autodesk releases 3ds Max 2027.3",
+      "source": "CG Channel",
+      "published": "2026-11-19T12:27:45+00:00",
+      "link": "https://www.cgchannel.com/2026/11/autodesk-releases-3ds-max-2027-3/",
+      "label": "Modellek & motion",
+      "image": null,
+      "score": 9.6,
+      "topic": "ai"
+    },
+    {
+      "id": "a25f7a1426",
+      "title": "Autodesk releases Maya 2027.3 with new agentic AI features",
+      "source": "CG Channel",
+      "published": "2026-11-19T09:48:34+00:00",
+      "link": "https://www.cgchannel.com/2026/11/autodesk-releases-maya-2027-3-with-new-agentic-ai-features/",
+      "label": "Modellek & motion",
+      "image": null,
+      "score": 14.6,
+      "topic": "ai"
+    },
+    {
       "id": "b429cb510b",
       "title": "The nation’s largest school districts consider ditching Google Search",
       "source": "The Verge",
@@ -625,83 +713,6 @@
       "label": "AI artistok",
       "image": null,
       "score": 5.5,
-      "topic": "ai"
-    },
-    {
-      "id": "741dfa258d",
-      "title": "Google joins the decision-model wave with Gemini Decision 1, scoring 1,000 questions in a single pass",
-      "source": "The Decoder",
-      "published": "2026-11-11T20:12:46+00:00",
-      "link": "https://the-decoder.com/google-joins-the-decision-model-wave-with-gemini-decision-1-scoring-1000-questions-in-a-single-pass/",
-      "label": "AI artistok",
-      "image": "https://the-decoder.com/wp-content/uploads/2026/10/gemini_4_logo_wall.png",
-      "score": 6.7,
-      "topic": "ai"
-    },
-    {
-      "id": "150739597a",
-      "title": "US corporate AI spending hits a new high in October, but growth slows to 1.65 percent",
-      "source": "The Decoder",
-      "published": "2026-11-11T19:35:11+00:00",
-      "link": "https://the-decoder.com/us-corporate-ai-spending-hits-a-new-high-in-october-but-growth-slows-to-1-65-percent/",
-      "label": "AI artistok",
-      "image": "https://the-decoder.com/wp-content/uploads/2026/02/openai_anthropic_logos-1.jpeg",
-      "score": 3.7,
-      "topic": "ai"
-    },
-    {
-      "id": "7fc3551d4a",
-      "title": "Compare GPT, Claude, and Gemini Side by Side for a One-Time $32",
-      "source": "PC MAG",
-      "published": "2026-11-11T19:00:00+00:00",
-      "link": "https://www.pcmag.com/deals/compare-gpt-claude-and-gemini-side-by-side-for-a-one-time-32",
-      "label": "Modellek & motion",
-      "image": null,
-      "score": 6.0,
-      "topic": "ai"
-    },
-    {
-      "id": "02b0e08fd5",
-      "title": "Pixel users are getting a major Android Auto update – and it rivals Siri AI",
-      "source": "zdnet",
-      "published": "2026-11-11T17:11:19+00:00",
-      "link": "https://www.zdnet.com/tech/android-auto-gemini-intelligence-update/",
-      "label": "AI artistok",
-      "image": "https://www.zdnet.com/wp-content/uploads/sites/3/38545acc-df59-4d4a-b19d-d4057d0b306e.jpg",
-      "score": 3.7,
-      "topic": "ai"
-    },
-    {
-      "id": "2d8f602ac5",
-      "title": "Google’s Tabletop AI experiment lets you build custom collaboration apps",
-      "source": "The Verge",
-      "published": "2026-11-11T16:00:00+00:00",
-      "link": "https://www.theverge.com/tech/1031526/google-tabletop-ai-experiment-waitlist-availability",
-      "label": "Modellek & motion",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Google-Labs-Tabletop.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "score": 10.0,
-      "topic": "ai"
-    },
-    {
-      "id": "a86af765ff",
-      "title": "Google’s AlphaGenome 2 zooms in on the cellular roots of disease",
-      "source": "The Verge",
-      "published": "2026-11-11T15:00:00+00:00",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1031524/google-deepmind-alphagenome-2-genetic-ai-model",
-      "label": "AI artistok",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/alphagenome-atlas-cover__background.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "score": 7.5,
-      "topic": "ai"
-    },
-    {
-      "id": "827402de33",
-      "title": "I locked down my OpenClaw agent with Claude Code – then dared it to escape",
-      "source": "zdnet",
-      "published": "2026-11-11T13:09:57+00:00",
-      "link": "https://www.zdnet.com/innovation/openclaw-agent-claude-code-security-test/",
-      "label": "Reklám & film",
-      "image": "https://www.zdnet.com/wp-content/uploads/sites/3/mac-rack.png",
-      "score": 8.45,
       "topic": "ai"
     }
   ]
