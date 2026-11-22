@@ -1,6 +1,61 @@
 {
   "items": [
     {
+      "id": "033823f6f4",
+      "title": "Nvidia researchers argue huge AI context windows are a dead end",
+      "source": "The Decoder",
+      "published": "2026-11-21T16:23:45+00:00",
+      "link": "https://the-decoder.com/nvidia-researchers-argue-huge-ai-context-windows-are-a-dead-end/",
+      "label": "AI artistok",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/11/you-dont-need-long-context-nano-banana-pro.jpg",
+      "score": 3.7,
+      "topic": "ai"
+    },
+    {
+      "id": "a35786f035",
+      "title": "Silicon Valley's growing obsession with AI doomsday is turning parts of the tech industry toward cult-like devotion",
+      "source": "The Decoder",
+      "published": "2026-11-21T16:04:29+00:00",
+      "link": "https://the-decoder.com/silicon-valleys-growing-obsession-with-ai-doomsday-is-turning-parts-of-the-tech-industry-toward-cult-like-devotion/",
+      "label": "Reklám & film",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/11/buddhist_ai_sect.png",
+      "score": 8.45,
+      "topic": "ai"
+    },
+    {
+      "id": "d536e38a7a",
+      "title": "OpenAI shares new prompting tips for GPT-6.2 Astra and Sol to fix brief answers and unnecessary questions",
+      "source": "The Decoder",
+      "published": "2026-11-21T13:32:35+00:00",
+      "link": "https://the-decoder.com/openai-shares-new-prompting-tips-for-gpt-6-2-astra-and-sol-to-fix-brief-answers-and-unnecessary-questions/",
+      "label": "AI artistok",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/06/openai_logo_chatgpt-2.png",
+      "score": 11.7,
+      "topic": "ai"
+    },
+    {
+      "id": "5ace281185",
+      "title": "ChatPlayground AI’s Unlimited Plan Hits $55, Its Lowest Price Ever",
+      "source": "PC MAG",
+      "published": "2026-11-21T12:00:00+00:00",
+      "link": "https://www.pcmag.com/deals/chatplayground-ais-unlimited-plan-hits-55-its-lowest-price-ever",
+      "label": "Modellek & motion",
+      "image": null,
+      "score": 6.0,
+      "topic": "ai"
+    },
+    {
+      "id": "e8d8b83c69",
+      "title": "Bytedance argues most AI training phases are unnecessary and backs it up with a competitive open model",
+      "source": "The Decoder",
+      "published": "2026-11-21T09:17:24+00:00",
+      "link": "https://the-decoder.com/bytedance-argues-most-ai-training-phases-are-unnecessary-and-backs-it-up-with-a-competitive-open-model/",
+      "label": "Reklám & film",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/11/bytedance-axio-training-pipeline-nano-banana-pro.jpg",
+      "score": 8.45,
+      "topic": "ai"
+    },
+    {
       "id": "5a49fd4a2d",
       "title": "Google rolls out new search homepage with AI chat history and no search button",
       "source": "Ars Technica",
@@ -20,6 +75,17 @@
       "label": "AI artistok",
       "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/09/STK466_ELECTION_2024_CVirginia_E.jpg?quality=90&strip=all&crop=0,0,100,100",
       "score": 4.5,
+      "topic": "ai"
+    },
+    {
+      "id": "49c582ae02",
+      "title": "AI Toys Still 'Not Ready For Primetime'",
+      "source": "Mashable",
+      "published": "2026-11-20T18:26:33+00:00",
+      "link": "https://in.mashable.com/tech/116456/ai-toys-still-not-ready-for-primetime",
+      "label": "Reklám & film",
+      "image": "https://sm.mashable.com/mashable_in/news/a/ai-toys-st/ai-toys-still-not-ready-for-primetime_ckpm.jpg",
+      "score": 8.85,
       "topic": "ai"
     },
     {
@@ -592,94 +658,6 @@
       "label": "Modellek & motion",
       "image": "https://the-decoder.com/wp-content/uploads/2026/11/Runway-Praxis-1.jpg",
       "score": 9.2,
-      "topic": "ai"
-    },
-    {
-      "id": "633d2a6ad9",
-      "title": "Jensen Huang's ouster likely traces back to Nvidia's risky business practices more than his personal life",
-      "source": "The Decoder",
-      "published": "2026-11-13T20:07:34+00:00",
-      "link": "https://the-decoder.com/jensen-huangs-ouster-likely-traces-back-to-nvidias-risky-business-practices-more-than-his-personal-life/",
-      "label": "AI artistok",
-      "image": "https://the-decoder.com/wp-content/uploads/2026/11/nvidia_logo_glitch.png",
-      "score": 3.7,
-      "topic": "ai"
-    },
-    {
-      "id": "cfb5766d57",
-      "title": "Jensen Huang was reckless with the environment, too",
-      "source": "The Verge",
-      "published": "2026-11-13T17:44:22+00:00",
-      "link": "https://www.theverge.com/tech/1033051/nvidia-jensen-huang-chips-gpu-supply-chain-climate-pollution",
-      "label": "AI artistok",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/gettyimages-2301295182.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "score": 4.5,
-      "topic": "ai"
-    },
-    {
-      "id": "fbf6f47675",
-      "title": "Anthropic's Claude for Manufacturing plugs AI directly into factory software to automate industrial workflows",
-      "source": "The Decoder",
-      "published": "2026-11-13T16:37:01+00:00",
-      "link": "https://the-decoder.com/anthropics-claude-for-manufacturing-plugs-ai-directly-into-factory-software-to-automate-industrial-workflows/",
-      "label": "AI artistok",
-      "image": "https://the-decoder.com/wp-content/uploads/2026/11/claude_for_manufactoring.png",
-      "score": 6.7,
-      "topic": "ai"
-    },
-    {
-      "id": "6db00f3416",
-      "title": "Former OpenAI researcher says he found Nvidia Blackwell fingerprints hidden inside six Chinese AI models",
-      "source": "The Decoder",
-      "published": "2026-11-13T15:21:04+00:00",
-      "link": "https://the-decoder.com/former-openai-researcher-says-he-found-nvidia-blackwell-fingerprints-hidden-inside-six-chinese-ai-models/",
-      "label": "Reklám & film",
-      "image": "https://the-decoder.com/wp-content/uploads/2026/06/china_vs_usa_ai_race.png",
-      "score": 8.45,
-      "topic": "ai"
-    },
-    {
-      "id": "45a56ab3ef",
-      "title": "Meta's Muse now calls businesses for you, but many companies might just hang up on the AI",
-      "source": "The Decoder",
-      "published": "2026-11-13T15:12:44+00:00",
-      "link": "https://the-decoder.com/metas-muse-now-calls-businesses-for-you-but-many-companies-might-just-hang-up-on-the-ai/",
-      "label": "Modellek & motion",
-      "image": "https://the-decoder.com/wp-content/uploads/2026/10/met_muse_gadget_logo.jpg",
-      "score": 6.2,
-      "topic": "ai"
-    },
-    {
-      "id": "cd6b269846",
-      "title": "OpenAI enters the cybersecurity market with two Daybreak products",
-      "source": "The Decoder",
-      "published": "2026-11-13T15:08:57+00:00",
-      "link": "https://the-decoder.com/openai-enters-the-cybersecurity-market-with-two-daybreak-products/",
-      "label": "Reklám & film",
-      "image": "https://the-decoder.com/wp-content/uploads/2026/06/openai_logo_background_dark.png",
-      "score": 5.45,
-      "topic": "ai"
-    },
-    {
-      "id": "4c7137b671",
-      "title": "Adobe's Black Friday Deals Deliver Creative Cloud Pro and More for Up To 60% Off",
-      "source": "PC MAG",
-      "published": "2026-11-13T13:10:18+00:00",
-      "link": "https://www.pcmag.com/deals/adobes-black-friday-deals-deliver-creative-cloud-pro-more-nov-13",
-      "label": "Modellek & motion",
-      "image": null,
-      "score": 22.0,
-      "topic": "ai"
-    },
-    {
-      "id": "d207fd780e",
-      "title": "OPPO find X10 flagship smartphones capture beauty with 200mp hasselblad cameras",
-      "source": "Design Boom",
-      "published": "2026-11-13T11:01:11+00:00",
-      "link": "https://www.designboom.com/technology/oppo-hasselblad-cameras-find-x10-flagship-smartphones/",
-      "label": "Reklám & film",
-      "image": "https://www.designboom.com/wp-content/uploads/2026/11/火星-CMF静物图-月白Luna-White-RGB-1-500x400-22b08q85r646.jpeg",
-      "score": 8.45,
       "topic": "ai"
     }
   ]
