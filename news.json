@@ -1,28 +1,48 @@
 {
-  "generated_at": "2026-11-23T15:39:18.902927+00:00",
+  "generated_at": "2026-11-24T15:29:34.359352+00:00",
   "window_hours": 36,
   "scoring": "kulcsszavas",
   "topics": {
     "ai": [
       {
-        "id": "7cda752582",
-        "title": "AI coding agents ace isolated tests but complete fewer than one in ten tasks in a simulated workplace",
+        "id": "7386512707",
+        "title": "Booms & Shakes: who’s moved where in November, from Neville Brody to Uber’s creative leader",
+        "source": "Creative Boom",
+        "published": "2026-11-24T07:00:00+00:00",
+        "link": "https://www.creativeboom.com/news/booms-shakes-novembers-biggest-creative-industry-moves-from-neville-brody-to-apples-agency/",
+        "label": "AI artistok",
+        "image": "https://media.creativeboom.com/d9c721bf-2f26-4752-83b1-442830d647a7/conversions/b086feef9f5989bfeaedda920dcae05cf585d31a-medium.webp",
+        "score": 16.1
+      },
+      {
+        "id": "8726b4bf08",
+        "title": "What’s the answer to a sea of lookalike AI brands? A fossilised typewriter, a flight delay and hand-drawn cave art",
+        "source": "Creative Boom",
+        "published": "2026-11-24T06:15:00+00:00",
+        "link": "https://www.creativeboom.com/news/whats-the-answer-to-a-sea-of-lookalike-ai-brands-a-fossilised-typewriter-a-flight-delay-and-some-hand-drawn-cave-art-of-course/",
+        "label": "Reklám & film",
+        "image": "https://media.creativeboom.com/d355dcde-7dfa-4311-b282-7c9a257729ff/conversions/42bf54b935d184a393ec90d6c1322d5baf371b97-medium.webp",
+        "score": 9.85
+      },
+      {
+        "id": "9a843b0cbb",
+        "title": "OpenAI warns that upcoming AI systems could outpace safety checks and urges rivals to agree on shared limits",
         "source": "The Decoder",
-        "published": "2026-11-22T15:15:48+00:00",
-        "link": "https://the-decoder.com/ai-coding-agents-ace-isolated-tests-but-complete-fewer-than-one-in-ten-tasks-in-a-simulated-workplace/",
+        "published": "2026-11-23T18:42:38+00:00",
+        "link": "https://the-decoder.com/openai-warns-that-upcoming-ai-systems-could-outpace-safety-checks-and-urges-rivals-to-agree-on-shared-limits/",
         "label": "Modellek & motion",
-        "image": "https://the-decoder.com/wp-content/uploads/2026/11/cowork-benchmark-chatgpt-5-6.jpg",
+        "image": "https://the-decoder.com/wp-content/uploads/2026/10/openai_safety.png",
         "score": 9.2
       },
       {
-        "id": "5f8d980aa0",
-        "title": "AI is getting better faster than experts can reliably test whether new systems are safe, METR warns",
+        "id": "94d323914d",
+        "title": "OpenAI updates ChatGPT to handle complex everyday questions, web searches, and images more reliably",
         "source": "The Decoder",
-        "published": "2026-11-22T13:00:43+00:00",
-        "link": "https://the-decoder.com/ai-is-getting-better-faster-than-experts-can-reliably-test-whether-new-systems-are-safe-metr-warns/",
-        "label": "Modellek & motion",
-        "image": "https://the-decoder.com/wp-content/uploads/2026/06/metr_logo.png",
-        "score": 9.2
+        "published": "2026-11-23T20:39:18+00:00",
+        "link": "https://the-decoder.com/openai-updates-chatgpt-to-handle-complex-everyday-questions-web-searches-and-images-more-reliably/",
+        "label": "AI artistok",
+        "image": "https://the-decoder.com/wp-content/uploads/2026/11/openai_chatgpt_pattern.png",
+        "score": 6.7
       },
       {
         "id": "dff8ecfdbf",
@@ -35,24 +55,14 @@
         "score": 6.7
       },
       {
-        "id": "70320c02db",
-        "title": "US spies tracked Nvidia scandal figure's ties to Chinese intelligence for over a year",
-        "source": "The Decoder",
-        "published": "2026-11-23T13:45:32+00:00",
-        "link": "https://the-decoder.com/us-spies-tracked-nvidia-scandal-figures-ties-to-chinese-intelligence-for-over-a-year/",
-        "label": "AI artistok",
-        "image": "https://the-decoder.com/wp-content/uploads/2026/11/nvidia_logo_glitch.png",
-        "score": 6.7
-      },
-      {
-        "id": "7bb6862f62",
-        "title": "Perplexity's new Monitor API turns web search from a one-off query into a nonstop watchdog",
-        "source": "The Decoder",
-        "published": "2026-11-22T14:20:28+00:00",
-        "link": "https://the-decoder.com/perplexitys-new-monitor-api-turns-web-search-from-a-one-off-query-into-a-nonstop-watchdog/",
-        "label": "AI artistok",
-        "image": "https://the-decoder.com/wp-content/uploads/2026/06/Perplexity-Logo-Silhouette-Nano-Banana-Pro.jpg",
-        "score": 6.7
+        "id": "d70dafe27b",
+        "title": "Nothing's Next Earbuds Feature an AI-Powered Recording Case",
+        "source": "PC MAG",
+        "published": "2026-11-24T13:09:24+00:00",
+        "link": "https://www.pcmag.com/news/nothings-next-earbuds-feature-an-ai-powered-recording-case",
+        "label": "Modellek & motion",
+        "image": null,
+        "score": 6.0
       },
       {
         "id": "88e21d675a",
@@ -93,26 +103,10 @@
         "label": "AI artistok",
         "image": "https://sm.mashable.com/mashable_in/photo/default/chatgpt-mash_14g6.jpg",
         "score": 4.1
-      },
-      {
-        "id": "fa047a8016",
-        "title": "Boris FX releases Silhouette 2027",
-        "source": "CG Channel",
-        "published": "2026-11-22T04:00:36+00:00",
-        "link": "https://www.cgchannel.com/2026/11/boris-fx-releases-silhouette-2027/",
-        "label": "AI artistok",
-        "image": null,
-        "score": 4.1
       }
     ]
   },
-  "errors": [
-    {
-      "source": "Telex",
-      "message": "403 Client Error: Forbidden for url: https://telex.hu/rss",
-      "streak": 1
-    }
-  ],
+  "errors": [],
   "sources": [
     {
       "name": "The Verge",
@@ -126,7 +120,7 @@
       "topic": "ai",
       "ok": true,
       "fetched": 10,
-      "kept": 1
+      "kept": 0
     },
     {
       "name": "Ars Technica",
@@ -140,7 +134,7 @@
       "topic": "ai",
       "ok": true,
       "fetched": 10,
-      "kept": 5
+      "kept": 3
     },
     {
       "name": "Mashable",
@@ -152,10 +146,9 @@
     {
       "name": "Telex",
       "topic": "ai",
-      "ok": false,
-      "fetched": 0,
-      "kept": 0,
-      "fail_streak": 1
+      "ok": true,
+      "fetched": 50,
+      "kept": 0
     },
     {
       "name": "zdnet",
@@ -169,7 +162,7 @@
       "topic": "ai",
       "ok": true,
       "fetched": 100,
-      "kept": 1
+      "kept": 2
     },
     {
       "name": "It's nice that",
@@ -183,7 +176,7 @@
       "topic": "ai",
       "ok": true,
       "fetched": 20,
-      "kept": 0
+      "kept": 2
     },
     {
       "name": "Design Boom",
