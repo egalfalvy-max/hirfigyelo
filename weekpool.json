@@ -1,6 +1,83 @@
 {
   "items": [
     {
+      "id": "a6eb08723d",
+      "title": "FCC clears SpaceX to deploy up to 1 million Starmind satellites for orbital AI data centers by 2040",
+      "source": "The Decoder",
+      "published": "2026-11-26T13:41:07+00:00",
+      "link": "https://the-decoder.com/fcc-clears-spacex-to-deploy-up-to-1-million-starmind-satellites-for-orbital-ai-data-centers-by-2040/",
+      "label": "Reklám & film",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/11/SpaceX-xAI-Satellite-scaled.png",
+      "score": 5.45,
+      "topic": "ai"
+    },
+    {
+      "id": "0a95f1b09b",
+      "title": "Now Google’s Familiar Faces AI feature works on Walmart’s $35 smart home camera too",
+      "source": "The Verge",
+      "published": "2026-11-26T00:04:34+00:00",
+      "link": "https://www.theverge.com/tech/1042938/google-home-familiar-faces-onn-cameras",
+      "label": "Modellek & motion",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/23451196/acastro_220510_STK123_0002.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "score": 10.0,
+      "topic": "ai"
+    },
+    {
+      "id": "ceecf9e348",
+      "title": "Google’s patent for custom AI video feeds paints a bleak picture of entertainment’s future",
+      "source": "The Verge",
+      "published": "2026-11-25T21:51:26+00:00",
+      "link": "https://www.theverge.com/entertainment/1042221/google-my-channel-ai-video-patent",
+      "label": "AI artistok",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Screenshot-2026-11-25-at-11.34.07-AM.png?quality=90&strip=all&crop=2.859375,3.7218027238494,93.788122558594,91.658221639303",
+      "score": 4.5,
+      "topic": "ai"
+    },
+    {
+      "id": "9136aa5e82",
+      "title": "Anthropic CEO Dario Amodei says letting AI govern society would be \"a bad idea\"",
+      "source": "The Decoder",
+      "published": "2026-11-25T20:15:50+00:00",
+      "link": "https://the-decoder.com/anthropic-ceo-dario-amodei-says-letting-ai-govern-society-would-be-a-bad-idea/",
+      "label": "AI artistok",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/09/anthropic_amodei.png",
+      "score": 10.7,
+      "topic": "ai"
+    },
+    {
+      "id": "1abbeffa2a",
+      "title": "OpenAI wants companies to trust it with sensitive work by promising not to look at their data",
+      "source": "The Decoder",
+      "published": "2026-11-25T18:22:02+00:00",
+      "link": "https://the-decoder.com/openai-wants-companies-to-trust-it-with-sensitive-work-by-promising-not-to-look-at-their-data/",
+      "label": "Modellek & motion",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/10/openai_logo-1.png",
+      "score": 14.2,
+      "topic": "ai"
+    },
+    {
+      "id": "61ca50113a",
+      "title": "Etsy clarifies AI terms after seller backlash",
+      "source": "Ars Technica",
+      "published": "2026-11-25T17:12:57+00:00",
+      "link": "https://arstechnica.com/tech-policy/2026/11/etsy-clarifies-ai-terms-after-seller-backlash/",
+      "label": "Modellek & motion",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/GettyImages-2289651678-1152x648.jpg",
+      "score": 6.9,
+      "topic": "ai"
+    },
+    {
+      "id": "dc8fa3c5c4",
+      "title": "Amazon and Meta are in talks to end the block on Meta's AI shopping agent Muse in Amazon's online store.",
+      "source": "The Decoder",
+      "published": "2026-11-25T16:44:37+00:00",
+      "link": "https://the-decoder.com/amazon-and-meta-are-in-talks-to-end-the-block-on-metas-ai-shopping-agent-muse-in-amazons-online-store/",
+      "label": "Reklám & film",
+      "image": "https://the-decoder.com/wp-content/uploads/2026/10/met_muse_gadget_logo.jpg",
+      "score": 8.45,
+      "topic": "ai"
+    },
+    {
       "id": "f27b156bf3",
       "title": "MIT team discovers that unrealistic training data makes AI climate predictions more reliable",
       "source": "The Decoder",
@@ -548,83 +625,6 @@
       "label": "Modellek & motion",
       "image": "https://the-decoder.com/wp-content/uploads/2026/03/AI-Fake-Chain-of-Evidence.png",
       "score": 6.2,
-      "topic": "ai"
-    },
-    {
-      "id": "2aa45ea829",
-      "title": "google splits eighth-generation TPU into training and inference chips as AI agents reshape hardware economics",
-      "source": "Design Boom",
-      "published": "2026-11-18T07:15:29+00:00",
-      "link": "https://www.designboom.com/readers/google-eighth-generation-tpu-training-inference-chips-ai-agents-hardware-economics-cloudfresh/",
-      "label": "Modellek & motion",
-      "image": "https://www.designboom.com/wp-content/uploads/2026/11/google-tpu-chips-cloudfresh-google-cloud-consulting-services-designboom-700-500x400-22b08q85r284.jpg",
-      "score": 6.2,
-      "topic": "ai"
-    },
-    {
-      "id": "ab50b7af66",
-      "title": "Copilot is \"the new OS for work,\" and now Office runs inside of it",
-      "source": "Ars Technica",
-      "published": "2026-11-18T00:27:29+00:00",
-      "link": "https://arstechnica.com/gadgets/2026/11/microsoft-calls-copilot-the-new-os-for-work-at-ignite-keynote/",
-      "label": "AI artistok",
-      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/MS_Ignite_Perception.png",
-      "score": 4.4,
-      "topic": "ai"
-    },
-    {
-      "id": "6630c5d9a2",
-      "title": "Microsoft says its new AI coding model rivals Claude Opus 5.5 at 5% of the cost",
-      "source": "zdnet",
-      "published": "2026-11-17T22:42:44+00:00",
-      "link": "https://www.zdnet.com/innovation/microsoft-ai-coding-model-rivals-claude-opus-5-5-ignite/",
-      "label": "AI artistok",
-      "image": "https://www.zdnet.com/wp-content/uploads/sites/3/ignite.jpg",
-      "score": 11.7,
-      "topic": "ai"
-    },
-    {
-      "id": "859fe7425c",
-      "title": "Not even Sam Altman is safe from AI deepfakes on Instagram",
-      "source": "The Verge",
-      "published": "2026-11-17T21:00:55+00:00",
-      "link": "https://www.theverge.com/news/1035957/meta-alexandr-wang-sam-altman-instagram-ai-deepfake",
-      "label": "AI artistok",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/gettyimages-2297785644.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "score": 7.5,
-      "topic": "ai"
-    },
-    {
-      "id": "d4e4caa0af",
-      "title": "See How ChatGPT, Claude, and Gemini Talk About Your Brand for $49",
-      "source": "PC MAG",
-      "published": "2026-11-17T21:00:00+00:00",
-      "link": "https://www.pcmag.com/deals/see-how-chatgpt-claude-and-gemini-talk-about-your-brand-for-49",
-      "label": "Reklám & film",
-      "image": null,
-      "score": 5.25,
-      "topic": "ai"
-    },
-    {
-      "id": "794837209e",
-      "title": "OpenAI launches GPT-6.2 Astra and Sol with lower API prices and some benchmark gains",
-      "source": "The Decoder",
-      "published": "2026-11-17T20:30:50+00:00",
-      "link": "https://the-decoder.com/openai-launches-gpt-6-2-astra-and-sol-with-lower-api-prices-and-some-benchmark-gains/",
-      "label": "AI artistok",
-      "image": "https://the-decoder.com/wp-content/uploads/2026/11/openai_vals_sol.png",
-      "score": 6.7,
-      "topic": "ai"
-    },
-    {
-      "id": "81ab4dac6b",
-      "title": "I asked Gemini Notebook to ‘make me a site’ from my notes – it was satisfying",
-      "source": "zdnet",
-      "published": "2026-11-17T17:52:39+00:00",
-      "link": "https://www.zdnet.com/innovation/google-gemini-notebook-interactive-sites-notes/",
-      "label": "Modellek & motion",
-      "image": "https://www.zdnet.com/wp-content/uploads/sites/3/1111_97018e.jpg",
-      "score": 9.2,
       "topic": "ai"
     }
   ]
